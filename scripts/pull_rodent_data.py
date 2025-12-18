@@ -37,7 +37,7 @@ data = client.get(
         inspection_date <= '{sunday_last_week}' AND
         result != 'Passed'
     """,
-    limit =10)
+    limit =1000)
 
 # print(data)
 
