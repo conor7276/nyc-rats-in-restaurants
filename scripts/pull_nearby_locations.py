@@ -11,15 +11,15 @@ logging.basicConfig(level = logging.INFO, format = '%(message)s')
 logger = logging.getLogger(__name__)
 
 # Resolve data and environment paths
-data_path = Path(__file__).resolve().parent.parent / "data/raw_data/data_2025-12-08_2025-12-14.csv"
+data_path = Path(__file__).resolve().parent.parent / "data/raw_data/data_2025-12-15_2025-12-21.csv"
 env_path = Path(__file__).resolve().parent.parent / "secrets.env"
 
-logger.log("Data and environmnet variable paths loaded")
+logger.info("Data and environmnet variable paths loaded")
 
 # Read data and environment variables
 df = pd.read_csv(data_path)
 env_vars = dotenv_values(env_path)
-logger.log("Data and environment variables loaded.")
+logger.info("Data and environment variables loaded.")
 
 # Filter out bad coordinates
 df = df.dropna(subset = ['longitude', 'latitude'])
@@ -29,7 +29,7 @@ df = df[(df['longitude'] != 0) & (df['latitude'] != 0)]
 df['street_name'] = df['street_name'].apply(lambda x : x.title())
 df['address'] = df.apply(lambda x : str(x['house_number']) + ' ' + x['street_name'] ,axis = 1)
 
-logger.log("Raw data cleaned")
+logger.info("Raw data cleaned")
 
 # Replace with your actual API Key
 API_KEY = env_vars['GOOGLE_PLACES_API_KEY']
@@ -60,11 +60,11 @@ headers = {
     "X-Goog-FieldMask": "places.displayName,places.formattedAddress,places.location,places.rating"
 }
 
-logger.log("Beginning to make requests for each location.")
+logger.info("Beginning to make requests for each location.")
 requested_places = pd.DataFrame()
 
 # Loop through rows
-for row in df.head(10).iterrows():
+for row in df.head(100).iterrows():
 
     temp_df = pd.DataFrame()
 
@@ -128,7 +128,7 @@ if requested_places.empty == False:
     requested_places_saved['split_check'] = requested_places_saved.apply(lambda x : x['formattedAddress'].split()[0] == x['address'].split()[0], axis = 1)
     requested_places_saved = requested_places_saved[requested_places_saved['split_check'] == True]
 
-    requested_places_saved.to_csv("data/intermediate_data/data.csv", index = False)
+    requested_places_saved.to_csv(f"data/intermediate_data/data_{env_vars['MONDAY_LAST_WEEK']}_{env_vars['SUNDAY_LAST_WEEK']}.csv", index = False)
     logger.info("Address comparison and cleanup completed. File Saved to intermediate data folder.")
 else:
     # if no data is returned at all
