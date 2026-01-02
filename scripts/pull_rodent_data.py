@@ -41,8 +41,8 @@ data = client.get(
 
 # print(data)
 
-import pandas as pd
+from pandas import DataFrame
 
-data = pd.DataFrame(data)
+data = DataFrame(data)
 print(data.head())
-data.to_csv("data.csv", index = False)
+data.to_csv(f"data/raw_data/data_{monday_last_week}_{sunday_last_week}.csv", index = False)
