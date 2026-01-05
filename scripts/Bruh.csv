@@ -1,0 +1,4 @@
+formattedAddress,location,rating,displayName,latitude,longitude,address,ratio,split_check
+"554 W 181st St, New York, NY 10033, USA","{'latitude': 40.8488258, 'longitude': -73.9328546}",2.7,"{'text': 'Caridad', 'languageCode': 'en'}",40.84894689122,-73.932873893386,554 West 181 Street,86,True
+"554 W 181st St, New York, NY 10033, USA","{'latitude': 40.8487565, 'longitude': -73.932974}",4.3,"{'text': 'Jarto’e Sazon Restaurant', 'languageCode': 'en'}",40.84894689122,-73.932873893386,554 West 181 Street,86,True
+"505 Grand St #507, New York, NY 10002, USA","{'latitude': 40.7144992, 'longitude': -73.9823237}",4.4,"{'text': 'A-1 Pizza Shop', 'languageCode': 'en'}",40.714639696184,-73.982310025479,505 Grand Street,86,True
