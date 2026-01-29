@@ -47,7 +47,10 @@ jobs:
           APP_TOKEN_API_KEY: ${{ secrets.APP_TOKEN_API_KEY }}
         run: |
           python scripts/pull_rodent_data.py \
-            --dry-run=${{ inputs.dry_run || 'false' }}
+            --start-date=$START_DATE \
+            --end-date=$END_DATE \
+            --dry-run=${{ github.event.inputs.dry_run || 'false' }}
+
       - name: Run data processing
         env:
           GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
