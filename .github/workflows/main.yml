@@ -7,6 +7,11 @@ on:
         description: "Run without writing data"
         required: false
         default: "true"
+      branch:
+        description: "Branch to run the workflow on"
+        required: true
+        default: "git-actions-fix"
+
   schedule:
     - cron: "0 0 * * 1"
 
@@ -15,8 +20,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout selected branch
         uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.branch || 'main' }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -28,5 +35,9 @@ jobs:
 
       - name: Run ingest job
         run: |
-          python ingest.py \
+          python scripts/pull_rodent_data.py \
+            --dry-run=${{ inputs.dry_run || 'false' }}
+      - name: Run data processing
+        run: |
+          python scripts/pull_nearby_locations.py \
             --dry-run=${{ inputs.dry_run || 'false' }}
