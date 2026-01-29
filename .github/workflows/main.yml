@@ -34,6 +34,8 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run ingest job
+        env:
+          APP_TOKEN_API_KEY: ${{ secrets.APP_TOKEN_API_KEY }}
         run: |
           python scripts/pull_rodent_data.py \
             --dry-run=${{ inputs.dry_run || 'false' }}
