@@ -15,8 +15,8 @@ logger.info("Getting environment variables to pull from NYC Open Data.")
 # env_vars = dotenv_values(env_path)
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--start-date", required=True)
-parser.add_argument("--end-date", required=True)
+parser.add_argument("--START-DATE", required=True)
+parser.add_argument("--END-DATE", required=True)
 parser.add_argument("--dry-run", default="false")
 
 args = parser.parse_args()
