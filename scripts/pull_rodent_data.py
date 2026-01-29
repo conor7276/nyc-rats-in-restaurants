@@ -1,11 +1,9 @@
-import requests
-import urllib3
 from pathlib import Path
 import logging
-import os
 from sodapy import Socrata
 from dotenv import dotenv_values, set_key
 from datetime import date
+import os
 
 
 logging.basicConfig(level = logging.INFO, format = '%(message)s')
@@ -13,9 +11,13 @@ logger = logging.getLogger(__name__)
 
 # Get environment variables
 logger.info("Getting environment variables to pull from NYC Open Data.")
-env_path = Path(__file__).resolve().parent.parent / "secrets.env"
-env_vars = dotenv_values(env_path)
+# env_path = Path(__file__).resolve().parent.parent / "secrets.env"
+# env_vars = dotenv_values(env_path)
 
+app_token_api_key = os.getenv('APP_TOKEN_API_KEY')
+
+if not app_token_api_key:
+    raise ValueError("app token api key is not here.")
 
 # do not use an https
 DOMAIN = 'data.cityofnewyork.us'
@@ -25,7 +27,7 @@ logger.info("Connecting to Database")
 # APP_TOKEN_API_KEY
 client = Socrata(
     DOMAIN,
-    app_token = env_vars['APP_TOKEN_API_KEY'],
+    app_token = app_token_api_key,
     timeout = 10
 )
 
