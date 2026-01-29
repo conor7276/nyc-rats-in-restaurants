@@ -3,8 +3,8 @@ import logging
 from sodapy import Socrata
 from dotenv import dotenv_values, set_key
 from datetime import date
-import os
-
+import os # prod api key
+import argparse # prod for args
 
 logging.basicConfig(level = logging.INFO, format = '%(message)s')
 logger = logging.getLogger(__name__)
@@ -13,6 +13,16 @@ logger = logging.getLogger(__name__)
 logger.info("Getting environment variables to pull from NYC Open Data.")
 # env_path = Path(__file__).resolve().parent.parent / "secrets.env"
 # env_vars = dotenv_values(env_path)
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--start-date", required=True)
+parser.add_argument("--end-date", required=True)
+parser.add_argument("--dry-run", default="false")
+
+args = parser.parse_args()
+
+monday_last_week = args.start_date
+sunday_last_week = args.end_date
 
 app_token_api_key = os.getenv('APP_TOKEN_API_KEY')
 
@@ -31,8 +41,11 @@ client = Socrata(
     timeout = 10
 )
 
-monday_last_week = date(2025,12,15).isoformat()
-sunday_last_week = date(2025,12,21).isoformat()
+# monday_last_week = date(2025,12,15).isoformat()
+# sunday_last_week = date(2025,12,21).isoformat()
+monday_last_week = monday_last_week.strptime('%Y-%m-%d').isoformat()
+sunday_last_week = sunday_last_week.strptime('%Y-%m-%d').isoformat()
+
 
 try:
     logging.info("Pulling this weeks data.")
@@ -60,8 +73,8 @@ if data.empty == False:
 
     logger.info(f"Data for the week of {monday_last_week} through {sunday_last_week} saved.")
 
-    set_key(dotenv_path=env_path, key_to_set="MONDAY_LAST_WEEK", value_to_set=monday_last_week)
-    set_key(dotenv_path=env_path, key_to_set="SUNDAY_LAST_WEEK", value_to_set=sunday_last_week)
+    # set_key(dotenv_path=env_path, key_to_set="MONDAY_LAST_WEEK", value_to_set=monday_last_week)
+    # set_key(dotenv_path=env_path, key_to_set="SUNDAY_LAST_WEEK", value_to_set=sunday_last_week)
 
     logger.info("Environment keys updated.")
 else:
