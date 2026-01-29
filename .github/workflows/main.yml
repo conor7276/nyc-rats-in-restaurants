@@ -40,6 +40,8 @@ jobs:
           python scripts/pull_rodent_data.py \
             --dry-run=${{ inputs.dry_run || 'false' }}
       - name: Run data processing
+        env:
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
         run: |
           python scripts/pull_nearby_locations.py \
             --dry-run=${{ inputs.dry_run || 'false' }}
