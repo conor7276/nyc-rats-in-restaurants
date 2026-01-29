@@ -23,27 +23,20 @@ jobs:
       - name: Checkout selected branch
         uses: actions/checkout@v4
         with:
-              ref: ${{ github.event.inputs.branch || github.ref_name }}
+          ref: ${{ github.event.inputs.branch || github.ref_name }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-          
+
       - name: Set date range
-        id: dates
         run: |
           END_DATE=$(date -u -d "yesterday" +%F)
           START_DATE=$(date -u -d "$END_DATE -6 days" +%F)
-      
           echo "START_DATE=$START_DATE" >> $GITHUB_ENV
           echo "END_DATE=$END_DATE" >> $GITHUB_ENV
 
-      - name: Debug dates
-        run: |
-          echo "START_DATE=$START_DATE"
-          echo "END_DATE=$END_DATE"
-          
       - name: Install dependencies
         run: pip install -r requirements.txt
 
@@ -61,4 +54,4 @@ jobs:
           GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
         run: |
           python scripts/pull_nearby_locations.py \
-            --dry-run=${{ inputs.dry_run || 'false' }}
+            --dry-run=${{ github.event.inputs.dry_run || 'false' }}
