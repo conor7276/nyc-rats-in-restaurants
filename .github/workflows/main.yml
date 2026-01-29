@@ -38,6 +38,11 @@ jobs:
       
           echo "START_DATE=$START_DATE" >> $GITHUB_ENV
           echo "END_DATE=$END_DATE" >> $GITHUB_ENV
+
+      - name: Debug dates
+        run: |
+          echo "START_DATE=$START_DATE"
+          echo "END_DATE=$END_DATE"
           
       - name: Install dependencies
         run: pip install -r requirements.txt
