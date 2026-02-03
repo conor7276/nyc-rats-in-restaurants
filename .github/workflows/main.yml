@@ -54,4 +54,6 @@ jobs:
           GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
         run: |
           python scripts/pull_nearby_locations.py \
+            --start-date=$START_DATE \
+            --end-date=$END_DATE \
             --dry-run=${{ github.event.inputs.dry_run || 'false' }}
