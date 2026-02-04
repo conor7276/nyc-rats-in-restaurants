@@ -7,7 +7,7 @@ import time
 import logging
 import os
 import argparse
-import datetime
+from datetime import datetime
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--start-date", required=True)
@@ -27,7 +27,9 @@ start_date = datetime.strptime(args.start_date, "%Y-%m-%d").date().isoformat()
 end_date = datetime.strptime(args.end_date, "%Y-%m-%d").date().isoformat()
 
 input_dir = Path("data/raw_data")
+input_dir.mkdir(parents=True, exist_ok=True)
 output_dir = Path("data/intermediate_data")
+output_dir.mkdir(parents=True, exist_ok=True)
 input_filepath = input_dir / f"data_{start_date}_{end_date}.csv"
 output_filepath = output_dir / f"data_{start_date}_{end_date}.csv"
 
