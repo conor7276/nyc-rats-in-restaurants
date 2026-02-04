@@ -60,5 +60,7 @@ if not df.empty:
     filepath = output_dir / f"data_{monday_last_week}_{sunday_last_week}.csv"
     df.to_csv(filepath, index=False)
     logger.info(f"Saved data to {filepath}")
+    logger.info(f"Data Preview: ")
+    logger.info(df.head())
 else:
     logger.info("No data returned.")
