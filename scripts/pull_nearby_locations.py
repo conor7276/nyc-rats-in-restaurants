@@ -149,7 +149,9 @@ if requested_places.empty == False:
     requested_places_saved['split_check'] = requested_places_saved.apply(lambda x : x['formattedAddress'].split()[0] == x['address'].split()[0], axis = 1)
     requested_places_saved = requested_places_saved[requested_places_saved['split_check'] == True]
 
+    requested_places_saved = requested_places_saved.drop(columns = ["ratio", "split_check"])
     requested_places_saved.to_csv(output_filepath, index = False)
+    
     logger.info("Preview of dataframe: ")
     logger.info(requested_places_saved.head())
     logger.info("Address comparison and cleanup completed. File Saved to intermediate data folder.")
