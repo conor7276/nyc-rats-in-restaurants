@@ -150,6 +150,8 @@ if requested_places.empty == False:
     requested_places_saved = requested_places_saved[requested_places_saved['split_check'] == True]
 
     requested_places_saved.to_csv(output_filepath, index = False)
+    logger.info("Preview of dataframe: ")
+    logger.info(requested_places_saved.head())
     logger.info("Address comparison and cleanup completed. File Saved to intermediate data folder.")
 else:
     # if no data is returned at all
