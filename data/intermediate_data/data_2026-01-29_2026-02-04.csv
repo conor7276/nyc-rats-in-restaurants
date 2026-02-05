@@ -1,0 +1,12 @@
+formattedAddress,location,rating,displayName,latitude,longitude,address,ratio,split_check
+"307 E 77th St, New York, NY 10075, USA","{'latitude': 40.77201, 'longitude': -73.955404}",4.2,"{'text': 'Ollie’s To Go: Upper East Side', 'languageCode': 'en'}",40.771830557198,-73.955552807522,307 East 77 Street,86,True
+"79 Chrystie St, New York, NY 10002, USA","{'latitude': 40.717318899999995, 'longitude': -73.9944649}",4.5,"{'text': 'Wah Fung No.1 Fast Food', 'languageCode': 'en'}",40.717303342478,-73.99426423578,79 Chrystie Street,86,True
+"1496 Amsterdam Ave, New York, NY 10031, USA","{'latitude': 40.818205, 'longitude': -73.95298}",4.7,"{'text': 'Fruces', 'languageCode': 'en'}",40.818097718134,-73.952830188244,1496 Amsterdam Avenue,86,True
+"246 Spring St, New York, NY 10013, USA","{'latitude': 40.7255319, 'longitude': -74.0054273}",3.3,"{'text': 'Mezzanine', 'languageCode': 'en'}",40.725609031324,-74.005253029906,246 Spring Street,86,True
+"193 Meserole Ave, Brooklyn, NY 11222, USA","{'latitude': 40.7285447, 'longitude': -73.948647}",4.4,"{'text': 'Café Grumpy - Greenpoint', 'languageCode': 'en'}",40.728443967516,-73.948622016034,193 Meserole Avenue,86,True
+"73 Jay St, Brooklyn, NY 11201, USA","{'latitude': 40.702525, 'longitude': -73.9865153}",3.8,"{'text': ""Pedro's bar and restaurant"", 'languageCode': 'en'}",40.702516637482,-73.986673629017,73 Jay Street,86,True
+"3640 Broadway, New York, NY 10031, USA","{'latitude': 40.8295932, 'longitude': -73.9477979}",4.3,"{'text': 'Mire Star Restaurant', 'languageCode': 'en'}",40.829683959419,-73.948059328904,3640 Broadway,90,True
+"3640 Broadway, New York, NY 10031, USA","{'latitude': 40.8295932, 'longitude': -73.9477979}",,"{'text': 'restaurante mire', 'languageCode': 'en'}",40.829683959419,-73.948059328904,3640 Broadway,90,True
+"414 8th St, Brooklyn, NY 11215, USA","{'latitude': 40.6672891, 'longitude': -73.9808018}",4.6,"{'text': 'Java Joe Coffee Tea & Spice Merchant', 'languageCode': 'en'}",40.667267382082,-73.980628437023,414 8 Street,86,True
+"153 Clymer St, Brooklyn, NY 11211, USA","{'latitude': 40.7067972, 'longitude': -73.96351109999999}",4.7,"{'text': ""Steinberg's Kosher Bakery"", 'languageCode': 'en'}",40.706743989282,-73.963343833927,153 Clymer Street,86,True
+"770 W 181st St, New York, NY 10033, USA","{'latitude': 40.8507507, 'longitude': -73.938169}",4.0,"{'text': 'Hudson View', 'languageCode': 'en'}",40.85077220305,-73.937867513019,770 West  181 Street,86,True
