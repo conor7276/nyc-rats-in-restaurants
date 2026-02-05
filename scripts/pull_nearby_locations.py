@@ -5,20 +5,41 @@ from fuzzywuzzy import fuzz
 import requests
 import time
 import logging
+import os
+import argparse
+from datetime import datetime
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--start-date", required=True)
+parser.add_argument("--end-date", required=True)
+parser.add_argument("--dry-run", default="false")
+args = parser.parse_args()
 
 # Set up logger
 logging.basicConfig(level = logging.INFO, format = '%(message)s')
 logger = logging.getLogger(__name__)
 
-# Resolve data and environment paths
-data_path = Path(__file__).resolve().parent.parent / "data/raw_data/data_2025-12-15_2025-12-21.csv"
-env_path = Path(__file__).resolve().parent.parent / "secrets.env"
+# Resolve data and environment variables
+# data_path = Path(__file__).resolve().parent.parent / "data/raw_data/data_2025-12-15_2025-12-21.csv"
+# env_path = Path(__file__).resolve().parent.parent / "secrets.env"
+
+start_date = datetime.strptime(args.start_date, "%Y-%m-%d").date().isoformat()
+end_date = datetime.strptime(args.end_date, "%Y-%m-%d").date().isoformat()
+
+input_dir = Path("data/raw_data")
+input_dir.mkdir(parents=True, exist_ok=True)
+output_dir = Path("data/intermediate_data")
+output_dir.mkdir(parents=True, exist_ok=True)
+input_filepath = input_dir / f"data_{start_date}_{end_date}.csv"
+output_filepath = output_dir / f"data_{start_date}_{end_date}.csv"
+
+API_KEY = os.getenv('GOOGLE_PLACES_API_KEY')
 
 logger.info("Data and environmnet variable paths loaded")
 
 # Read data and environment variables
-df = pd.read_csv(data_path)
-env_vars = dotenv_values(env_path)
+df = pd.read_csv(input_filepath)
+# env_vars = dotenv_values(env_path)
 logger.info("Data and environment variables loaded.")
 
 # Filter out bad coordinates
@@ -31,8 +52,6 @@ df['address'] = df.apply(lambda x : str(x['house_number']) + ' ' + x['street_nam
 
 logger.info("Raw data cleaned")
 
-# Replace with your actual API Key
-API_KEY = env_vars['GOOGLE_PLACES_API_KEY']
 
 # The endpoint for the Nearby Search (New) API
 url = "https://places.googleapis.com/v1/places:searchNearby"
@@ -60,7 +79,7 @@ headers = {
     "X-Goog-FieldMask": "places.displayName,places.formattedAddress,places.location,places.rating"
 }
 
-logger.info("Beginning to make requests for each location.")
+logger.info(f"Beginning to make requests for each location from {args.start_date} to {args.end_date}")
 requested_places = pd.DataFrame()
 
 # Loop through rows
@@ -94,6 +113,7 @@ for row in df.head(100).iterrows():
                     location = place.get("location", {})
                     rating = place.get("rating", "N/A")
             else:
+                pass
                 print("No places found or unexpected response format.")
         else:
             logger.error(f"Request failed with {response.status_code} at {row[0]} in data check Logger and {response.text} then rerun.")
@@ -113,6 +133,7 @@ for row in df.head(100).iterrows():
         
         requested_places = pd.concat([requested_places, temp_df])
     else:
+        pass
         print("Nothing returned!")
 logger.info("Requestes finished and data combined.")
 
@@ -128,7 +149,9 @@ if requested_places.empty == False:
     requested_places_saved['split_check'] = requested_places_saved.apply(lambda x : x['formattedAddress'].split()[0] == x['address'].split()[0], axis = 1)
     requested_places_saved = requested_places_saved[requested_places_saved['split_check'] == True]
 
-    requested_places_saved.to_csv(f"data/intermediate_data/data_{env_vars['MONDAY_LAST_WEEK']}_{env_vars['SUNDAY_LAST_WEEK']}.csv", index = False)
+    requested_places_saved.to_csv(output_filepath, index = False)
+    logger.info("Preview of dataframe: ")
+    logger.info(requested_places_saved.head())
     logger.info("Address comparison and cleanup completed. File Saved to intermediate data folder.")
 else:
     # if no data is returned at all

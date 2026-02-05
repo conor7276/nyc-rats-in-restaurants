@@ -1,5 +1,6 @@
 name: Weekly Data Ingest
-
+permissions:
+  contents: write
 on:
   workflow_dispatch:
     inputs:
@@ -7,6 +8,11 @@ on:
         description: "Run without writing data"
         required: false
         default: "true"
+      branch:
+        description: "Branch to run the workflow on"
+        required: true
+        default: "main"
+
   schedule:
     - cron: "0 0 * * 1"
 
@@ -15,18 +21,53 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout selected branch
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.branch || github.ref_name }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
+      - name: Set date range
+        run: |
+          END_DATE=$(date -u -d "yesterday" +%F)
+          START_DATE=$(date -u -d "$END_DATE -6 days" +%F)
+          echo "START_DATE=$START_DATE" >> $GITHUB_ENV
+          echo "END_DATE=$END_DATE" >> $GITHUB_ENV
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 
       - name: Run ingest job
+        env:
+          APP_TOKEN_API_KEY: ${{ secrets.APP_TOKEN_API_KEY }}
         run: |
-          python ingest.py \
-            --dry-run=${{ inputs.dry_run || 'false' }}
+          python scripts/pull_rodent_data.py \
+            --start-date=$START_DATE \
+            --end-date=$END_DATE \
+            --dry-run=${{ github.event.inputs.dry_run || 'false' }}
+
+      - name: Run data processing
+        env:
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+        run: |
+          python scripts/pull_nearby_locations.py \
+            --start-date=$START_DATE \
+            --end-date=$END_DATE \
+            --dry-run=${{ github.event.inputs.dry_run || 'false' }}
+
+      - name: Commit and push data updates
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add data/raw_data/
+          git add data/intermediate_data/
+
+          git diff --cached --quiet || git commit -m "Weekly data update"
+          git push
+
