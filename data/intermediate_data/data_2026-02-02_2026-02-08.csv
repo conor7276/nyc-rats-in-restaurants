@@ -1,0 +1,9 @@
+formattedAddress,location,rating,displayName,latitude,longitude,address
+"64 Graham Ave, Brooklyn, NY 11206, USA","{'latitude': 40.703183599999996, 'longitude': -73.9423382}",3.8,"{'text': 'The Graham Pizza & Chicken', 'languageCode': 'en'}",40.70315350666,-73.942503096569,64 Graham Avenue
+"126 Front St, Brooklyn, NY 11201, USA","{'latitude': 40.7023726, 'longitude': -73.9875072}",4.4,"{'text': 'Superfine', 'languageCode': 'en'}",40.702437131351,-73.987492341214,126 Front Street
+"164 Bedford Ave, Brooklyn, NY 11249, USA","{'latitude': 40.718392099999996, 'longitude': -73.95741129999999}",4.4,"{'text': 'Sweet Chick', 'languageCode': 'en'}",40.718302840715,-73.957230033332,164 Bedford Avenue
+"1284 Southern Blvd, Bronx, NY 10459, USA","{'latitude': 40.8303188, 'longitude': -73.8915797}",4.1,"{'text': 'Happy Wok', 'languageCode': 'en'}",40.830347410917,-73.891810243118,1284 Southern Boulevard
+"308 E 78th St, New York, NY 10075, USA","{'latitude': 40.7722982, 'longitude': -73.95494599999999}",4.5,"{'text': 'Orwashers Bakery', 'languageCode': 'en'}",40.772434214963,-73.955068609835,308 East 78 Street
+"308 E 78th St, New York, NY 10075, USA","{'latitude': 40.7722856, 'longitude': -73.9550488}",4.9,"{'text': 'Ed’s Elbow Room', 'languageCode': 'en'}",40.772434214963,-73.955068609835,308 East 78 Street
+"304 E 78th St, New York, NY 10075, USA","{'latitude': 40.7722991, 'longitude': -73.9552362}",4.3,"{'text': 'Anand', 'languageCode': 'en'}",40.77246443269,-73.955133576549,304 East 78 Street
+"1496 2nd Ave, New York, NY 10075, USA","{'latitude': 40.7724573, 'longitude': -73.95538660000001}",4.4,"{'text': ""Nightly's"", 'languageCode': 'en'}",40.772549706788,-73.955613702549,1496 2 Avenue
