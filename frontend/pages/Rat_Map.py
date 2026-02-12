@@ -37,10 +37,22 @@ def app() -> None:
         icon_anchor = (12,12)
         )
 
+        # html = f"""
+        # <div style="font-family: Arial; font-size: 13px; width: 220px;">
+        #     <b>{row[1]['restaurant_name']}</b><br>
+        #     {row[1]['address']}<br>
+        #     <hr style="margin: 5px 0;">
+        #     <b>Inspection Result:</b> {row[1]['result']}<br>
+        #     <b>Date:</b> {row[1]['inspection_date']}
+        # </div>
+        # """
+
+        # popup = folium.Popup(html, max_width=300)
+
         folium.Marker(
             [row[1]['latitude'], row[1]['longitude']],
             icon = rat_icon,
-            popup = row[1]['address']
+            # popup = popup
         ).add_to(rat_map)
 
 
