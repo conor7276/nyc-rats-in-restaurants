@@ -22,29 +22,35 @@ def app() -> None:
 
     df = df[cols]
 
-    rat_map = folium.Map(location = [40.7, -74.05])
+    rat_map = folium.Map(
+        location = [40.7, -74.05],
+        tiles = "cartodb positron"
+    )
 
 
     # add icons
     for row in df.iterrows():
 
         rat_icon = folium.CustomIcon(
-        icon_image = "icons/rat-emoji.jpg",
+        icon_image = "icons/rat-emoji_transparent.png",
         icon_size = (25,25),
-        icon_anchor = ([row[1]['latitude'], row[1]['longitude']])
+        icon_anchor = (12,12)
         )
 
         folium.Marker(
             [row[1]['latitude'], row[1]['longitude']],
-            # icon = rat_icon,
+            icon = rat_icon,
             popup = row[1]['address']
         ).add_to(rat_map)
 
+
+    st.write("Below is a map of the restaurants that failed rat inspections within the past week.")
     st_folium(rat_map, height = 500, width = 700)
+
     
 
     st.dataframe(df)
-
+    st.write("Datasets included below. \n NYC Open Data Rodent Inspeciton Dataset.")
 
 # idk why it doesn't work without this my other streamlit apps never needed this
 app()
