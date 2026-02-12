@@ -8,11 +8,11 @@ on:
         description: "Run without writing data"
         required: false
         default: "true"
-      start_date:
+      manual_start_date:
         description: "Beginning date to begin manual run"
         required: false
         default : ""
-      end_date:
+      manual_end_date:
         description: "End date to begin manual run"
         required: false
         default: ""
