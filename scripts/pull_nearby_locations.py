@@ -12,6 +12,8 @@ from datetime import datetime
 parser = argparse.ArgumentParser()
 parser.add_argument("--start-date", required=True)
 parser.add_argument("--end-date", required=True)
+parser.add_argument("--manual-start-date", default = "")
+parser.add_argument("--manual-end-date", default = "")
 parser.add_argument("--dry-run", default="false")
 args = parser.parse_args()
 
@@ -23,8 +25,13 @@ logger = logging.getLogger(__name__)
 # data_path = Path(__file__).resolve().parent.parent / "data/raw_data/data_2025-12-15_2025-12-21.csv"
 # env_path = Path(__file__).resolve().parent.parent / "secrets.env"
 
-start_date = datetime.strptime(args.start_date, "%Y-%m-%d").date().isoformat()
-end_date = datetime.strptime(args.end_date, "%Y-%m-%d").date().isoformat()
+# Differentiate between manual and automated run
+if args.manual_start_date and args.manual_end_date:
+    start_date = datetime.strptime(args.manual_start_date, "%Y-%m-%d").date().isoformat()
+    end_date = datetime.strptime(args.manual_end_date, "%Y-%m-%d").date().isoformat() 
+else:
+    start_date = datetime.strptime(args.start_date, "%Y-%m-%d").date().isoformat()
+    end_date = datetime.strptime(args.end_date, "%Y-%m-%d").date().isoformat()
 
 input_dir = Path("data/raw_data")
 input_dir.mkdir(parents=True, exist_ok=True)
@@ -100,7 +107,7 @@ for row in df.head(100).iterrows():
 
         # Make request
         response = requests.post(url, headers=headers, json=request_body)
-        time.sleep(0.1)
+        time.sleep(0.5)
 
         # Success == 200
         if response.status_code == 200:

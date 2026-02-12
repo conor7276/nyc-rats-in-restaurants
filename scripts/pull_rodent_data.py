@@ -13,11 +13,18 @@ logger = logging.getLogger(__name__)
 parser = argparse.ArgumentParser()
 parser.add_argument("--start-date", required=True)
 parser.add_argument("--end-date", required=True)
+parser.add_argument("--manual-start-date", default = "")
+parser.add_argument("--manual-end-date", default = "")
 parser.add_argument("--dry-run", default="false")
 args = parser.parse_args()
 
-monday_last_week = datetime.strptime(args.start_date, "%Y-%m-%d").date().isoformat()
-sunday_last_week = datetime.strptime(args.end_date, "%Y-%m-%d").date().isoformat()
+# Differentiate between manual and automated run
+if args.manual_start_date and args.manual_end_date:
+    monday_last_week = datetime.strptime(args.manual_start_date, "%Y-%m-%d").date().isoformat()
+    sunday_last_week = datetime.strptime(args.manual_end_date, "%Y-%m-%d").date().isoformat() 
+else:
+    monday_last_week = datetime.strptime(args.start_date, "%Y-%m-%d").date().isoformat()
+    sunday_last_week = datetime.strptime(args.end_date, "%Y-%m-%d").date().isoformat()
 
 # ------------------ ENV VARS ------------------
 logger.info("Getting environment variables.")
