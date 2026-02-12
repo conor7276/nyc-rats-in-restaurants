@@ -8,6 +8,14 @@ on:
         description: "Run without writing data"
         required: false
         default: "true"
+      start_date:
+        description: "Beginning date to begin manual run"
+        required: false
+        default : ""
+      end_date:
+        description: "End date to begin manual run"
+        required: false
+        default: ""
       branch:
         description: "Branch to run the workflow on"
         required: true
