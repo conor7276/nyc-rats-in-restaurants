@@ -26,6 +26,7 @@ logger = logging.getLogger(__name__)
 # env_path = Path(__file__).resolve().parent.parent / "secrets.env"
 
 # Differentiate between manual and automated run
+logger.info(f"Dates: {args.manual_start_date} {args.manual_end_date}")
 if args.manual_start_date and args.manual_end_date:
     start_date = datetime.strptime(args.manual_start_date, "%Y-%m-%d").date().isoformat()
     end_date = datetime.strptime(args.manual_end_date, "%Y-%m-%d").date().isoformat() 
