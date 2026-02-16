@@ -1,0 +1,2 @@
+formattedAddress,location,rating,displayName,latitude,longitude,address
+"235 Malcolm X Blvd, Brooklyn, NY 11233, USA","{'latitude': 40.6847466, 'longitude': -73.92911629999999}",4.5,"{'text': 'Peri Peri Grill House', 'languageCode': 'en'}",40.684715035706,-73.929405379605,235 Malcolm X Boulevard
