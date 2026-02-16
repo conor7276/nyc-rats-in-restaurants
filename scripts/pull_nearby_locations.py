@@ -87,17 +87,19 @@ headers = {
     "X-Goog-FieldMask": "places.displayName,places.formattedAddress,places.location,places.rating"
 }
 
-logger.info(f"Beginning to make requests for each location from {args.start_date} to {args.end_date}")
+logger.info(f"Beginning to make requests for each location from {start_date} to {end_date}")
 requested_places = pd.DataFrame()
 
 # Loop through rows
-for row in df.head(100).iterrows():
+for row in df.iterrows():
 
     temp_df = pd.DataFrame()
 
     latitude = row[1]['latitude']
     longitude = row[1]['longitude']
     address = row[1]['address']
+    inspection_type = row[1]['inspection_type']
+    inspection_date = row[1]['inspection_date']
     
     try:
         # Makes POST request to google searchNearby API and returns json of nearby locations
@@ -138,6 +140,8 @@ for row in df.head(100).iterrows():
         temp_df['latitude'] = latitude
         temp_df['longitude'] = longitude
         temp_df['address'] = address
+        temp_df['inspection_type'] = inspection_type
+        temp_df['inspection_date'] = inspection_date
         
         requested_places = pd.concat([requested_places, temp_df])
     else:
