@@ -1,2 +1,0 @@
-formattedAddress,location,rating,displayName,latitude,longitude,address,ratio,split_check
-"1175 Vyse Ave, Bronx, NY 10459, USA","{'latitude': 40.828443299999996, 'longitude': -73.8900592}",,"{'text': 'Vyse Deli', 'languageCode': 'en'}",40.828009878589,-73.889960370595,1175 Vyse Avenue,86,True

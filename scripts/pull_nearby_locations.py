@@ -110,7 +110,7 @@ for row in df.iterrows():
 
         # Make request
         response = requests.post(url, headers=headers, json=request_body)
-        time.sleep(0.5)
+        time.sleep(0.25)
 
         # Success == 200
         if response.status_code == 200:
@@ -124,7 +124,7 @@ for row in df.iterrows():
                     rating = place.get("rating", "N/A")
             else:
                 pass
-                print("No places found or unexpected response format.")
+                # print("No places found or unexpected response format.")
         else:
             logger.error(f"Request failed with {response.status_code} at {row[0]} in data check Logger and {response.text} then rerun.")
             # print(f"Error: Request failed with status code {response.status_code}")
@@ -146,7 +146,7 @@ for row in df.iterrows():
         requested_places = pd.concat([requested_places, temp_df])
     else:
         pass
-        print("Nothing returned!")
+        # print("Nothing returned!")
 logger.info("Requestes finished and data combined.")
 
 # Check for if any data is returned at all
