@@ -137,7 +137,7 @@ for row in df.head(200).iterrows():
     
     # Append to main dataframe if data is returned
     if response_data:
-        temp_df = pd.DataFrame()
+        temp_df = pd.DataFrame(response_data['places'])
         temp_df['latitude'] = location['latitude']
         temp_df['longitude'] = location['longitude']
         temp_df['address'] = formatted_address
