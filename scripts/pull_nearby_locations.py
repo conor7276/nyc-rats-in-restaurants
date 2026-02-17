@@ -91,7 +91,7 @@ logger.info(f"Beginning to make requests for each location from {start_date} to 
 requested_places = pd.DataFrame()
 
 # Loop through rows
-for row in df.iterrows():
+for row in df.head(100).iterrows():
 
     temp_df = pd.DataFrame()
 
@@ -100,6 +100,7 @@ for row in df.iterrows():
     address = row[1]['address']
     inspection_type = row[1]['inspection_type']
     inspection_date = row[1]['inspection_date']
+    result = row[1]['result']
     
     try:
         # Makes POST request to google searchNearby API and returns json of nearby locations
@@ -136,12 +137,15 @@ for row in df.iterrows():
     
     # Append to main dataframe if data is returned
     if response_data:
-        temp_df = pd.DataFrame(response_data['places'])
-        temp_df['latitude'] = latitude
-        temp_df['longitude'] = longitude
-        temp_df['address'] = address
+        temp_df = pd.DataFrame()
+        temp_df['latitude'] = location['latitude']
+        temp_df['longitude'] = location['longitude']
+        temp_df['address'] = formatted_address
+        temp_df['restaurant_name'] = display_name
+        temp_df['rating'] = rating
         temp_df['inspection_type'] = inspection_type
         temp_df['inspection_date'] = inspection_date
+        temp_df['result'] = result
         
         requested_places = pd.concat([requested_places, temp_df])
     else:
