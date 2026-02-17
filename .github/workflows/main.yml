@@ -41,8 +41,14 @@ jobs:
 
       - name: Set date range
         run: |
-          END_DATE=$(date -u -d "yesterday" +%F)
-          START_DATE=$(date -u -d "$END_DATE -6 days" +%F)
+          TODAY=$(date -u +%Y-%m-%d)
+
+          # Get last Sunday of completed week
+          END_DATE=$(date -u -d "last sunday -7 days" +%Y-%m-%d)
+
+          # Get Monday of that week
+          START_DATE=$(date -u -d "$END_DATE -6 days" +%Y-%m-%d)
+          
           echo "START_DATE=$START_DATE" >> $GITHUB_ENV
           echo "END_DATE=$END_DATE" >> $GITHUB_ENV
 
