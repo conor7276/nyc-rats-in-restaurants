@@ -20,11 +20,13 @@ args = parser.parse_args()
 
 # Differentiate between manual and automated run
 if args.manual_start_date and args.manual_end_date:
-    monday_last_week = datetime.strptime(args.manual_start_date, "%Y-%m-%d").date().isoformat()
-    sunday_last_week = datetime.strptime(args.manual_end_date, "%Y-%m-%d").date().isoformat() 
+    start_date = datetime.strptime(args.manual_start_date, "%Y-%m-%d").date().isoformat()
+    start_date = datetime.strptime(args.manual_end_date, "%Y-%m-%d").date().isoformat() 
+    logger.info(f"Using manual run dates {start_date} and {start_date}")
 else:
-    monday_last_week = datetime.strptime(args.start_date, "%Y-%m-%d").date().isoformat()
-    sunday_last_week = datetime.strptime(args.end_date, "%Y-%m-%d").date().isoformat()
+    start_date = datetime.strptime(args.start_date, "%Y-%m-%d").date().isoformat()
+    start_date = datetime.strptime(args.end_date, "%Y-%m-%d").date().isoformat()
+    logger.info(f"Using manual run dates {start_date} and {start_date}")
 
 # ------------------ ENV VARS ------------------
 logger.info("Getting environment variables.")
@@ -42,12 +44,12 @@ client = Socrata(DOMAIN, app_token=app_token_api_key, timeout=10)
 
 # ------------------ DATA PULL ------------------
 try:
-    logger.info(f"Pulling data from {monday_last_week} to {sunday_last_week}")
+    logger.info(f"Pulling data from {start_date} to {start_date}")
     data = client.get(
         DATASET_ID,
         where=f"""
-            inspection_date >= '{monday_last_week}' AND
-            inspection_date <= '{sunday_last_week}' AND
+            inspection_date >= '{start_date}' AND
+            inspection_date <= '{start_date}' AND
             result != 'Passed'
         """,
         limit=1000
@@ -64,7 +66,7 @@ if not df.empty:
     output_dir = Path("data/raw_data")
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    filepath = output_dir / f"data_{monday_last_week}_{sunday_last_week}.csv"
+    filepath = output_dir / f"data_{start_date}_{start_date}.csv"
     df.to_csv(filepath, index=False)
     logger.info(f"Saved data to {filepath}")
     logger.info(f"Data Preview: ")

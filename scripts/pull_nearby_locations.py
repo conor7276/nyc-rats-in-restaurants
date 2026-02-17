@@ -30,9 +30,11 @@ logger.info(f"Dates: {args.manual_start_date} {args.manual_end_date}")
 if args.manual_start_date and args.manual_end_date:
     start_date = datetime.strptime(args.manual_start_date, "%Y-%m-%d").date().isoformat()
     end_date = datetime.strptime(args.manual_end_date, "%Y-%m-%d").date().isoformat() 
+    logger.info(f"Using manual run dates {start_date} and {end_date}")
 else:
     start_date = datetime.strptime(args.start_date, "%Y-%m-%d").date().isoformat()
     end_date = datetime.strptime(args.end_date, "%Y-%m-%d").date().isoformat()
+    logger.info(f"Using auto run dates {start_date} and {end_date}")
 
 input_dir = Path("data/raw_data")
 input_dir.mkdir(parents=True, exist_ok=True)
