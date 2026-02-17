@@ -91,7 +91,7 @@ logger.info(f"Beginning to make requests for each location from {start_date} to 
 requested_places = pd.DataFrame()
 
 # Loop through rows
-for row in df.head(200).iterrows():
+for row in df.iterrows():
 
     temp_df = pd.DataFrame()
 
@@ -140,8 +140,8 @@ for row in df.head(200).iterrows():
         temp_df = pd.DataFrame(response_data['places'])
         temp_df['latitude'] = location['latitude']
         temp_df['longitude'] = location['longitude']
-        temp_df['address'] = formatted_address
         temp_df['restaurant_name'] = display_name
+        temp_df['address'] = formatted_address
         temp_df['rating'] = rating
         temp_df['inspection_type'] = inspection_type
         temp_df['inspection_date'] = inspection_date
@@ -165,7 +165,10 @@ if requested_places.empty == False:
     requested_places_saved['split_check'] = requested_places_saved.apply(lambda x : x['formattedAddress'].split()[0] == x['address'].split()[0], axis = 1)
     requested_places_saved = requested_places_saved[requested_places_saved['split_check'] == True]
 
-    requested_places_saved = requested_places_saved.drop(columns = ["ratio", "split_check"])
+    requested_places_saved = requested_places_saved.drop(columns = ["ratio", "split_check", "displayName", "formattedAddress"])
+
+    requested_places_saved = requested_places_saved[['longitude', 'latitude']].round(6)
+
     requested_places_saved.to_csv(output_filepath, index = False)
     
     logger.info("Preview of dataframe: ")
