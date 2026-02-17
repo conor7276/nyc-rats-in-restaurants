@@ -91,7 +91,7 @@ logger.info(f"Beginning to make requests for each location from {start_date} to 
 requested_places = pd.DataFrame()
 
 # Loop through rows
-for row in df.head(100).iterrows():
+for row in df.head(200).iterrows():
 
     temp_df = pd.DataFrame()
 
