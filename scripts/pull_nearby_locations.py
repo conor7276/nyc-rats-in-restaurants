@@ -21,10 +21,7 @@ args = parser.parse_args()
 logging.basicConfig(level = logging.INFO, format = '%(message)s')
 logger = logging.getLogger(__name__)
 
-# Resolve data and environment variables
-# data_path = Path(__file__).resolve().parent.parent / "data/raw_data/data_2025-12-15_2025-12-21.csv"
-# env_path = Path(__file__).resolve().parent.parent / "secrets.env"
-
+# Resolve environment variables
 # Differentiate between manual and automated run
 logger.info(f"Dates: {args.manual_start_date} {args.manual_end_date}")
 if args.manual_start_date and args.manual_end_date:
@@ -36,6 +33,7 @@ else:
     end_date = datetime.strptime(args.end_date, "%Y-%m-%d").date().isoformat()
     logger.info(f"Using auto run dates {start_date} and {end_date}")
 
+# establish directories
 input_dir = Path("data/raw_data")
 input_dir.mkdir(parents=True, exist_ok=True)
 output_dir = Path("data/intermediate_data")
@@ -43,6 +41,7 @@ output_dir.mkdir(parents=True, exist_ok=True)
 input_filepath = input_dir / f"data_{start_date}_{end_date}.csv"
 output_filepath = output_dir / f"data_{start_date}_{end_date}.csv"
 
+# Get google api key
 API_KEY = os.getenv('GOOGLE_PLACES_API_KEY')
 
 logger.info("Data and environmnet variable paths loaded")
@@ -92,7 +91,7 @@ headers = {
 logger.info(f"Beginning to make requests for each location from {start_date} to {end_date}")
 requested_places = pd.DataFrame()
 
-# Loop through rows
+# make requests looping through each row
 for row in df.iterrows():
 
     temp_df = pd.DataFrame()
@@ -118,7 +117,6 @@ for row in df.iterrows():
         # Success == 200
         if response.status_code == 200:
             response_data = response.json()
-            # print("Nearby Search Results:")
             if response_data and "places" in response_data:
                 for place in response_data["places"]:
                     display_name = place.get("displayName", {}).get("text", "N/A")
@@ -127,11 +125,8 @@ for row in df.iterrows():
                     rating = place.get("rating", "N/A")
             else:
                 pass
-                # print("No places found or unexpected response format.")
         else:
             logger.error(f"Request failed with {response.status_code} at {row[0]} in data check Logger and {response.text} then rerun.")
-            # print(f"Error: Request failed with status code {response.status_code}")
-            # print(f"Response: {response.text}")
 
     except requests.exceptions.RequestException as e:
         logger.error(f"Request failed with {response.status_code} at {row[0]} in data check Logger and {response.text} then rerun.")
@@ -152,7 +147,6 @@ for row in df.iterrows():
         requested_places = pd.concat([requested_places, temp_df])
     else:
         pass
-        # print("Nothing returned!")
 logger.info("Requestes finished and data combined.")
 
 # Check for if any data is returned at all
@@ -169,7 +163,7 @@ if requested_places.empty == False:
 
     requested_places_saved = requested_places_saved.drop(columns = ["ratio", "split_check", "displayName", "formattedAddress"])
 
-    requested_places_saved = requested_places_saved[['longitude', 'latitude']].round(6)
+    requested_places_saved[['longitude', 'latitude']] = requested_places_saved[['longitude', 'latitude']].round(6)
 
     requested_places_saved.to_csv(output_filepath, index = False)
     
