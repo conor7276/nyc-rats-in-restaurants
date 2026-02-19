@@ -161,7 +161,7 @@ if requested_places.empty == False:
     requested_places_saved['split_check'] = requested_places_saved.apply(lambda x : x['formattedAddress'].split()[0] == x['address'].split()[0], axis = 1)
     requested_places_saved = requested_places_saved[requested_places_saved['split_check'] == True]
 
-    requested_places_saved = requested_places_saved.drop(columns = ["ratio", "split_check", "displayName", "formattedAddress"])
+    requested_places_saved = requested_places_saved.drop(columns = ["ratio", "split_check", "displayName", "formattedAddress", "location"])
 
     requested_places_saved[['longitude', 'latitude']] = requested_places_saved[['longitude', 'latitude']].round(6)
 
