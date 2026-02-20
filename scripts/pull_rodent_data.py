@@ -26,7 +26,7 @@ if args.manual_start_date and args.manual_end_date:
 else:
     start_date = datetime.strptime(args.start_date, "%Y-%m-%d").date().isoformat()
     start_date = datetime.strptime(args.end_date, "%Y-%m-%d").date().isoformat()
-    logger.info(f"Using manual run dates {start_date} and {start_date}")
+    logger.info(f"Using auto run dates {start_date} and {start_date}")
 
 # ------------------ ENV VARS ------------------
 logger.info("Getting environment variables.")
