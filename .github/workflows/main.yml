@@ -8,6 +8,14 @@ on:
         description: "Run without writing data"
         required: false
         default: "true"
+      manual_start_date:
+        description: "Beginning date to begin manual run"
+        required: false
+        default : ""
+      manual_end_date:
+        description: "End date to begin manual run"
+        required: false
+        default: ""
       branch:
         description: "Branch to run the workflow on"
         required: true
@@ -48,6 +56,8 @@ jobs:
           python scripts/pull_rodent_data.py \
             --start-date=$START_DATE \
             --end-date=$END_DATE \
+            --manual-start-date=${{github.event.inputs.manual_start_date || ''}} \
+            --manual-end-date=${{github.event.inputs.manual_end_date || ''}} \
             --dry-run=${{ github.event.inputs.dry_run || 'false' }}
 
       - name: Run data processing
@@ -57,6 +67,12 @@ jobs:
           python scripts/pull_nearby_locations.py \
             --start-date=$START_DATE \
             --end-date=$END_DATE \
+            --manual-start-date=${{github.event.inputs.manual_start_date || ''}} \
+            --manual-end-date=${{github.event.inputs.manual_end_date || ''}} \
+            --dry-run=${{ github.event.inputs.dry_run || 'false' }}
+      - name: Aggregate Data
+        run: |
+          python scripts/aggregate_monthly_data.py \
             --dry-run=${{ github.event.inputs.dry_run || 'false' }}
 
       - name: Commit and push data updates
@@ -67,7 +83,9 @@ jobs:
 
           git add data/raw_data/
           git add data/intermediate_data/
+          git add data/final_data/
 
-          git diff --cached --quiet || git commit -m "Weekly data update"
+          # git diff --cached --quiet || 
+          git commit -m "Weekly data update"
           git push
 
