@@ -441,3 +441,61 @@ rating,latitude,longitude,restaurant_name,address,inspection_type,inspection_dat
 4.0,40.794017,-73.94023,Treats By Trice,"2161 2nd Ave, New York, NY 10029, USA",Initial,2026-02-13 13:28:57,Rat Activity
 4.3,40.699466,-73.937584,The House,"29 Locust St, Brooklyn, NY 11206, USA",Initial,2026-02-13 13:37:03,Rat Activity
 4.0,40.674104,-73.957124,Banhmigos Park Place,"636 Park Pl, Brooklyn, NY 11238, USA",Treatments,2026-02-13 13:47:57,Bait applied
+3.0,40.703102,-73.91824,The Podunk Inquirer,"323 Stanhope St, Brooklyn, NY 11237, USA",Treatments,2025-01-26 14:10:00,Bait applied
+5.0,40.702601,-73.918874,SPLASH NUTRITION,"303 Stanhope St, Brooklyn, NY 11237, USA",Treatments,2025-01-26 14:30:00,Bait applied
+4.4,40.787022,-73.978129,Namazake Sushi,"2315 Broadway, New York, NY 10024, USA",Initial,2025-01-27 08:20:00,Rat Activity
+4.4,40.787022,-73.978129,Namazake Sushi,"2315 Broadway, New York, NY 10024, USA",Initial,2025-01-27 08:20:00,Rat Activity
+3.6,40.801942,-73.956899,Dragon Sushi,"2072 Frederick Douglass Blvd, New York, NY 10026, USA",Treatments,2025-01-27 08:32:31,Bait applied
+3.6,40.804603,-73.955034,Kennedy Chicken & Burgers,"2150 Frederick Douglass Blvd, New York, NY 10026, USA",Treatments,2025-01-27 08:44:03,Bait applied
+3.8,40.661749,-73.950985,Dragon King,"1078 Nostrand Ave, Brooklyn, NY 11225, USA",Treatments,2025-01-27 09:20:49,Bait applied
+4.2,40.811455,-73.950228,Arnie & Ebony Catering LLC,"Frederick Douglass Blvd, W 127th St, New York, NY 10027, USA",Treatments,2025-01-27 09:26:12,Bait applied
+5.0,40.717974,-73.999259,dinkies,"118 Baxter St, New York, NY 10013, USA",Treatments,2025-01-27 09:26:45,Bait applied
+5.0,40.717974,-73.999259,dinkies,"118 Baxter St, New York, NY 10013, USA",Treatments,2025-01-27 09:26:45,Bait applied
+4.5,40.846839,-73.897963,National Burger House,"470 E Tremont Ave, Bronx, NY 10457, USA",Treatments,2025-01-27 09:38:00,Bait applied
+3.9,40.797385,-73.949085,Kennedy Fried Chicken,"1316 5th Ave, New York, NY 10026, USA",Treatments,2025-01-27 09:53:56,Bait applied
+4.7,40.719806,-73.999084,161 Lafayette,"161 Lafayette St, New York, NY 10013, USA",Treatments,2025-01-27 09:56:45,Bait applied
+,40.701853,-73.919564,Diego's Gyros,"178 Irving Ave, Brooklyn, NY 11237, USA",Compliance,2025-01-27 10:02:40,Rat Activity
+,40.701853,-73.919564,Diego's Gyros,"178 Irving Ave, Brooklyn, NY 11237, USA",Compliance,2025-01-27 10:02:40,Rat Activity
+5.0,40.702601,-73.918874,SPLASH NUTRITION,"303 Stanhope St, Brooklyn, NY 11237, USA",Compliance,2025-01-27 10:10:40,Rat Activity
+,40.720137,-73.996476,Acai Berry,"377 Broome St, New York, NY 10013, USA",Treatments,2025-01-27 10:11:45,Bait applied
+5.0,40.700769,-73.903929,El Novillo 4,"8-95 Seneca Ave, Ridgewood, NY 11385, USA",Treatments,2025-01-27 10:16:47,Bait applied
+3.7,40.734035,-73.990743,Lavazza,"850 Broadway, New York, NY 10003, USA",Treatments,2025-01-27 10:26:45,Bait applied
+3.9,40.701827,-73.908879,El Fogón Costeño,"17-01 Palmetto St, Ridgewood, NY 11385, USA",Treatments,2025-01-27 10:29:27,Bait applied
+4.8,40.852459,-73.889782,UNCHIN CHIN,"2276 Arthur Ave Ste #A, Bronx, NY 10457, USA",Initial,2025-01-27 10:35:00,Failed for Other R
+1.0,40.842584,-73.885102,Chef G’s Kitchen,"881 E Tremont Ave, Bronx, NY 10460, USA",Initial,2025-01-27 10:36:49,Failed for Rat Act
+4.9,40.786152,-73.975772,Honeybrains Upper West Side,"495 Amsterdam Ave, New York, NY 10024, USA",Treatments,2025-01-27 10:40:35,Bait applied
+4.9,40.786152,-73.975772,Honeybrains Upper West Side,"495 Amsterdam Ave, New York, NY 10024, USA",Treatments,2025-01-27 10:40:35,Bait applied
+4.5,40.683674,-73.932599,Rita & Maria,"558 Halsey St, Brooklyn, NY 11233, USA",Treatments,2025-01-27 10:41:00,Bait applied
+4.1,40.792704,-73.945772,Great Hong Kong,"1703 Lexington Ave, New York, NY 10029, USA",Treatments,2025-01-27 10:43:00,Bait applied
+4.7,40.71294,-73.996568,Jin Mei Dumpling,"25B Henry St B, New York, NY 10002, USA",Initial,2025-01-27 10:49:27,Rat Activity
+4.4,40.7297,-73.988813,Hasaki,"210 E 9th St, New York, NY 10003, USA",Treatments,2025-01-27 10:57:25,Bait applied
+4.5,40.790956,-73.94699,Alison,"1651 Lexington Ave, New York, NY 10029, USA",Treatments,2025-01-27 11:01:00,Bait applied
+4.6,40.790411,-73.948226,Gold Deli,"126 E 103rd St, New York, NY 10029, USA",Treatments,2025-01-27 11:09:05,Monitoring visit
+3.8,40.722117,-73.996386,Soupside,"51 Spring St, New York, NY 10012, USA",Treatments,2025-01-27 11:10:45,Bait applied
+3.8,40.722117,-73.996386,Soupside,"51 Spring St, New York, NY 10012, USA",Treatments,2025-01-27 11:10:45,Bait applied
+3.8,40.722117,-73.996386,Soupside,"51 Spring St, New York, NY 10012, USA",Treatments,2025-01-27 11:10:45,Bait applied
+3.8,40.722117,-73.996386,Soupside,"51 Spring St, New York, NY 10012, USA",Treatments,2025-01-27 11:10:45,Bait applied
+4.4,40.81435,-73.944053,Yatenga,"3023, 2269 Adam Clayton Powell Jr Blvd #1, New York, NY 10030, USA",Compliance,2025-01-27 11:18:22,Rat Activity
+4.6,40.659893,-73.961085,Pomo BK,"2122 Beekman Pl, Brooklyn, NY 11225, USA",Treatments,2025-01-27 11:20:00,Bait applied
+4.0,40.79033,-73.947419,Dunkin',"1631 Lexington Ave, New York, NY 10029, USA",Treatments,2025-01-27 11:21:00,Monitoring visit
+4.4,40.720608,-73.996533,Deux Luxe,"384 Broome St, New York, NY 10012, USA",Treatments,2025-01-27 11:24:45,Bait applied
+4.4,40.720608,-73.996533,Deux Luxe,"384 Broome St, New York, NY 10012, USA",Treatments,2025-01-27 11:24:45,Bait applied
+3.7,40.732254,-73.98741,Market Sandwich,"4 Union Square S, New York, NY 10003, USA",Treatments,2025-01-27 11:30:25,Bait applied
+3.7,40.732254,-73.98741,Market Sandwich,"4 Union Square S, New York, NY 10003, USA",Treatments,2025-01-27 11:41:25,Bait applied
+4.6,40.656865,-73.960391,Ouma Bakery and All Day Cafe,"676 Flatbush Ave, Brooklyn, NY 11225, USA",Treatments,2025-01-27 11:50:24,Bait applied
+3.5,40.842443,-73.885909,Bella Italia Pizza,"Bronx, NY 10460, USA",Initial,2025-01-27 11:51:44,Rat Activity
+4.7,40.813955,-73.944016,Rejuvenate Juice bar,"171 W 133rd St, New York, NY 10030, USA",Compliance,2025-01-27 11:53:22,Failed for Rat Act
+4.9,40.727033,-74.002032,Rei Restaurant,"142 Sullivan St, New York, NY 10012, USA",Treatments,2025-01-27 11:54:45,Bait applied
+4.9,40.727033,-74.002032,Rei Restaurant,"142 Sullivan St, New York, NY 10012, USA",Treatments,2025-01-27 11:54:45,Bait applied
+4.7,40.788428,-73.97715,"Crossbar - Coffee, Food, Soccer","250 W 86th St, New York, NY 10024, USA",Initial,2025-01-27 11:55:00,Failed for Other R
+4.5,40.790956,-73.94699,Alison,"1651 Lexington Ave, New York, NY 10029, USA",Treatments,2025-01-27 11:55:05,Bait applied
+4.2,40.842986,-73.885888,Kennedy Chicken,"879 E Tremont Ave, Bronx, NY 10460, USA",Initial,2025-01-27 12:04:44,Failed for Other R
+2.3,40.769295,-73.95223,Subway,"1427 York Ave, New York, NY 10021, USA",Initial,2025-01-27 12:05:00,Failed for Rat Act
+4.2,40.843016,-73.886567,Yaque River Lounge,"860 E Tremont Ave, Bronx, NY 10460, USA",Initial,2025-01-27 12:09:44,Rat Activity
+4.3,40.858692,-73.898665,Meat Market Jazmin Corporation,"2356 Grand Concourse, Bronx, NY 10458, USA",Compliance,2025-01-27 12:18:00,Rat Activity
+4.5,40.790328,-73.946074,G&J's Pizzeria,"188 E 104th St, New York, NY 10029, USA",Treatments,2025-01-27 12:19:05,Bait applied
+5.0,40.812701,-73.941595,Lenox Deli & Salad,"New York, NY 10037, USA",Compliance,2025-01-27 12:19:22,Failed for Rat Act
+3.9,40.681,-73.994127,Bagels By the Park,"323 Smith St, Brooklyn, NY 11231, USA",Compliance,2025-01-27 12:27:00,Rat Activity
+3.9,40.681,-73.994127,Bagels By the Park,"323 Smith St, Brooklyn, NY 11231, USA",Compliance,2025-01-27 12:27:00,Rat Activity
+4.3,40.768186,-73.955024,The Sweet Shop NYC,"404 E 73rd St, New York, NY 10021, USA",Initial,2025-01-27 12:30:00,Rat Activity
+4.5,40.76017,-73.878498,Nana's Kitchen New York 🇨🇴,"90-01 31st Ave, East Elmhurst, NY 11369, USA",Compliance,2025-01-27 12:36:00,Rat Activity
