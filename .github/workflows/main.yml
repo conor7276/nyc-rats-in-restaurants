@@ -41,14 +41,8 @@ jobs:
 
       - name: Set date range
         run: |
-          TODAY=$(date -u +%Y-%m-%d)
-
-          # Get last Sunday of completed week
-          END_DATE=$(date -u -d "last sunday -7 days" +%Y-%m-%d)
-
-          # Get Monday of that week
-          START_DATE=$(date -u -d "$END_DATE -6 days" +%Y-%m-%d)
-          
+          END_DATE=$(date -u -d "yesterday" +%F)
+          START_DATE=$(date -u -d "$END_DATE -6 days" +%F)
           echo "START_DATE=$START_DATE" >> $GITHUB_ENV
           echo "END_DATE=$END_DATE" >> $GITHUB_ENV
 
@@ -76,6 +70,10 @@ jobs:
             --manual-start-date=${{github.event.inputs.manual_start_date || ''}} \
             --manual-end-date=${{github.event.inputs.manual_end_date || ''}} \
             --dry-run=${{ github.event.inputs.dry_run || 'false' }}
+      - name: Aggregate Data
+        run: |
+          python scripts/aggregate_monthly_data.py
+            --dry-run=${{ github.event.inputs.dry_run || 'false' }}
 
       - name: Commit and push data updates
         if: github.event.inputs.dry_run != 'true'
@@ -85,6 +83,7 @@ jobs:
 
           git add data/raw_data/
           git add data/intermediate_data/
+          git add data/final_data/
 
           # git diff --cached --quiet || 
           git commit -m "Weekly data update"
