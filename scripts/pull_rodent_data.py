@@ -25,7 +25,7 @@ if args.manual_start_date and args.manual_end_date:
     logger.info(f"Using manual run dates {start_date} and {end_date}")
 else:
     start_date = datetime.strptime(args.start_date, "%Y-%m-%d").date().isoformat()
-    start_date = datetime.strptime(args.end_date, "%Y-%m-%d").date().isoformat()
+    end_date = datetime.strptime(args.end_date, "%Y-%m-%d").date().isoformat()
     logger.info(f"Using auto run dates {start_date} and {end_date}")
 
 # ------------------ ENV VARS ------------------
@@ -66,7 +66,7 @@ if not df.empty:
     output_dir = Path("data/raw_data")
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    filepath = output_dir / f"data_{start_date}_{start_date}.csv"
+    filepath = output_dir / f"data_{start_date}_{end_date}.csv"
     df.to_csv(filepath, index=False)
     logger.info(f"Saved data to {filepath}")
     logger.info(f"Data Preview: ")
