@@ -21,12 +21,12 @@ args = parser.parse_args()
 # Differentiate between manual and automated run
 if args.manual_start_date and args.manual_end_date:
     start_date = datetime.strptime(args.manual_start_date, "%Y-%m-%d").date().isoformat()
-    start_date = datetime.strptime(args.manual_end_date, "%Y-%m-%d").date().isoformat() 
-    logger.info(f"Using manual run dates {start_date} and {start_date}")
+    end_date = datetime.strptime(args.manual_end_date, "%Y-%m-%d").date().isoformat() 
+    logger.info(f"Using manual run dates {start_date} and {end_date}")
 else:
     start_date = datetime.strptime(args.start_date, "%Y-%m-%d").date().isoformat()
     start_date = datetime.strptime(args.end_date, "%Y-%m-%d").date().isoformat()
-    logger.info(f"Using auto run dates {start_date} and {start_date}")
+    logger.info(f"Using auto run dates {start_date} and {end_date}")
 
 # ------------------ ENV VARS ------------------
 logger.info("Getting environment variables.")
@@ -44,12 +44,12 @@ client = Socrata(DOMAIN, app_token=app_token_api_key, timeout=10)
 
 # ------------------ DATA PULL ------------------
 try:
-    logger.info(f"Pulling data from {start_date} to {start_date}")
+    logger.info(f"Pulling data from {start_date} to {end_date}")
     data = client.get(
         DATASET_ID,
         where=f"""
             inspection_date >= '{start_date}' AND
-            inspection_date <= '{start_date}' AND
+            inspection_date <= '{end_date}' AND
             result != 'Passed'
         """,
         limit=1000
