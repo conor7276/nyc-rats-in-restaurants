@@ -3,7 +3,7 @@ from streamlit_folium import st_folium
 import pandas as pd
 import numpy as np
 import folium
-from folium.plugins import MarkerCluster
+from folium.plugins import MarkerCluster, FastMarkerCluster
 from pathlib import Path
 
 
@@ -13,41 +13,38 @@ def app() -> None:
     # @st.cache_resource
     def build_map(df):
 
-        # df = df.head(50)
-
-
         rat_map = folium.Map(
-            location = [40.7, -74.05],
-            tiles = "cartodb positron"
+            location=[40.7, -74.05],
+            tiles="cartodb positron"
         )
 
-        marker_cluster = MarkerCluster().add_to(rat_map)
-        rat_icon = folium.CustomIcon(
-            icon_image = "icons/rat-emoji_transparent.png",
-            icon_size = (25,25),
-            icon_anchor = (12,12)
-        )
+        data = df[
+            ["latitude", "longitude", "restaurant_name", "address", "result", "inspection_date"]
+        ].values.tolist()
 
         
-        # add icons
-        for row in df.itertuples(index=False):
-            html = f"""
-            <div style="font-family: Arial; font-size: 13px; width: 220px;">
-                <b>{row.restaurant_name}</b><br>
-                {row.address}<br>
-                <hr style="margin: 5px 0;">
-                <b>Inspection Result:</b> {row.result}<br>
-                <b>Date:</b> {row.inspection_date}
-            </div>
-            """
+        rat_file = "https://img.icons8.com/?size=256w&id=vzz0xyvO-UyC&format=png"
 
-            # popup = folium.Popup(html, max_width=300)
+        print(rat_file)
+        callback = f"""
+                function (row) {{
+                    var icon = L.icon({{
+                        iconUrl: '{rat_file}',
+                        iconSize: [25,25],
+                        iconAnchor: [12,12]
+                    }});
 
-            folium.Marker(
-                [row.latitude, row.longitude],
-                icon = rat_icon,
-                popup = html
-            ).add_to(marker_cluster)
+                    var popup =
+                        "<b>" + row[2] + "</b><br>" +
+                        row[3] + "<br><hr>" +
+                        "<b>Result:</b> " + row[4] + "<br>" +
+                        "<b>Date:</b> " + row[5];
+
+                    return L.marker([row[0], row[1]], {{icon: icon}})
+                        .bindPopup(popup);
+                }}
+        """
+        FastMarkerCluster(data, callback=callback).add_to(rat_map)
 
         return rat_map
 
