@@ -25,7 +25,7 @@ def app() -> None:
         
         rat_file = "https://img.icons8.com/?size=256w&id=vzz0xyvO-UyC&format=png"
 
-        print(rat_file)
+        # JS callbacks are very fast
         callback = f"""
                 function (row) {{
                     var icon = L.icon({{
@@ -48,7 +48,7 @@ def app() -> None:
 
         return rat_map
 
-    st.header("We got rats at the function")
+    st.header("NYC Rodent Inspection Map")
     
     # with st.sidebar:
         
@@ -59,27 +59,30 @@ def app() -> None:
 
     df = df.drop_duplicates()
 
-    # st.dataframe(df)
-
-    # cols = ['latitude', 'longitude', 'address', 'address']
-
-    # df = df[cols]
-
+    # Build Map
     rat_map = build_map(df)
 
-    st.write("Below is a map of the restaurants that failed rat inspections within the past week.")
+    st.write("Below is a map of 500 restaurants that failed rat inspections within the latest dates of day that we have available.")
 
 
     st_folium(
         rat_map,
         use_container_width= True,
         returned_objects = []
-        # height = 500,
-        # width = 700
     )
 
     
-    st.write("Datasets included below. \n NYC Open Data Rodent Inspeciton Dataset.")
+    st.write(
+        f"""
+        Datasets included below. NYC Open Data Rodent Inspeciton Dataset.
+
+        Source Data: [NYC Open Data Rodent Inspection Data](https://data.cityofnewyork.us/Health/Rodent-Inspection/p937-wjvj/about_data)
+
+        Locations sourced through [Google Maps API](https://developers.google.com/maps/documentation/places/web-service/overview)
+
+        Mapping software [Leaflet](https://leafletjs.com/)
+
+        """)
 
 # idk why it doesn't work without this my other streamlit apps never needed this
 app()
