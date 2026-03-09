@@ -11,7 +11,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--dry-run", default="false")
 args = parser.parse_args()
 
-logger.info("Beginning Data Aggregation")
+logger.info("Preparing Final Data.")
 input_path = Path('data/intermediate_data')
 output_path = Path('data/final_data')
 
@@ -24,10 +24,12 @@ for file in input_path.glob("*.csv"):
     df = pd.concat([df, pd.read_csv(file, parse_dates = ['inspection_date'])])
 
 logger.info("Data Combined")
+
+df = df.sort_values(by = "inspection_date", ascending = False)
+
 df = df.head(500)
 
-
-output_path = output_path / f"aggregated_rat_data.csv"
+output_path = output_path / f"final_rat_data.csv"
 
 df.to_csv(output_path, index = False)
 
