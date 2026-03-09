@@ -62,7 +62,7 @@ def app() -> None:
     # Build Map
     rat_map = build_map(df)
 
-    st.write("Below is a map of 500 restaurants that failed rat inspections within the latest dates of day that we have available.")
+    st.write("Below is a map of 500 most recent restaurants that failed rat inspections within the latest dates of day that we have available.")
 
 
     st_folium(
