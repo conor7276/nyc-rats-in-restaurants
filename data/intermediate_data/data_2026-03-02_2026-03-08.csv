@@ -1,0 +1,185 @@
+rating,latitude,longitude,restaurant_name,address,inspection_type,inspection_date,result
+3.6,40.727425,-73.989948,D:ICE,"223 E 5th St, New York, NY 10003, USA",Compliance,2026-03-02T08:00:00.000,Rat Activity
+3.6,40.727425,-73.989948,D:ICE,"223 E 5th St, New York, NY 10003, USA",Compliance,2026-03-02T08:00:00.000,Rat Activity
+N/A,40.727519,-73.98275,BABA DONER,"147 Avenue A, New York, NY 10009, USA",Compliance,2026-03-02T08:33:48.000,Rat Activity
+N/A,40.727519,-73.98275,BABA DONER,"147 Avenue A, New York, NY 10009, USA",Compliance,2026-03-02T08:33:48.000,Rat Activity
+N/A,40.727519,-73.98275,BABA DONER,"147 Avenue A, New York, NY 10009, USA",Compliance,2026-03-02T08:33:48.000,Rat Activity
+4,40.694158,-73.961329,Nathan's Famous,"569 Myrtle Ave, Brooklyn, NY 11205, USA",Treatments,2026-03-02T08:49:20.000,Bait applied
+N/A,40.641712,-74.006867,Le Tian Restaurant Inc.,"5110 7th Ave, Brooklyn, NY 11220, USA",Treatments,2026-03-02T09:24:00.000,Bait applied
+N/A,40.641712,-74.006867,Le Tian Restaurant Inc.,"5110 7th Ave, Brooklyn, NY 11220, USA",Treatments,2026-03-02T09:24:00.000,Bait applied
+N/A,40.641712,-74.006867,Le Tian Restaurant Inc.,"5110 7th Ave, Brooklyn, NY 11220, USA",Treatments,2026-03-02T09:38:00.000,Bait applied
+N/A,40.641712,-74.006867,Le Tian Restaurant Inc.,"5110 7th Ave, Brooklyn, NY 11220, USA",Treatments,2026-03-02T09:38:00.000,Bait applied
+3.7,40.833923,-73.941007,Dunkin',"1995 Amsterdam Ave, New York, NY 10032, USA",Treatments,2026-03-02T09:40:00.000,Bait applied
+N/A,40.685919,-73.929484,Sa Imong,"209 Malcolm X Blvd Apt 2R, Brooklyn, NY 11221, USA",Initial,2026-03-02T09:48:00.000,Rat Activity
+4,40.860547,-73.895017,China City,"308 E 188th St, Bronx, NY 10458, USA",Stoppage,2026-03-02T09:55:00.000,Stoppage done
+3.5,40.834298,-73.941248,Tortilleria & Rosticeria El Guerrerence,"2002 Amsterdam Ave, New York, NY 10032, USA",Treatments,2026-03-02T09:55:54.000,Bait applied
+4.9,40.686211,-73.929486,Flat Out Burger,"199 Malcolm X Blvd, Brooklyn, NY 11221, USA",Initial,2026-03-02T09:57:00.000,Rat Activity
+4,40.699287,-73.923511,Happy Garden,"188 Wilson Ave, Brooklyn, NY 11237, USA",Initial,2026-03-02T10:14:30.000,Failed for Rat Act
+4,40.699287,-73.923511,Happy Garden,"188 Wilson Ave, Brooklyn, NY 11237, USA",Initial,2026-03-02T10:24:32.000,Rat Activity
+3.7,40.819395,-73.916429,Empanadas Monumental,"681 Melrose Ave, Bronx, NY 10455, USA",Stoppage,2026-03-02T10:26:00.000,Stoppage done
+4,40.699287,-73.923511,Happy Garden,"188 Wilson Ave, Brooklyn, NY 11237, USA",Initial,2026-03-02T10:26:42.000,Failed for Rat Act
+4,40.699287,-73.923511,Happy Garden,"188 Wilson Ave, Brooklyn, NY 11237, USA",Initial,2026-03-02T10:35:26.000,Rat Activity
+4.5,40.766576,-73.920303,Nisi Estiatorio,"32-07 30th Ave., Astoria, NY 11102, USA",Treatments,2026-03-02T10:39:50.000,Bait applied
+3,40.836909,-73.938871,Yummy Grill,"2089 Amsterdam Ave, New York, NY 10032, USA",Treatments,2026-03-02T10:45:11.000,Bait applied
+3,40.836909,-73.938871,Yummy Grill,"2089 Amsterdam Ave, New York, NY 10032, USA",Treatments,2026-03-02T10:45:11.000,Bait applied
+4.9,40.772286,-73.955049,Ed’s Elbow Room,"308 E 78th St, New York, NY 10075, USA",Compliance,2026-03-02T10:56:00.000,Rat Activity
+4.3,40.837491,-73.938912,Santo Entierro Mexican Restaurant,"2102 Amsterdam Ave #2, New York, NY 10032, USA",Treatments,2026-03-02T11:00:13.000,Bait applied
+4.2,40.699311,-73.923972,Mi Bella Cholulita,"1386 Dekalb Ave, Brooklyn, NY 11221, USA",Initial,2026-03-02T11:00:34.000,Rat Activity
+4.1,40.744244,-73.716877,Cheung Khei,"253-24 Union Tpke, Queens, NY 11004, USA",Initial,2026-03-02T11:05:13.000,Failed for Other R
+4.3,40.772299,-73.955236,Anand,"304 E 78th St, New York, NY 10075, USA",Compliance,2026-03-02T11:06:00.000,Rat Activity
+5,40.777749,-73.953801,Spoonable Spirits,"214 E 85th St, New York, NY 10028, USA",Initial,2026-03-02T11:11:48.000,Rat Activity
+4.9,40.684182,-73.978728,Supreme pizza NY,"22 4th Ave, Brooklyn, NY 11217, USA",Initial,2026-03-02T11:16:31.000,Rat Activity
+4.4,40.773174,-73.957013,Sushi Spot—78 Street,"226 E 78th St, New York, NY 10075, USA",Compliance,2026-03-02T11:20:00.000,Rat Activity
+4.6,40.698306,-73.924742,Ahehuete-food truck,"1321 Myrtle Ave, Brooklyn, NY 11221, USA",Initial,2026-03-02T11:23:46.000,Rat Activity
+4.4,40.698033,-73.92452,Oodles,"1298 Myrtle Ave, Brooklyn, NY 11221, USA",Initial,2026-03-02T11:24:08.000,Rat Activity
+4.1,40.70355,-73.942894,Mothers Seafood & More,"59 Graham Ave, Brooklyn, NY 11206, USA",Treatments,2026-03-02T11:29:39.000,Bait applied
+4.3,40.799729,-73.967854,Ben & Jerry's,"2722 Broadway, New York, NY 10025, USA",Initial,2026-03-02T11:30:30.000,Rat Activity
+2.4,40.787002,-73.975815,New Green Leaf Deli,"518 Amsterdam Ave, New York, NY 10024, USA",Treatments,2026-03-02T11:30:36.000,Bait applied
+4.8,40.774182,-73.95323,Panineria UES,"322 E 81st St, New York, NY 10028, USA",Initial,2026-03-02T11:31:08.000,Rat Activity
+4.2,40.805167,-73.966312,The Heights Bar & Grill,"2867 Broadway, New York, NY 10025, USA",Initial,2026-03-02T11:35:00.000,Rat Activity
+4.8,40.839394,-73.914753,Taqueria Muñoz,"155 E 170th St, Bronx, NY 10452, USA",Compliance,2026-03-02T11:38:00.000,Rat Activity
+4.9,40.838255,-73.93788,Niccolo Pizzeria,"2127 Amsterdam Ave, New York, NY 10032, USA",Treatments,2026-03-02T11:40:13.000,Bait applied
+4.6,40.707802,-73.940338,Stella Di Sicilia Bakery,"217 Montrose Ave, Brooklyn, NY 11206, USA",Initial,2026-03-02T11:41:00.000,Rat Activity
+4.5,40.789873,-73.948342,Frenchy Coffee NYC,"129E E 102nd St, New York, NY 10029, USA",Initial,2026-03-02T11:42:51.000,Failed for Rat Act
+4.7,40.843591,-73.836055,Da Franco & Tony Ristorante,"2815 Middletown Rd, Bronx, NY 10461, USA",Initial,2026-03-02T11:43:47.000,Failed for Other R
+4.4,40.749417,-73.888705,Lakeside NYC,"77-05A 37th Ave, Jackson Heights, NY 11372, USA",Initial,2026-03-02T12:00:00.000,Failed for Other R
+N/A,40.812744,-73.907989,Niyab87,"540 Concord Ave, Bronx, NY 10455, USA",Initial,2026-03-02T12:03:39.000,Rat Activity
+3,40.836909,-73.938871,Yummy Grill,"2089 Amsterdam Ave, New York, NY 10032, USA",Treatments,2026-03-02T12:05:36.000,Bait applied
+3,40.836909,-73.938871,Yummy Grill,"2089 Amsterdam Ave, New York, NY 10032, USA",Treatments,2026-03-02T12:05:36.000,Bait applied
+4.5,40.839327,-73.9147,Big Cheese Pizza,"157 E 170th St, Bronx, NY 10452, USA",Compliance,2026-03-02T12:12:00.000,Rat Activity
+4.5,40.839327,-73.9147,Big Cheese Pizza,"157 E 170th St, Bronx, NY 10452, USA",Compliance,2026-03-02T12:12:00.000,Rat Activity
+4.1,40.88046,-73.883608,Happy Dragon,"3388 Jerome Ave, Bronx, NY 10467, USA",Treatments,2026-03-02T12:20:55.000,Bait applied
+4.1,40.841586,-73.935892,El Nuevo Taino,"2228 Amsterdam Ave, New York, NY 10032, USA",Treatments,2026-03-02T12:30:52.000,Bait applied
+3.7,40.701963,-73.915946,La Gualacena,"178 Wyckoff Ave, Brooklyn, NY 11237, USA",Compliance,2026-03-02T12:36:07.000,Rat Activity
+5,40.843652,-73.934064,Bartolobritura,"174 Amsterdam Ave, New York, NY 10033, USA",Treatments,2026-03-02T12:45:10.000,Bait applied
+N/A,40.76237,-73.959146,WestMunster Ventures LLC,"406 E 64th St, New York, NY 10065, USA",Compliance,2026-03-02T12:51:00.000,Failed for Rat Act
+N/A,40.76237,-73.959146,WestMunster Ventures LLC,"406 E 64th St, New York, NY 10065, USA",Compliance,2026-03-02T12:51:00.000,Failed for Rat Act
+4.2,40.775782,-73.952303,Dulce Vida Latin Bistro,"309 E 83rd St, New York, NY 10028, USA",Initial,2026-03-02T13:00:48.000,Failed for Rat Act
+4.2,40.857159,-73.890909,Fiesta Lounge and Restaurant,"4640 Third Ave, Bronx, NY 10458, USA",Compliance,2026-03-02T13:01:01.000,Failed for Other R
+4.8,40.842095,-73.924665,Guerrero’s Pizzeria,"1381 Ogden Ave, Bronx, NY 10452, USA",Treatments,2026-03-02T13:19:00.000,Bait applied
+4.4,40.853991,-73.887167,Shila Bar & Grill,"629 Crescent Ave, Bronx, NY 10458, USA",Compliance,2026-03-02T13:22:01.000,Failed for Other R
+4.6,40.702615,-73.917189,Ops,"346 Himrod St, Brooklyn, NY 11237, USA",Compliance,2026-03-02T13:25:07.000,Rat Activity
+3.9,40.77472,-73.950597,Le Pain Quotidien,"1592 1st Ave, New York, NY 10028, USA",Initial,2026-03-02T13:25:48.000,Failed for Other R
+2.7,40.644934,-74.010205,TACOS EL SABOR DE MI TIERRA,"sunset park, 50 y 51st5 Ave, Brooklyn, NY 11220, USA",Treatments,2026-03-02T13:34:00.000,Bait applied
+4.5,40.683893,-73.929437,Trad Room,"266 Malcolm X Blvd, Brooklyn, NY 11233, USA",Compliance,2026-03-02T13:40:00.000,Rat Activity
+5,40.68117,-73.928091,Upstairs at Eric's,"218 Bainbridge St., Brooklyn, NY 11233, USA",Compliance,2026-03-02T14:25:00.000,Rat Activity
+4.4,40.8252,-73.916583,Katelyn Food Center,"3201 Park Ave, Bronx, NY 10451, USA",Compliance,2026-03-02T14:28:47.000,Rat Activity
+4.7,40.702294,-73.919701,Honore Club,"173 Irving Ave, Brooklyn, NY 11237, USA",Compliance,2026-03-02T14:53:07.000,Rat Activity
+4.1,40.826211,-73.917809,PG Pizza,"904 Morris Ave, Bronx, NY 10451, USA",Compliance,2026-03-02T14:53:47.000,Failed for Rat Act
+3.8,40.862348,-73.893736,Baskin-Robbins,"321 E Kingsbridge Rd, Bronx, NY 10458, USA",Initial,2026-03-03T08:00:00.000,Failed for Rat Act
+3.8,40.862348,-73.893736,Baskin-Robbins,"321 E Kingsbridge Rd, Bronx, NY 10458, USA",Initial,2026-03-03T08:00:00.000,Failed for Rat Act
+4.7,40.645262,-73.970202,Werkstatt,"509 Coney Island Ave, Brooklyn, NY 11218, USA",Initial,2026-03-03T08:29:15.000,Rat Activity
+5,40.695467,-73.95365,Bergers To Impress,"114 Sandford St, Brooklyn, NY 11205, USA",Initial,2026-03-03T08:44:24.000,Failed for Other R
+4.1,40.681302,-73.955868,Crown Fried Chicken & Pizza,"1147 Fulton St, Brooklyn, NY 11238, USA",Initial,2026-03-03T08:51:07.000,Rat Activity
+3.6,40.821657,-73.950515,Campus Deli & Grill,"1606 Amsterdam Ave, New York, NY 10031, USA",Compliance,2026-03-03T09:15:34.000,Failed for Rat Act
+5,40.695467,-73.95365,Bergers To Impress,"114 Sandford St, Brooklyn, NY 11205, USA",Initial,2026-03-03T09:20:00.000,Failed for Other R
+2.7,40.848826,-73.932855,Caridad,"554 W 181st St, New York, NY 10033, USA",Treatments,2026-03-03T09:22:51.000,Bait applied
+4.1,40.694829,-73.95301,Anaiah,"744 Myrtle Ave, Brooklyn, NY 11205, USA",Initial,2026-03-03T09:26:00.000,Failed for Other R
+4.1,40.694829,-73.95301,Anaiah,"744 Myrtle Ave, Brooklyn, NY 11205, USA",Initial,2026-03-03T09:36:00.000,Rat Activity
+5,40.822013,-73.950219,Oasis Jimma Juice Bar,"1620 Amsterdam Ave, New York, NY 10031, USA",Compliance,2026-03-03T09:37:34.000,Failed for Rat Act
+2.7,40.848826,-73.932855,Caridad,"554 W 181st St, New York, NY 10033, USA",Treatments,2026-03-03T09:40:24.000,Bait applied
+4.2,40.703771,-73.941514,La Cocina II,"100 Moore St, Brooklyn, NY 11206, USA",Treatments,2026-03-03T09:52:38.000,Bait applied
+4.1,40.651421,-73.962782,Caton Deli & Luncheonette,"1818 Caton Ave, Brooklyn, NY 11226, USA",Initial,2026-03-03T10:11:30.000,Failed for Other R
+4.6,40.829288,-73.944876,"Uptown Squeeze | Healthy Fresh Juice, Smoothie & Salad in Manhattan, NYC","1844 Amsterdam Ave, New York, NY 10031, USA",Initial,2026-03-03T10:13:05.000,Rat Activity
+2.9,40.652378,-74.006069,Domino's Pizza,"3901 4th Ave, Brooklyn, NY 11232, USA",Treatments,2026-03-03T10:17:00.000,Bait applied
+4.4,40.89095,-73.850206,The Chic Bistro,"938 E 233rd St, Bronx, NY 10466, USA",Initial,2026-03-03T10:30:08.000,Failed for Other R
+3.7,40.650446,-74.004445,Mis Angelitos Bakery,"4003 5th Ave, Brooklyn, NY 11232, USA",Treatments,2026-03-03T10:31:00.000,Bait applied
+4.6,40.80044,-73.966129,Yoyo Chicken Amsterdam Ave,"934 Amsterdam Ave, New York, NY 10025, USA",Compliance,2026-03-03T10:52:57.000,Failed for Rat Act
+4.6,40.80044,-73.966129,Yoyo Chicken Amsterdam Ave,"934 Amsterdam Ave, New York, NY 10025, USA",Compliance,2026-03-03T10:52:57.000,Failed for Rat Act
+4.4,40.805758,-73.954179,PATISSERIE DES AMBASSADES,"2190 Frederick Douglass Blvd, New York, NY 10026, USA",Compliance,2026-03-03T10:58:00.000,Failed for Rat Act
+4.7,40.776723,-73.97973,Solid State Coffee,"104 W 71st St, New York, NY 10023, USA",Treatments,2026-03-03T10:58:11.000,Bait applied
+4.4,40.723988,-73.980179,TOKUYAMATCHA & ONIGIRAZU BAR- E 6th St.,"627 E 6th St, New York, NY 10009, USA",Initial,2026-03-03T11:10:11.000,Rat Activity
+4.1,40.722058,-73.850618,Austin Street Bar & Grill (formerly Rotana Cafe & Grill),"68-60 Austin St Store 3, Forest Hills, NY 11375, USA",Initial,2026-03-03T11:22:12.000,Failed for Rat Act
+4.1,40.722058,-73.850618,Austin Street Bar & Grill (formerly Rotana Cafe & Grill),"68-60 Austin St Store 3, Forest Hills, NY 11375, USA",Initial,2026-03-03T11:22:12.000,Failed for Rat Act
+4.3,40.830498,-73.947187,Amanecer Restaurant And Lounge,"3666 Broadway, New York, NY 10031, USA",Initial,2026-03-03T11:25:05.000,Rat Activity
+4.1,40.777963,-73.979708,Legend 72,"127 W 72nd St, New York, NY 10023, USA",Treatments,2026-03-03T11:27:03.000,Bait applied
+4.3,40.830284,-73.947388,New Deli 1,"3660 Broadway, New York, NY 10031, USA",Initial,2026-03-03T11:29:05.000,Rat Activity
+4,40.84819,-73.938017,Tu Cachapa 🇻🇪,"4195 Broadway, New York, NY 10033, USA",Treatments,2026-03-03T11:30:45.000,Bait applied
+4.2,40.759775,-73.804341,BLEU GOLF,"42-16 162nd St, Flushing, NY 11358, USA",Initial,2026-03-03T11:40:11.000,Failed for Other R
+4.7,40.777795,-73.979123,Playa Bowls,"105 W 72nd St, New York, NY 10023, USA",Treatments,2026-03-03T11:42:47.000,Bait applied
+N/A,40.833534,-73.941346,Plantega (NY1 Gourmet Deli),"1981 Amsterdam Ave, New York, NY 10032, USA",Treatments,2026-03-03T12:00:08.000,Bait applied
+N/A,40.728335,-73.988132,Rey Taco,"125 2nd Ave #13, New York, NY 10003, USA",Compliance,2026-03-03T12:00:31.000,Rat Activity
+3.8,40.726152,-73.989716,La Vera Pizza,"67 2nd Ave, New York, NY 10003, USA",Compliance,2026-03-03T12:24:06.000,Rat Activity
+N/A,40.834301,-73.912315,Statue of Liberty,"1256 College Ave, Bronx, NY 10456, USA",Compliance,2026-03-03T12:25:16.000,Rat Activity
+N/A,40.753767,-73.990762,Contact Us — PUFFS,"237 W 37th St 2nd Floor, New York, NY 10018, USA",Treatments,2026-03-03T12:30:50.000,Bait applied
+4.1,40.745009,-73.99157,Gregorys Coffee,"775 6th Ave, New York, NY 10001, USA",Treatments,2026-03-03T13:00:50.000,Bait applied
+5,40.818616,-73.939419,Especiallymade_ByB,"117 W 141st St, New York, NY 10030, USA",Compliance,2026-03-03T13:09:08.000,Rat Activity
+3.6,40.832853,-73.942323,New Luck Garden,"1954 Amsterdam Ave, New York, NY 10032, USA",Treatments,2026-03-03T14:05:12.000,Bait applied
+4.7,40.746732,-73.947604,Traze,"21-03 45th Rd, Long Island City, NY 11101, USA",Compliance,2026-03-04T08:06:00.000,Rat Activity
+4.6,40.762848,-73.919843,Hutch Astoria,"35-07 31st Ave, Astoria, NY 11106, USA",Initial,2026-03-04T08:41:00.000,Rat Activity
+4.3,40.772299,-73.955236,Anand,"304 E 78th St, New York, NY 10075, USA",Compliance,2026-03-04T08:41:03.000,Failed for Rat Act
+4.3,40.772299,-73.955236,Anand,"304 E 78th St, New York, NY 10075, USA",Compliance,2026-03-04T08:55:03.000,Rat Activity
+N/A,40.850474,-73.903881,Anyi,"227 E 178th St, Bronx, NY 10457, USA",Initial,2026-03-04T09:00:00.000,Failed for Other R
+4.9,40.772286,-73.955049,Ed’s Elbow Room,"308 E 78th St, New York, NY 10075, USA",Compliance,2026-03-04T09:06:03.000,Rat Activity
+4.9,40.772286,-73.955049,Ed’s Elbow Room,"308 E 78th St, New York, NY 10075, USA",Compliance,2026-03-04T09:06:03.000,Rat Activity
+5,40.799575,-73.944246,Salimata,"62 E 116th St, New York, NY 10029, USA",Compliance,2026-03-04T09:07:15.000,Failed for Rat Act
+5,40.799575,-73.944246,Salimata,"62 E 116th St, New York, NY 10029, USA",Compliance,2026-03-04T09:07:15.000,Failed for Rat Act
+3.9,40.810252,-73.953189,OMEGA BAKERY & CAFE,"279 St Nicholas Ave, New York, NY 10027, USA",Stoppage,2026-03-04T09:12:00.000,Stoppage done
+5,40.799575,-73.944246,Salimata,"62 E 116th St, New York, NY 10029, USA",Initial,2026-03-04T09:20:15.000,Failed for Rat Act
+5,40.799575,-73.944246,Salimata,"62 E 116th St, New York, NY 10029, USA",Initial,2026-03-04T09:20:15.000,Failed for Rat Act
+N/A,40.879248,-73.872091,Val.eeefreshfood,"3510 Decatur Ave, Bronx, NY 10467, USA",Treatments,2026-03-04T09:24:00.000,Bait applied
+4.9,40.772286,-73.955049,Ed’s Elbow Room,"308 E 78th St, New York, NY 10075, USA",Compliance,2026-03-04T09:32:03.000,Rat Activity
+4.9,40.772286,-73.955049,Ed’s Elbow Room,"308 E 78th St, New York, NY 10075, USA",Compliance,2026-03-04T09:32:03.000,Rat Activity
+4.1,40.694829,-73.95301,Anaiah,"744 Myrtle Ave, Brooklyn, NY 11205, USA",Initial,2026-03-04T09:37:00.000,Rat Activity
+2.9,40.765393,-73.984161,Subway,"925 8th Ave, New York, NY 10019, USA",Initial,2026-03-04T09:39:00.000,Rat Activity
+3.9,40.846381,-73.892875,La Bella Rosa Bakery Inc,"605 E Tremont Ave, Bronx, NY 10457, USA",Initial,2026-03-04T09:41:00.000,Failed for Other R
+4.6,40.685979,-73.920972,Twin Grills,"865 Hancock St, Brooklyn, NY 11233, USA",Treatments,2026-03-04T09:47:52.000,Monitoring visit
+4.5,40.726465,-73.989447,LÀ LÁ Bakeshop NYC,"73 2nd Ave, New York, NY 10003, USA",Compliance,2026-03-04T09:49:32.000,Rat Activity
+N/A,40.720851,-74.000487,Ny24,"Grand St, New York, NY 10013, USA",Compliance,2026-03-04T09:53:37.000,Rat Activity
+4.9,40.772286,-73.955049,Ed’s Elbow Room,"308 E 78th St, New York, NY 10075, USA",Compliance,2026-03-04T09:55:03.000,Failed for Rat Act
+4.9,40.772286,-73.955049,Ed’s Elbow Room,"308 E 78th St, New York, NY 10075, USA",Compliance,2026-03-04T09:55:03.000,Failed for Rat Act
+4.6,40.800158,-73.952297,El Valle 46 Restaurante,"46 St Nicholas Ave, New York, NY 10026, USA",Stoppage,2026-03-04T09:56:00.000,Stoppage done
+3.6,40.796989,-73.969706,Aamber Indian Vegan,"2636a Broadway, New York, NY 10025, USA",Stoppage,2026-03-04T10:09:00.000,Stoppage done
+4.6,40.667289,-73.980802,Java Joe Coffee Tea & Spice Merchant,"414 8th St, Brooklyn, NY 11215, USA",Compliance,2026-03-04T10:10:03.000,Rat Activity
+4.6,40.847218,-73.938372,Manolo Tapas,"4165 Broadway, New York, NY 10033, USA",Treatments,2026-03-04T10:10:25.000,Bait applied
+4.8,40.856881,-73.887881,Stop One Mini Market,"566 E 188th St, Bronx, NY 10458, USA",Initial,2026-03-04T10:23:59.000,Failed for Other R
+4.6,40.830733,-73.899423,MERRY CANDY BAR LLC,"777 E 169th St, Bronx, NY 10456, USA",Initial,2026-03-04T10:28:09.000,Rat Activity
+4.6,40.772097,-73.95445,Xi'an Famous Foods 西安名吃 | Upper East Side 78th&2nd,"328 E 78th St, New York, NY 10075, USA",Compliance,2026-03-04T10:29:03.000,Rat Activity
+4.8,40.68059,-73.974388,Tacos del Barrio,"67 1/2 6th Ave, Brooklyn, NY 11217, USA",Initial,2026-03-04T10:30:00.000,Failed for Rat Act
+4.8,40.68059,-73.974388,Tacos del Barrio,"67 1/2 6th Ave, Brooklyn, NY 11217, USA",Initial,2026-03-04T10:30:00.000,Failed for Rat Act
+4.7,40.804639,-73.951185,The Monkey Cup,"1965 Adam Clayton Powell Jr Blvd, New York, NY 10026, USA",Treatments,2026-03-04T10:30:09.000,Bait applied
+4.1,40.833746,-73.926866,Don Sazón Restaurante,"1048 Woodycrest Ave, Bronx, NY 10452, USA",Compliance,2026-03-04T10:44:07.000,Rat Activity
+3.9,40.73841,-73.982538,Pick A Bagel on 23rd street,"210 E 23rd St, New York, NY 10010, USA",Treatments,2026-03-04T10:45:08.000,Bait applied
+4.7,40.679427,-73.938628,Den of Splendor,"42 Albany Ave, Brooklyn, NY 11213, USA",Treatments,2026-03-04T10:46:38.000,Bait applied
+5,40.753748,-73.91412,Teles Taqueria El Mas Sabroso,"48-01 Northern Blvd, Long Island City, NY 11101, USA",Compliance,2026-03-04T10:48:00.000,Failed for Other R
+4.4,40.85708,-73.886018,M&G II,"2472 Arthur Ave, Bronx, NY 10458, USA",Initial,2026-03-04T10:54:59.000,Failed for Other R
+4.4,40.802516,-73.938498,Teamworkon3 Juice,"2007 Lexington Avenue store Store, 2011 Lexington Ave, New York, NY 10035, USA",Stoppage,2026-03-04T11:00:00.000,Stoppage done
+4.4,40.85708,-73.886018,M&G II,"2472 Arthur Ave, Bronx, NY 10458, USA",Initial,2026-03-04T11:03:59.000,Failed for Other R
+4.4,40.767288,-73.98473,Stop By Café,"342 W 57th St, New York, NY 10019, USA",Initial,2026-03-04T11:05:28.000,Rat Activity
+4.3,40.712739,-73.994309,Phở Gà Vàng,"30 Market St, New York, NY 10002, USA",Initial,2026-03-04T11:07:11.000,Failed for Other R
+4.6,40.772097,-73.95445,Xi'an Famous Foods 西安名吃 | Upper East Side 78th&2nd,"328 E 78th St, New York, NY 10075, USA",Compliance,2026-03-04T11:08:03.000,Rat Activity
+4.4,40.798518,-73.933858,Santiago’s Garden,"2337 1st Ave, New York, NY 10035, USA",Stoppage,2026-03-04T11:18:00.000,Stoppage done
+4.3,40.712739,-73.994309,Phở Gà Vàng,"30 Market St, New York, NY 10002, USA",Initial,2026-03-04T11:20:19.000,Failed for Rat Act
+4.2,40.82611,-73.950383,LA VIAGRA,"3536 Broadway, New York, NY 10031, USA",Compliance,2026-03-04T11:22:01.000,Failed for Rat Act
+4.8,40.742092,-74.000594,Da Andrea Chelsea,"160 8th Ave, New York, NY 10011, USA",Compliance,2026-03-04T11:25:37.000,Rat Activity
+4.9,40.690626,-73.933758,Good Times Deli & Grill,"857 Greene Ave, Brooklyn, NY 11221, USA",Initial,2026-03-04T11:26:00.000,Failed for Rat Act
+4,40.806943,-73.918145,El Jaguar,"536 E 138th St, Bronx, NY 10454, USA",Compliance,2026-03-04T11:26:11.000,Rat Activity
+4.7,40.795941,-73.934748,Azalea Café,"409 E 116th St, New York, NY 10029, USA",Stoppage,2026-03-04T11:31:00.000,Stoppage done
+4.2,40.736985,-73.865227,Yummy Kitchen,"95-17 57th Ave, Elmhurst, NY 11373, USA",Treatments,2026-03-04T11:34:16.000,Bait applied
+3.9,40.676115,-74.000604,Dunkin',"289 Hamilton Ave, Brooklyn, NY 11231, USA",Initial,2026-03-04T11:35:00.000,Failed for Rat Act
+4.4,40.712436,-73.994027,Golden Diner,"123 Madison St, New York, NY 10002, USA",Initial,2026-03-04T11:36:00.000,Rat Activity
+3.7,40.717434,-73.997277,Yuan Zai Bing,"104 Mott St, New York, NY 10013, USA",Initial,2026-03-04T11:37:11.000,Failed for Other R
+N/A,40.766922,-73.986124,Crafted burgers NYC,"858 9th Ave, New York, NY 10019, USA",Initial,2026-03-04T11:38:00.000,Rat Activity
+N/A,40.766922,-73.986124,Crafted burgers NYC,"858 9th Ave, New York, NY 10019, USA",Initial,2026-03-04T11:38:00.000,Rat Activity
+N/A,40.721894,-73.988208,Bar Bryan night,"182 Orchard St, New York, NY 10002, USA",Treatments,2026-03-04T11:39:18.000,Bait applied
+4.5,40.756101,-73.966032,Kealoha Sushi & Poke Bowl,"330 E 53rd St, New York, NY 10022, USA",Treatments,2026-03-04T11:45:50.000,Bait applied
+4.3,40.858751,-73.903413,Elsa La Reina Del Chicharron,"1 E 183rd St, Bronx, NY 10453, USA",Initial,2026-03-04T11:50:59.000,Failed for Other R
+5,40.858677,-73.905129,SBK Gourmet,"30 W 183rd St, Bronx, NY 10453, USA",Initial,2026-03-04T12:07:59.000,Rat Activity
+4.3,40.712238,-73.994226,Bánh by Lauren,"42 Market St, New York, NY 10002, USA",Initial,2026-03-04T12:08:59.000,Rat Activity
+1,40.687764,-73.95494,Golden Hing,"1082 Bedford Ave, Brooklyn, NY 11216, USA",Compliance,2026-03-04T12:12:00.000,Rat Activity
+1,40.687764,-73.95494,Golden Hing,"1082 Bedford Ave, Brooklyn, NY 11216, USA",Compliance,2026-03-04T12:12:00.000,Rat Activity
+4.3,40.7119,-73.994552,Happy Medium,"49 Market St, New York, NY 10002, USA",Initial,2026-03-04T12:12:34.000,Rat Activity
+5,40.858677,-73.905129,SBK Gourmet,"30 W 183rd St, Bronx, NY 10453, USA",Initial,2026-03-04T12:13:59.000,Failed for Rat Act
+5,40.711704,-73.994409,Bolzot,"55 Market St, New York, NY 10002, USA",Initial,2026-03-04T12:16:00.000,Rat Activity
+5,40.711704,-73.994409,Bolzot,"55 Market St, New York, NY 10002, USA",Initial,2026-03-04T12:23:45.000,Rat Activity
+4.3,40.829593,-73.947798,Mire Star Restaurant,"3640 Broadway, New York, NY 10031, USA",Compliance,2026-03-04T12:25:01.000,Failed for Rat Act
+5,40.684546,-73.944572,Rodo Foods,"420 Putnam Ave, Brooklyn, NY 11216, USA",Compliance,2026-03-04T12:31:55.000,Rat Activity
+5,40.711704,-73.994409,Bolzot,"55 Market St, New York, NY 10002, USA",Initial,2026-03-04T12:31:56.000,Failed for Other R
+4.2,40.77201,-73.955404,Ollie’s To Go: Upper East Side,"307 E 77th St, New York, NY 10075, USA",Compliance,2026-03-04T13:22:03.000,Rat Activity
+4.5,40.700658,-73.921225,Knickerbocker Bagel,"367 Knickerbocker Ave, Brooklyn, NY 11237, USA",Compliance,2026-03-04T13:25:48.000,Rat Activity
+4.1,40.68303,-73.922893,Dream House,"194 Ralph Ave, Brooklyn, NY 11233, USA",Treatments,2026-03-04T13:47:00.000,Bait applied
+4.3,40.702192,-73.920344,Caraotas,"162 Irving Ave, Brooklyn, NY 11237, USA",Compliance,2026-03-04T14:22:48.000,Rat Activity
+4.9,40.785926,-73.976602,Florentin,"480 Amsterdam Ave, New York, NY 10024, USA",Compliance,2026-03-04T14:35:06.000,Failed for Rat Act
+3,40.680895,-73.977291,Sfi Grill & Deli,"Brooklyn, NY 11217, USA",Initial,2026-03-04T14:45:00.000,Failed for Other R
+4.4,40.747386,-73.893391,Karachi Kabab Boiz (KKB) Storefront,"72-08 Broadway, Jackson Heights, NY 11372, USA",Compliance,2026-03-05T08:14:00.000,Rat Activity
+N/A,40.748609,-73.8934,Rosui Ghor,"72 37th Ave, Jackson Heights, NY 11372, USA",Compliance,2026-03-05T09:22:00.000,Rat Activity
