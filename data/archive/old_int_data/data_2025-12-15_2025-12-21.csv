@@ -1,8 +1,0 @@
-formattedAddress,location,rating,displayName,latitude,longitude,address,ratio,split_check
-"282 Knickerbocker Ave, Brooklyn, NY 11237, USA","{'latitude': 40.7018795, 'longitude': -73.9241103}",4.9,"{'text': ""Don Fidel's Nieve de Garrafa - Street Mexican Ice Cream"", 'languageCode': 'en'}",40.702091586991,-73.924150162786,282 Knickerbocker Avenue,86,True
-"375 Canal St, New York, NY 10013, USA","{'latitude': 40.721404299999996, 'longitude': -74.0043748}",4.5,"{'text': 'Lucia Pizza Of SoHo', 'languageCode': 'en'}",40.721214694344,-74.004430146809,375 Canal Street,86,True
-"14 1st Ave, New York, NY 10009, USA","{'latitude': 40.723333100000005, 'longitude': -73.9880763}",4.1,"{'text': 'Lucien', 'languageCode': 'en'}",40.723407253161,-73.988310952975,14 1 Avenue,86,True
-"80 W Kingsbridge Rd, Bronx, NY 10468, USA","{'latitude': 40.8679105, 'longitude': -73.9004894}",4.2,"{'text': ""Emilio's Pizza"", 'languageCode': 'en'}",40.868117281311,-73.900440492835,80 West Kingsbridge Rd,86,True
-"80 W Kingsbridge Rd store 9, Bronx, NY 10468, USA","{'latitude': 40.8679105, 'longitude': -73.9004894}",3.9,"{'text': 'Antojitos del Mangu', 'languageCode': 'en'}",40.868117281311,-73.900440492835,80 West Kingsbridge Rd,86,True
-"80 W Kingsbridge Rd, Bronx, NY 10468, USA","{'latitude': 40.8679105, 'longitude': -73.9004894}",3.5,"{'text': 'Mambo Buffet Restaurant Corp', 'languageCode': 'en'}",40.868117281311,-73.900440492835,80 West Kingsbridge Rd,86,True
-"50 Malcolm X Blvd, Brooklyn, NY 11221, USA","{'latitude': 40.6924234, 'longitude': -73.9310984}",4.6,"{'text': 'Fat Doughnut', 'languageCode': 'en'}",40.692500171149,-73.930972950175,50 Malcolm X Boulevard,86,True

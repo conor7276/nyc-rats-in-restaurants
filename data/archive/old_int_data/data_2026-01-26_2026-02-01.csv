@@ -1,5 +1,0 @@
-formattedAddress,location,rating,displayName,latitude,longitude,address
-"19 Bogart St, Brooklyn, NY 11206, USA","{'latitude': 40.7037554, 'longitude': -73.933069}",4.5,"{'text': 'Amituofo', 'languageCode': 'en'}",40.703925075043,-73.932926711548,19 Bogart Street
-"19 Bogart St, Brooklyn, NY 11206, USA","{'latitude': 40.703884599999995, 'longitude': -73.9331486}",4.9,"{'text': 'MAKI', 'languageCode': 'en'}",40.703925075043,-73.932926711548,19 Bogart Street
-"1734 Amsterdam Ave, New York, NY 10031, USA","{'latitude': 40.8259034, 'longitude': -73.947366}",5.0,"{'text': 'Texas Chicken & burger', 'languageCode': 'en'}",40.82574213954,-73.947242198366,1734 Amsterdam Avenue
-"457 W 125th St @, Amsterdam Ave, New York, NY 10027, USA","{'latitude': 40.8129968, 'longitude': -73.9556197}",4.6,"{'text': 'Everytable', 'languageCode': 'en'}",40.812798779022,-73.95574932284,457 West 125 Street
