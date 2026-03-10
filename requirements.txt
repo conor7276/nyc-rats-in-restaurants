@@ -60,6 +60,7 @@ smmap==5.0.2
 sodapy==2.2.0
 stack-data==0.6.3
 streamlit==1.52.2
+streamlit-folium==0.26.2
 tenacity==9.1.2
 toml==0.10.2
 tornado==6.5.4
