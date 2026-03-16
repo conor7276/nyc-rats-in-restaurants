@@ -15,11 +15,8 @@ st.write("""
          
     **Don't forget to check out my other projects!**
          
-    (Github)[https://github.com/conor7276]
+    [Github](https://github.com/conor7276)
          
-    (Linkedin)[https://www.linkedin.com/in/conor7276]
+    [Linkedin](https://www.linkedin.com/in/conor7276)
     
         """)
-
-
-# st.sidebar.success("Select a Page")
