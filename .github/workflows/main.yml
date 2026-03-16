@@ -72,7 +72,7 @@ jobs:
             --dry-run=${{ github.event.inputs.dry_run || 'false' }}
       - name: Aggregate Data
         run: |
-          python scripts/aggregate_monthly_data.py \
+          python scripts/final_data.py \
             --dry-run=${{ github.event.inputs.dry_run || 'false' }}
 
       - name: Commit and push data updates
