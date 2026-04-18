@@ -19,7 +19,7 @@ def app() -> None:
         )
 
         data = df[
-            ["latitude", "longitude", "restaurant_name", "address", "result", "inspection_date"]
+            ["lat", "lon", "name", "address", "neighborhood", "type", "result", "approved_date"]
         ].values.tolist()
 
         
@@ -36,9 +36,10 @@ def app() -> None:
 
                     var popup =
                         "<b>" + row[2] + "</b><br>" +
-                        row[3] + "<br><hr>" +
-                        "<b>Result:</b> " + row[4] + "<br>" +
-                        "<b>Date:</b> " + row[5];
+                        row[3] + "<br>" + row[4] + "<br>" +
+                        "<b>Type:</b> " + row[5] + "<br>" +
+                        "<b>Result:</b> " + row[6] + "<br>" +
+                        "<b>Date:</b> " + row[7];
 
                     return L.marker([row[0], row[1]], {{icon: icon}})
                         .bindPopup(popup);
@@ -49,11 +50,9 @@ def app() -> None:
         return rat_map
 
     st.header("NYC Rodent Inspection Map")
-    
-    # with st.sidebar:
         
     # Temporary fixed data will have to figure out databricks one day
-    data_path = Path(__file__).resolve().parent.parent.parent / "data" / "final_data" / "final_rat_data.csv"
+    data_path = Path(__file__).resolve().parent.parent.parent / "data" / "final_data" / "final_new_test_data.csv"
 
     df = pd.read_csv(data_path)
 
@@ -78,7 +77,7 @@ def app() -> None:
 
         Source Data: [NYC Open Data Rodent Inspection Data](https://data.cityofnewyork.us/Health/Rodent-Inspection/p937-wjvj/about_data)
 
-        Locations sourced through [Google Maps API](https://developers.google.com/maps/documentation/places/web-service/overview)
+        Locations sourced through [Geoapify](https://www.geoapify.com/maps-api/)
 
         Mapping software [Leaflet](https://leafletjs.com/)
 
