@@ -50,7 +50,7 @@ output_filepath = output_dir / f"data_{start_date}_{end_date}.csv"
 logger.info("Data and environmnet variable paths loaded")
 
 # Read data and environment variables
-df = pd.read_csv(input_filepath, parse_dates= ['inspection_date', 'approval_date'])
+df = pd.read_csv(input_filepath, parse_dates= ['inspection_date', 'approved_date'])
 
 logger.info("Reading in file.")
 
