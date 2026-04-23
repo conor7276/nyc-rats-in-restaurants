@@ -50,8 +50,9 @@ output_filepath = output_dir / f"data_{start_date}_{end_date}.csv"
 logger.info("Data and environmnet variable paths loaded")
 
 # Read data and environment variables
-df = pd.read_csv(input_filepath)
-logger.info("Data and environment variables loaded.")
+df = pd.read_csv(input_filepath, parse_dates= ['inspection_date', 'approval_date'])
+
+logger.info("Reading in file.")
 
 # Filter out bad coordinates
 df = df.dropna(subset = ['longitude', 'latitude'])
@@ -62,10 +63,11 @@ df['street_name'] = df['street_name'].apply(lambda x : x.title())
 df['address'] = df.apply(lambda x : str(x['house_number']) + ' ' + x['street_name'] ,axis = 1)
 
 # Turn dates from timestamp level to date level
+df['inspection_date'] = df['inspection_date'].apply(lambda x : pd.Timestamp(year = x.year, month = x.month, day = x.day))
 df['approved_date'] = df['approved_date'].apply(lambda x : pd.Timestamp(year = x.year, month = x.month, day = x.day))
 
 # Limit amount of data for testing REMOVE LATER ###################################################################
-df = df.iloc[201:300]
+df = df.iloc[201:251]
 
 # Select needed columns
 df = df[
@@ -79,6 +81,7 @@ df = df[
      'latitude',
      'longitude',
      'result',
+     'inspection_date',
      'approved_date',
      'nta'
      ]
@@ -135,6 +138,7 @@ for _ , row in df.iterrows():
         local_restaurant_df['latitude_interdata'] = row['latitude_interdata']
         local_restaurant_df['longitude_interdata'] = row['longitude_interdata']
         local_restaurant_df['result_interdata'] = row['result_interdata']
+        local_restaurant_df['inspection_date_interdata'] = row['inspection_date_interdata']
         local_restaurant_df['approved_date_interdata'] = row['approved_date_interdata']
         local_restaurant_df['nta_interdata'] = row['nta_interdata']
         
@@ -153,7 +157,7 @@ if all_restaurants_df.empty:
 selected_columns = [
     'name', 'county', 'city', 'postcode', 'district', 'suburb', 'housenumber', 'street', 'address_line2',
     'lon','lat', 'formatted', 'catering', 'commercial','house_number_interdata',
-    'street_name_interdata', 'address_interdata', 'result_interdata', 'approved_date_interdata', 'nta_interdata'
+    'street_name_interdata', 'address_interdata', 'result_interdata', 'inspection_date_interdata', 'approved_date_interdata', 'nta_interdata'
     ]
 
 # format address
@@ -176,11 +180,11 @@ requested_places_saved[['lon', 'lat']] = requested_places_saved[['lon', 'lat']].
 selected_columns = [
     'name', 'county', 'city', 'postcode',
     'suburb', 'address_line2', 'address_interdata', 'lon', 'lat',
-    'catering', 'commercial', 'approved_date_interdata', 'result_interdata', 'nta_interdata'
+    'catering', 'commercial', 'inspection_date_interdata', 'approved_date_interdata', 'result_interdata', 'nta_interdata'
 ]
 requested_places_saved = requested_places_saved[selected_columns]
 requested_places_saved = requested_places_saved.rename(
-    columns = {'address_line2' : 'address', 'approved_date_interdata' : 'approved_date', 'result_interdata' : "result", 'nta_interdata' : 'neighborhood'}
+    columns = {'address_line2' : 'address', 'inspection_date_interdata' : 'insepection_date', 'approved_date_interdata' : 'approved_date', 'result_interdata' : "result", 'nta_interdata' : 'neighborhood'}
 )
 
 def category_handler(catering, commercial):
