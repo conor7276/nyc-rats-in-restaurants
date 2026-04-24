@@ -1,8 +1,8 @@
 rating,latitude,longitude,restaurant_name,address,inspection_type,inspection_date,result,name,county,city,postcode,suburb,lon,lat,approved_date,neighborhood,type
-,,,,9 Hanover Place,,2026-04-13 00:00:00,Bait applied,Gourmet Cafe,Kings County,New York,11201,Brooklyn,-73.982276,40.688898,2026-04-20,Downtown Brooklyn-DUMBO-Boerum Hill,Breakfast;Sandwich;Salad
-,,,,4168 Broadway,,2026-04-13 00:00:00,Bait applied,IHOP,New York County,New York,10033,Manhattan,-73.937823,40.847519,2026-04-16,Washington Heights (South),Breakfast;Pancake
-,,,,170 East 110th Street,,2026-04-13 00:00:00,Rat Activity,Aloaf Cafe,New York County,New York,10029,Manhattan,-73.943524,40.794318,2026-04-15,East Harlem (South),Bakery
-,,,,2108 2nd Avenue,,2026-04-13 00:00:00,Bait applied,Ollin,New York County,New York,10035,Manhattan,-73.941037,40.792207,2026-04-16,East Harlem (South),
+,,,,9 Hanover Place,Treatments,2026-04-13 00:00:00,Bait applied,Gourmet Cafe,Kings County,New York,11201,Brooklyn,-73.982276,40.688898,2026-04-20,Downtown Brooklyn-DUMBO-Boerum Hill,Breakfast;Sandwich;Salad
+,,,,4168 Broadway,Treatments,2026-04-13 00:00:00,Bait applied,IHOP,New York County,New York,10033,Manhattan,-73.937823,40.847519,2026-04-16,Washington Heights (South),Breakfast;Pancake
+,,,,170 East 110th Street,Initial,2026-04-13 00:00:00,Rat Activity,Aloaf Cafe,New York County,New York,10029,Manhattan,-73.943524,40.794318,2026-04-15,East Harlem (South),Bakery
+,,,,2108 2nd Avenue,Treatments,2026-04-13 00:00:00,Bait applied,Ollin,New York County,New York,10035,Manhattan,-73.941037,40.792207,2026-04-16,East Harlem (South),
 ,40.748609,-73.8934,Rosui Ghor,"72 37th Ave, Jackson Heights, NY 11372, USA",Compliance,2026-03-05 09:22:00,Rat Activity,,,,,,,,,,
 4.4,40.747386,-73.893391,Karachi Kabab Boiz (KKB) Storefront,"72-08 Broadway, Jackson Heights, NY 11372, USA",Compliance,2026-03-05 08:14:00,Rat Activity,,,,,,,,,,
 3.0,40.680895,-73.977291,Sfi Grill & Deli,"Brooklyn, NY 11217, USA",Initial,2026-03-04 14:45:00,Failed for Other R,,,,,,,,,,
