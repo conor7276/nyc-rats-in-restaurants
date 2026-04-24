@@ -167,9 +167,10 @@ selected_columns = [
 geo_rest_df = all_restaurants_df.copy()
 geo_rest_df['address_line2'] = geo_rest_df['address_line2'].apply(lambda x : x.split(',')[0].strip() if x else None)
 geo_rest_df = all_restaurants_df[selected_columns]
-geo_rest_df.head()
 
 requested_places_saved = geo_rest_df.copy()
+
+logger.info(requested_places_saved.head())
 
 # Logic is fuzzy with addresses we try to pick ones that are close to matching then compare numerical addresses
 requested_places_saved['ratio'] = requested_places_saved.apply(lambda x: fuzz.WRatio(x['address_line2'], x['address_interdata']), axis=1)
