@@ -92,6 +92,8 @@ df.columns = df.columns.str.lower() + '_interdata'
 
 ################################## Perform API actions #######################################
 
+logger.info("Beginning API calls to get nearby locations.")
+
 # Set API params
 categories = "catering.restaurant,commercial.food_and_drink,catering.fast_food,catering.food_court,catering.bar"
 radius = "50" # meters
@@ -147,7 +149,8 @@ for _ , row in df.iterrows():
         # Move on if no data is found
         continue
 
- 
+logger.info("API calls completed, beginning data processing.")
+
 if all_restaurants_df.empty:
     # If no data was pulled
     logger.info("No locations were able to be found.")
@@ -210,7 +213,10 @@ requested_places_saved = requested_places_saved.drop(columns = ['catering', 'com
 # Handle addresses
 requested_places_saved['address'] = requested_places_saved['address'].apply(lambda x : x.split(',')[0])
 requested_places_saved = requested_places_saved.drop(columns = ['address_interdata'])
-        
+
+logger.info("Saving data to repo.")
+
 requested_places_saved.to_csv(output_filepath, index = False)
 
-requested_places_saved
+logger.info(f"Data was successfully saved to repo. Preview of dataframe: {requested_places_saved.head()}")
+
