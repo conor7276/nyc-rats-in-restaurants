@@ -28,7 +28,6 @@ df = df.sort_values(by = "inspection_date", ascending = False)
 
 df = df.head(500)
 
-
 output_dir = Path("data/final_data")
 output_dir.mkdir(parents=True, exist_ok=True)
 
