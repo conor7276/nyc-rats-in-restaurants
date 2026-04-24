@@ -62,7 +62,7 @@ jobs:
 
       - name: Run data processing
         env:
-          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+          GEOAPIFY_KEY: ${{ secrets.GEOAPIFY_KEY }}
         run: |
           python scripts/pull_nearby_locations.py \
             --start-date=$START_DATE \
