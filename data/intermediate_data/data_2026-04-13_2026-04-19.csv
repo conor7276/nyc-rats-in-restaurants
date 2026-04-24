@@ -1,0 +1,5 @@
+name,county,city,postcode,suburb,address,lon,lat,inspection_date,approved_date,result,neighborhood,type
+Aloaf Cafe,New York County,New York,10029,Manhattan,170 East 110th Street,-73.943524,40.794318,2026-04-13,2026-04-15,Rat Activity,East Harlem (South),Bakery
+Ollin,New York County,New York,10035,Manhattan,2108 2nd Avenue,-73.941037,40.792207,2026-04-13,2026-04-16,Bait applied,East Harlem (South),N/A
+IHOP,New York County,New York,10033,Manhattan,4168 Broadway,-73.937823,40.847519,2026-04-13,2026-04-16,Bait applied,Washington Heights (South),Breakfast;Pancake
+Gourmet Cafe,Kings County,New York,11201,Brooklyn,9 Hanover Place,-73.982276,40.688898,2026-04-13,2026-04-20,Bait applied,Downtown Brooklyn-DUMBO-Boerum Hill,Breakfast;Sandwich;Salad
