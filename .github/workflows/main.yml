@@ -64,7 +64,7 @@ jobs:
         env:
           GEOAPIFY_KEY: ${{ secrets.GEOAPIFY_KEY }}
         run: |
-          python scripts/pull_nearby_locations_v2.py \
+          python scripts/pull_nearby_locations.py \
             --start-date=$START_DATE \
             --end-date=$END_DATE \
             --manual-start-date=${{github.event.inputs.manual_start_date || ''}} \
