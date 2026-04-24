@@ -184,7 +184,7 @@ selected_columns = [
 ]
 requested_places_saved = requested_places_saved[selected_columns]
 requested_places_saved = requested_places_saved.rename(
-    columns = {'address_line2' : 'address', 'inspection_date_interdata' : 'insepection_date', 'approved_date_interdata' : 'approved_date', 'result_interdata' : "result", 'nta_interdata' : 'neighborhood'}
+    columns = {'address_line2' : 'address', 'inspection_date_interdata' : 'inspection_date', 'approved_date_interdata' : 'approved_date', 'result_interdata' : "result", 'nta_interdata' : 'neighborhood'}
 )
 
 def category_handler(catering, commercial):
