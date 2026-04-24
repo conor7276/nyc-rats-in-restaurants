@@ -10,7 +10,7 @@ st.write("""
     
     NYC is known for its food worldwide, it is also known for its abundance of rats 
     This dashboard shows what restaurants have recently failed rodent inspections using NYC 
-    Open Data's Rodent Inspection dataset that can be viewed below combined with Google Maps API's
+    Open Data's Rodent Inspection dataset that can be viewed below combined with Geoapify's Places API
     to tell which address' are restaurants or not.
          
     **Don't forget to check out my other projects!**
