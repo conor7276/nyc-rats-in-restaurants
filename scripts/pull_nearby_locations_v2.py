@@ -156,8 +156,8 @@ if all_restaurants_df.empty:
 # Process data
 selected_columns = [
     'name', 'county', 'city', 'postcode', 'district', 'suburb', 'housenumber', 'street', 'address_line2',
-    'lon','lat', 'formatted', 'catering', 'commercial','house_number_interdata',
-    'street_name_interdata', 'address_interdata', 'inspection_type_interdata', 'result_interdata', 'inspection_date_interdata', 'approved_date_interdata', 'nta_interdata'
+    'lon','lat', 'formatted', 'catering', 'commercial','house_number_interdata', 'street_name_interdata', 'address_interdata',
+    'inspection_type_interdata', 'result_interdata', 'inspection_date_interdata', 'approved_date_interdata', 'nta_interdata'
     ]
 
 # format address
@@ -183,7 +183,13 @@ selected_columns = [
 ]
 requested_places_saved = requested_places_saved[selected_columns]
 requested_places_saved = requested_places_saved.rename(
-    columns = {'address_line2' : 'address', 'inspection_type_interdata' : 'inspection_type', 'inspection_date_interdata' : 'inspection_date', 'approved_date_interdata' : 'approved_date', 'result_interdata' : "result", 'nta_interdata' : 'neighborhood'}
+    columns = {
+        'address_line2' : 'address',
+        'inspection_type_interdata' : 'inspection_type',
+        'inspection_date_interdata' : 'inspection_date',
+        'approved_date_interdata' : 'approved_date',
+        'result_interdata' : "result",
+        'nta_interdata' : 'neighborhood'}
 )
 
 def category_handler(catering, commercial):

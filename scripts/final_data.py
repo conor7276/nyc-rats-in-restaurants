@@ -13,7 +13,6 @@ args = parser.parse_args()
 
 logger.info("Preparing Final Data.")
 input_path = Path('data/intermediate_data')
-output_path = Path('data/final_data')
 
 logger.info("Paths Loaded.")
 
@@ -29,8 +28,11 @@ df = df.sort_values(by = "inspection_date", ascending = False)
 
 df = df.head(500)
 
-output_path = output_path / f"final_rat_data.csv"
 
+output_dir = Path("data/final_data")
+output_dir.mkdir(parents=True, exist_ok=True)
+
+output_path = output_dir / f"final_rat_data.csv"
 df.to_csv(output_path, index = False)
 
 logger.info(f"Saving data to {output_path} successfully.")
