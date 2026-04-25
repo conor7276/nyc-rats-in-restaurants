@@ -1,0 +1,27 @@
+name,county,city,postcode,suburb,address,lon,lat,inspection_type,inspection_date,approved_date,result,neighborhood,type
+Tampopo Ramen,New York County,New York,10033,Manhattan,1 Bennett Avenue,-73.936478,40.850583,Treatments,2026-03-30,2026-03-30,Bait applied,Washington Heights (North),Noodle;Japanese
+Yankee Pizza,New York County,New York,10009,Manhattan,181 Avenue C,-73.977157,40.726707,Treatments,2026-03-30,2026-04-02,Bait applied,East Village,Pizza
+IHOP,New York County,New York,10033,Manhattan,4168 Broadway,-73.937823,40.847519,Compliance,2026-03-30,2026-03-31,Rat Activity,Washington Heights (South),Breakfast;Pancake
+Panchita's Place,Kings County,New York,11215,Brooklyn,709 5th Avenue,-73.993963,40.660623,Treatments,2026-03-30,2026-03-30,Bait applied,Sunset Park (West),Mexican
+Insomnia Cookies,New York County,New York,10025,Manhattan,1028 Amsterdam Avenue,-73.963743,40.803477,Stoppage,2026-03-30,2026-03-31,Stoppage done,Morningside Heights,Cookie
+Hula Poké,New York County,New York,10025,Manhattan,1028 Amsterdam Avenue,-73.963778,40.80343,Stoppage,2026-03-30,2026-03-31,Stoppage done,Morningside Heights,Poke
+1020 Bar,New York County,New York,10205,Manhattan,1020 Amsterdam Avenue,-73.963939,40.803212,Stoppage,2026-03-30,2026-03-31,Stoppage done,Morningside Heights,N/A
+Cap't Loui,New York County,New York,10027,Manhattan,3147 Broadway,-73.95967,40.814266,Stoppage,2026-03-30,2026-03-31,Stoppage done,Morningside Heights,Seafood
+Caridad Restaurant,New York County,New York,10033,Manhattan,554 West 181st Street,-73.932928,40.848843,Treatments,2026-03-30,2026-03-31,Bait applied,Washington Heights (North),N/A
+Pret A Manger,New York County,New York,10011,Manhattan,655 6th Avenue,-73.994197,40.741345,Initial,2026-03-30,2026-03-31,Failed for Other R,Chelsea-Hudson Yards,Sandwich
+Thursday,New York County,New York,10009,Manhattan,424 East 9th Street,-73.983771,40.727608,Treatments,2026-03-31,2026-04-02,Bait applied,East Village,Korean;International
+The Original Soupman,New York County,New York,10005,Manhattan,10 Hanover Square,-74.008959,40.704673,Treatments,2026-03-31,2026-04-02,Bait applied,Financial District-Battery Park City,N/A
+Que Rico,New York County,New York,10010,Manhattan,221 East 23rd Street,-73.981948,40.738497,Treatments,2026-03-31,2026-04-02,Bait applied,Gramercy,Latin_American
+Baked by Luigi,New York County,New York,10010,Manhattan,221 East 23rd Street,-73.981908,40.73848,Treatments,2026-03-31,2026-04-02,Bait applied,Gramercy,Pizza
+Hale & Hearty Soup,New York County,New York,10004,Manhattan,55 Broad Street,-74.01095,40.705193,Treatments,2026-03-31,2026-04-02,Bait applied,Financial District-Battery Park City,N/A
+Sweetgreen,New York County,New York,10016,Manhattan,606 1st Avenue,-73.972871,40.74419,Treatments,2026-03-31,2026-04-02,Bait applied,Murray Hill-Kips Bay,Salad
+Nonna's Pizzeria,Kings County,New York,11222,Brooklyn,253 Nassau Avenue,-73.941839,40.725983,Compliance,2026-03-31,2026-04-01,Failed for Other R,Greenpoint,Pizza;Italian
+WAU,New York County,New York,10024,Manhattan,434 Amsterdam Avenue,-73.977614,40.784442,Initial,2026-03-31,2026-04-01,Rat Activity,Upper West Side (Central),Malaysian
+Krave It,New York County,New York,10003,Manhattan,141 2nd Avenue,-73.987535,40.72911,Treatments,2026-03-31,2026-04-02,Bait applied,East Village,Sandwich;Pizza
+The Palace,Kings County,New York,11222,Brooklyn,206 Nassau Avenue,-73.944628,40.725461,Initial,2026-03-31,2026-04-01,Rat Activity,Greenpoint,N/A
+Taco Bell,Kings County,New York,11222,Brooklyn,208 McGuinness Boulevard,-73.950636,40.729808,Compliance,2026-03-31,2026-04-01,Rat Activity,Greenpoint,Tex-Mex
+Hui Restaurant & Bar,New York County,New York,10021,Manhattan,314 East 70th Street,-73.958463,40.767013,Compliance,2026-03-31,2026-04-01,Failed for Rat Act,Upper East Side-Lenox Hill-Roosevelt Island,Chinese
+Asian 83,New York County,New York,10035,Manhattan,1605 2nd Avenue,-73.953169,40.776203,Initial,2026-04-01,2026-04-02,Failed for Other R,Upper East Side-Yorkville,Chinese
+Blue mountain heights cafe and bar,New York County,New York,10032,Manhattan,499 West 158th Street,-73.941173,40.833452,Treatments,2026-04-01,2026-04-06,Bait applied,Washington Heights (South),American;Mexican
+Da Andrea,New York County,New York,10011,Manhattan,160 8th Avenue,-74.000609,40.742072,Treatments,2026-04-01,2026-04-02,Bait applied,Chelsea-Hudson Yards,Italian
+IHOP,New York County,New York,10033,Manhattan,4168 Broadway,-73.937823,40.847519,Treatments,2026-04-01,2026-04-08,Bait applied,Washington Heights (South),Breakfast;Pancake
