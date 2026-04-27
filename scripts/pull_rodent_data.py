@@ -52,7 +52,7 @@ try:
             inspection_date <= '{end_date}' AND
             result != 'Passed'
         """,
-        limit=1000
+        limit=2000
     )
 except Exception as e:
     logger.error(f"Data pull failed: {e}")
