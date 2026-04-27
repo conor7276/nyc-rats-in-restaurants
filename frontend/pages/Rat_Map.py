@@ -19,7 +19,7 @@ def app() -> None:
         )
 
         data = df[
-            ["lat", "lon", "name", "address", "neighborhood", "type", "result", "approved_date"]
+            ["lat", "lon", "name", "address", "neighborhood", "type", "result", "inspection_date"]
         ].values.tolist()
 
         
@@ -51,7 +51,6 @@ def app() -> None:
 
     st.header("NYC Rodent Inspection Map")
         
-    # Temporary fixed data will have to figure out databricks one day
     data_path = Path(__file__).resolve().parent.parent.parent / "data" / "final_data" / "final_rat_data.csv"
 
     df = pd.read_csv(data_path)
