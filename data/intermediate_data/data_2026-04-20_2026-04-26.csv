@@ -1,0 +1,34 @@
+name,county,city,postcode,suburb,address,lon,lat,inspection_type,inspection_date,approved_date,result,neighborhood,type
+Lea,Kings County,New York,11218,Brooklyn,1022 Cortelyou Road,-73.968008,40.639435,Compliance,2026-04-20,2026-04-21,Rat Activity,Flatbush (West)-Ditmas Park-Parkville,Italian;Pizza;Bagel
+La Flor Pizzeria,Kings County,New York,11238,Brooklyn,766 Classon Avenue,-73.96064,40.673708,Initial,2026-04-20,2026-04-21,Rat Activity,Prospect Heights,Pizza
+Fat Choy,New York County,New York,10002,Manhattan,250 Broome Street,-73.989762,40.718093,Compliance,2026-04-20,2026-04-21,Rat Activity,Lower East Side,Asian
+Lone Wolf,Kings County,New York,11221,Brooklyn,1089 Broadway,-73.93051,40.694457,Initial,2026-04-20,2026-04-24,Rat Activity,Bushwick (West),N/A
+Tipsy,Kings County,New York,11205,Brooklyn,584 Myrtle Avenue,-73.961238,40.693875,Compliance,2026-04-20,2026-04-21,Rat Activity,Clinton Hill,Alcohol
+Dunkin',Bronx County,New York,10458,The Bronx,609 East Fordham Road,-73.884732,40.858671,Initial,2026-04-20,2026-04-21,Failed for Other R,Belmont,Donut;Coffee_Shop
+Panchita's Place,Kings County,New York,11215,Brooklyn,709 5th Avenue,-73.993963,40.660623,Treatments,2026-04-20,2026-04-20,Bait applied,Sunset Park (West),Mexican
+Brothers Pizza,Kings County,New York,11232,Brooklyn,647 4th Avenue,-73.994643,40.663411,Compliance,2026-04-20,2026-04-21,Failed for Rat Act,Sunset Park (West),Pizza
+Kolachi,New York County,New York,10009,Manhattan,130 1st Avenue,-73.985254,40.727357,Treatments,2026-04-20,2026-04-22,Bait applied,East Village,Pakistani
+Utshob Restaurant,New York County,New York,10009,Manhattan,130 1st Avenue,-73.985233,40.727387,Treatments,2026-04-20,2026-04-22,Bait applied,East Village,Indian
+Wingstop,New York County,New York,10031,Manhattan,3440 Broadway,-73.952262,40.823257,Initial,2026-04-20,2026-04-21,Rat Activity,Hamilton Heights-Sugar Hill,Wings
+Dunkin',New York County,New York,10025,Manhattan,2800 Broadway,-73.96727,40.802916,Treatments,2026-04-20,2026-04-23,Bait applied,Upper West Side-Manhattan Valley,Donut;Coffee_Shop
+Vinateria,New York County,New York,10026,Manhattan,2211 Frederick Douglass Boulevard,-73.954055,40.806538,Treatments,2026-04-20,2026-04-21,Bait applied,Harlem (South),Italian;Spanish
+Food King,New York County,New York,10002,Manhattan,56 Market Street,-73.994084,40.711728,Treatments,2026-04-20,2026-04-22,Bait applied,Chinatown-Two Bridges,Chinese
+Moishe's Kosher Bakery,New York County,New York,10002,Manhattan,504 Grand Street,-73.982312,40.714773,Treatments,2026-04-20,2026-04-22,Bait applied,Lower East Side,Bakery
+Grand Kosher Cafe,New York County,New York,10002,Manhattan,504 Grand Street,-73.982132,40.714758,Treatments,2026-04-20,2026-04-22,Bait applied,Lower East Side,N/A
+Vaqueros,Kings County,New York,11237,Brooklyn,1541 Myrtle Avenue,-73.913748,40.699451,Initial,2026-04-20,2026-04-23,Rat Activity,Bushwick (West),Mexican
+Onion Tree Pizza Co,New York County,New York,10009,Manhattan,214 1st Avenue,-73.982987,40.730498,Stoppage,2026-04-21,2026-04-21,Stoppage done,East Village,Pizza
+New York Grill and Deli,New York County,New York,10009,Manhattan,191 Avenue A,-73.981531,40.72905,Stoppage,2026-04-21,2026-04-21,Stoppage done,East Village,N/A
+Vazacs Horseshoe Bar,New York County,New York,10009,Manhattan,108 Avenue B,-73.981392,40.725013,Stoppage,2026-04-21,2026-04-21,Stoppage done,East Village,N/A
+Domino's,Queens County,New York,11433,Queens,109-50 Merrick Boulevard,-73.783279,40.696039,Treatments,2026-04-21,2026-04-23,Bait applied,South Jamaica,Pizza
+Okinawa,Kings County,New York,11220,Brooklyn,276 Bay Ridge Avenue,-74.026497,40.635734,Treatments,2026-04-21,2026-04-21,Monitoring visit,Bay Ridge,Japanese;Sushi
+International Wings Factory,New York County,New York,10128,Manhattan,1762 1st Avenue,-73.94668,40.780257,Initial,2026-04-21,2026-04-23,Failed for Rat Act,Upper East Side-Yorkville,Chicken
+Kennedy Fried Chicken & Pizza,New York County,New York,10037,Manhattan,2252 5th Avenue,-73.936772,40.814254,Compliance,2026-04-21,2026-04-23,Rat Activity,Harlem (North),N/A
+Dallas BBQ,Queens County,New York,11432,Queens,89-14 Parsons Boulevard,-73.801779,40.70553,Treatments,2026-04-22,2026-04-23,Bait applied,Jamaica,Barbecue
+Blue mountain heights cafe and bar,New York County,New York,10032,Manhattan,499 West 158th Street,-73.941173,40.833452,Treatments,2026-04-22,2026-04-23,Bait applied,Washington Heights (South),American;Mexican
+Gyro King,Kings County,New York,11230,Brooklyn,984 Coney Island Avenue,-73.967325,40.633455,Compliance,2026-04-22,2026-04-23,Rat Activity,Flatbush (West)-Ditmas Park-Parkville,Greek
+La Flor Pizzeria,Kings County,New York,11238,Brooklyn,766 Classon Avenue,-73.96064,40.673708,Stoppage,2026-04-22,2026-04-22,Stoppage done,Prospect Heights,Pizza
+Chipotle,New York County,New York,10014,Manhattan,200 Varick Street,-74.005159,40.728198,Treatments,2026-04-22,2026-04-23,Bait applied,SoHo-Little Italy-Hudson Square,Mexican
+Chopt,New York County,New York,10014,Manhattan,200 Varick Street,-74.005159,40.728146,Treatments,2026-04-22,2026-04-23,Bait applied,SoHo-Little Italy-Hudson Square,Salad
+Tipsy,Kings County,New York,11205,Brooklyn,584 Myrtle Avenue,-73.961238,40.693875,Stoppage,2026-04-22,2026-04-22,Stoppage done,Clinton Hill,Alcohol
+Umi Sushi & Seafood Buffet,Kings County,New York,11235,Brooklyn,3839 Nostrand Avenue,-73.939525,40.590429,Treatments,2026-04-22,2026-04-22,Bait applied,Sheepshead Bay-Manhattan Beach-Gerritsen Beach,Japanese
+Fred's,New York County,New York,10024,Manhattan,476 Amsterdam Avenue,-73.976719,40.785685,Treatments,2026-04-22,2026-04-23,Bait applied,Upper West Side (Central),N/A
