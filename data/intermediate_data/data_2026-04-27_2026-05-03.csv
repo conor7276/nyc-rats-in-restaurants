@@ -1,0 +1,23 @@
+name,county,city,postcode,suburb,address,lon,lat,inspection_type,inspection_date,approved_date,result,neighborhood,type
+Good Chinese,Kings County,New York,11207,Brooklyn,663 Knickerbocker Avenue,-73.911648,40.695168,Initial,2026-04-27,2026-04-28,Rat Activity,Bushwick (East),Chinese
+Soul Food Caterers,Kings County,New York,11216,Brooklyn,88 Kingston Avenue,-73.941658,40.676598,Initial,2026-04-27,2026-04-28,Failed for Other Reason,Crown Heights (North),Soul_Food
+Panchita's Place,Kings County,New York,11215,Brooklyn,709 5th Avenue,-73.993963,40.660623,Treatments,2026-04-27,2026-04-27,Bait applied,Sunset Park (West),Mexican
+Bar Cornelia,Kings County,New York,11221,Brooklyn,523 Evergreen Avenue,-73.915476,40.690437,Initial,2026-04-27,2026-04-29,Rat Activity,Bushwick (East),N/A
+Electric Burrito,New York County,New York,10003,Manhattan,81 Saint Marks Place,-73.985525,40.727825,Initial,2026-04-27,2026-04-29,Rat Activity,East Village,Mexican
+Little Kirin,New York County,New York,10003,Manhattan,81 Saint Marks Place,-73.985483,40.727807,Initial,2026-04-27,2026-04-29,Rat Activity,East Village,Asian;Sandwich
+Waterfront Wines & Spirits,Kings County,New York,11201,Brooklyn,360 Furman Street,-73.999426,40.693829,Treatments,2026-04-27,2026-04-28,Bait applied,Brooklyn Heights,Alcohol
+Mombar,Queens County,New York,11103,Queens,25-22 Steinway Street,-73.91233,40.767503,Compliance,2026-04-27,2026-04-30,Failed for Rat Activity and Other Reason,Astoria (East)-Woodside (North),Egyptian
+La Pizza Italia,New York County,New York,10009,Manhattan,201 Avenue A,-73.981259,40.729438,Compliance,2026-04-28,2026-05-01,Rat Activity,East Village,Pizza
+Yankee Pizza,New York County,New York,10009,Manhattan,181 Avenue C,-73.977157,40.726707,Compliance,2026-04-28,2026-04-29,Rat Activity,East Village,Pizza
+Leland,Kings County,New York,11238,Brooklyn,755 Dean Street,-73.965194,40.67972,Initial,2026-04-28,2026-05-01,Rat Activity,Prospect Heights,American
+Alison,New York County,New York,10029,Manhattan,1651 Lexington Avenue,-73.947027,40.790985,Treatments,2026-04-28,2026-04-29,Bait applied,East Harlem (South),American
+Caridad Restaurant,New York County,New York,10033,Manhattan,554 West 181st Street,-73.932928,40.848843,Treatments,2026-04-28,2026-04-29,Bait applied,Washington Heights (North),N/A
+Jose Luis,New York County,New York,10013,Manhattan,115 Mulberry Street,-73.998385,40.717672,Compliance,2026-04-29,2026-05-01,Rat Activity,SoHo-Little Italy-Hudson Square,Italian
+Krave It,New York County,New York,10003,Manhattan,141 2nd Avenue,-73.987535,40.72911,Compliance,2026-04-30,2026-05-01,Rat Activity,East Village,Sandwich;Pizza
+New Golden Empire,New York County,New York,10031,Manhattan,757 Saint Nicholas Avenue,-73.943478,40.826129,Treatments,2026-04-30,2026-04-30,Bait applied,Hamilton Heights-Sugar Hill,Chinese
+Nourish,Kings County,New York,11238,Brooklyn,637A Vanderbilt Avenue,-73.968552,40.677956,Initial,2026-04-30,2026-05-01,Rat Activity,Prospect Heights,Thai
+Asian Taste,New York County,New York,10009,Manhattan,199 East 3rd Street,-73.983023,40.722805,Treatments,2026-04-30,2026-05-01,Bait applied,East Village,Chinese
+Thursday,New York County,New York,10009,Manhattan,424 East 9th Street,-73.983771,40.727608,Compliance,2026-04-30,2026-05-01,Rat Activity,East Village,Korean;International
+Indian Tanpura,New York County,New York,10024,Manhattan,564 Amsterdam Avenue,-73.97456,40.788618,Initial,2026-04-30,2026-05-01,Rat Activity,Upper West Side (Central),Indian
+Serafina Ludlow,New York County,New York,10002,Manhattan,98 Rivington Street,-73.988446,40.720194,Treatments,2026-04-30,2026-05-01,Bait applied,Lower East Side,Italian
+Harlem Breakfast Club,New York County,New York,10027,Manhattan,2167 Adam Clayton Powell Jr. Boulevard,-73.946404,40.811133,Compliance,2026-04-30,2026-05-01,Rat Activity,Harlem (North),N/A
