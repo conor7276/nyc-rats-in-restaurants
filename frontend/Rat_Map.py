@@ -10,7 +10,11 @@ from pathlib import Path
 
 def app() -> None:
 
-    # @st.cache_resource
+    st.set_page_config(
+        page_title="Rats in Restaurants",
+        page_icon = "🐀"
+    )
+
     def build_map(df):
 
         rat_map = folium.Map(
@@ -51,7 +55,7 @@ def app() -> None:
 
     st.header("NYC Rodent Inspection Map")
         
-    data_path = Path(__file__).resolve().parent.parent.parent / "data" / "final_data" / "final_rat_data.csv"
+    data_path = Path(__file__).resolve().parent.parent / "data" / "final_data" / "final_rat_data.csv"
 
     df = pd.read_csv(data_path)
 
@@ -60,7 +64,13 @@ def app() -> None:
     # Build Map
     rat_map = build_map(df)
 
-    st.write("Below is a map of 500 most recent restaurants that failed rat inspections within the latest dates of day that we have available.")
+    st.write("""   
+        NYC is known for its food worldwide, it is also known for its abundance of rats. 
+        This dashboard shows what restaurants have recently failed rodent inspections using NYC 
+        Open Data's Rodent Inspection dataset that can be viewed below combined with Geoapify's Places API
+        to tell which addreses are restaurants or not. Below is a map of the most recent restaurants
+        that failed rat inspections within the latest days we have available.     
+            """)
 
 
     st_folium(
@@ -79,6 +89,12 @@ def app() -> None:
         Locations sourced through [Geoapify](https://www.geoapify.com/maps-api/)
 
         Mapping software [Leaflet](https://leafletjs.com/)
+                 
+        **Don't forget to check out my other projects!**
+            
+        [Github](https://github.com/conor7276)
+            
+        [Linkedin](https://www.linkedin.com/in/conor7276)
 
         """)
 
