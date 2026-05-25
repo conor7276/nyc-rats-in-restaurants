@@ -1,0 +1,20 @@
+name,county,city,postcode,suburb,address,lon,lat,inspection_type,inspection_date,approved_date,result,neighborhood,type
+99¢ Pizza,New York County,New York,10002,Manhattan,156 Delancey Street,-73.986015,40.71812,Compliance,2026-05-18,2026-05-19,Failed for Rat Activity,Lower East Side,Pizza
+Red Lobster,New York County,New York,10027,Manhattan,261 West 125th Street,-73.950439,40.810057,Stoppage,2026-05-18,2026-05-19,Stoppage done,Harlem (South),Seafood
+Alison,New York County,New York,10029,Manhattan,1651 Lexington Avenue,-73.947027,40.790985,Treatments,2026-05-18,2026-05-22,Bait applied,East Harlem (South),American
+IHOP,New York County,New York,10033,Manhattan,4168 Broadway,-73.937823,40.847519,Compliance,2026-05-18,2026-05-19,Failed for Rat Activity,Washington Heights (South),Breakfast;Pancake
+Beijing House,Kings County,New York,11207,Brooklyn,553 Wilson Avenue,-73.909334,40.691534,Initial,2026-05-19,2026-05-20,Failed for Rat Activity,Bushwick (East),Chinese
+Blue mountain heights cafe and bar,New York County,New York,10032,Manhattan,499 West 158th Street,-73.941173,40.833452,Treatments,2026-05-19,2026-05-21,Bait applied,Washington Heights (South),American;Mexican
+El Nuevo Caribeno,New York County,New York,10029,Manhattan,1675 Lexington Avenue,-73.946571,40.791617,Initial,2026-05-19,2026-05-21,Failed for Rat Activity,East Harlem (South),Caribbean
+The Last Resort,New York County,New York,10009,Manhattan,432 East 13th Street,-73.981872,40.730028,Compliance,2026-05-19,2026-05-20,Failed for Rat Activity,East Village,N/A
+Popeyes,New York County,New York,10029,Manhattan,1908 3rd Avenue,-73.945192,40.791188,Initial,2026-05-19,2026-05-20,Failed for Rat Activity,East Harlem (South),Chicken
+Tick Tock Diner,New York County,New York,10001,Manhattan,481 8th Avenue,-73.99355,40.752444,Compliance,2026-05-19,2026-05-20,Failed for Rat Activity,Chelsea-Hudson Yards,Diner
+La Casa del Panuozzo,Kings County,New York,11215,Brooklyn,301 7th Avenue,-73.980741,40.667678,Initial,2026-05-19,2026-05-20,Failed for Rat Activity,Park Slope,Pizza
+Pret A Manger,New York County,New York,10011,Manhattan,655 6th Avenue,-73.994197,40.741345,Compliance,2026-05-19,2026-05-21,Failed for Other Reason,Chelsea-Hudson Yards,Sandwich
+Bricklyn Pizza,Kings County,New York,11237,Brooklyn,1240 Hancock Street,-73.910861,40.692392,Compliance,2026-05-20,2026-05-21,Failed for Rat Activity,Bushwick (East),Pizza
+Blind Tiger,New York County,New York,10014,Manhattan,281 Bleecker Street,-74.003244,40.731856,Stoppage,2026-05-20,2026-05-20,Stoppage done,West Village,Pub
+New Golden Empire,New York County,New York,10031,Manhattan,757 Saint Nicholas Avenue,-73.943478,40.826129,Treatments,2026-05-21,2026-05-22,Bait applied,Hamilton Heights-Sugar Hill,Chinese
+New Golden Empire,New York County,New York,10031,Manhattan,757 Saint Nicholas Avenue,-73.943478,40.826129,Treatments,2026-05-21,2026-05-22,Bait applied,Hamilton Heights-Sugar Hill,Chinese
+El Pollo Real,Queens County,New York,11378,Queens,69-51 Grand Avenue,-73.893875,40.72696,Initial,2026-05-21,2026-05-22,Failed for Rat Activity and Other Reason,Maspeth,Chicken
+La Isla Restaurant,New York County,New York,10029,Manhattan,1883 3rd Avenue,-73.945384,40.790289,Compliance,2026-05-21,2026-05-22,Failed for Rat Activity,East Harlem (South),Latin_American
+The Food Sermon,Kings County,New York,11225,Brooklyn,355 Rogers Avenue,-73.953624,40.664655,Compliance,2026-05-21,2026-05-22,Failed for Other Reason,Crown Heights (South),Caribbean
