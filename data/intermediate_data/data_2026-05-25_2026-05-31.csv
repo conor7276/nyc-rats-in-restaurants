@@ -1,0 +1,32 @@
+name,county,city,postcode,suburb,address,lon,lat,inspection_type,inspection_date,approved_date,result,neighborhood,type
+El Castillo,Kings County,New York,11207,Brooklyn,189 Wilson Avenue,-73.923248,40.699451,Initial,2026-05-26,2026-05-29,Failed for Rat Activity,Bushwick (West),Mexican
+Astro Restaurant,New York County,New York,10019,Manhattan,1361 6th Avenue,-73.978243,40.763209,Initial,2026-05-26,2026-05-27,Failed for Rat Activity and Other Reason,Midtown-Times Square,Greek;Diner
+Sarabeth's,New York County,New York,10024,Manhattan,423 Amsterdam Avenue,-73.977515,40.783921,Treatments,2026-05-26,2026-05-27,Bait applied,Upper West Side (Central),N/A
+Meli's,New York County,New York,10029,Manhattan,159 East 103rd Street,-73.947076,40.790167,Compliance,2026-05-26,2026-05-28,Failed for Rat Activity and Other Reason,East Harlem (South),N/A
+Empanada Mama,New York County,New York,10019,Manhattan,765 9th Avenue,-73.988517,40.764416,Initial,2026-05-26,2026-05-27,Failed for Rat Activity,Hell's Kitchen,Colombian
+WAU,New York County,New York,10024,Manhattan,434 Amsterdam Avenue,-73.977614,40.784442,Treatments,2026-05-26,2026-05-27,Bait applied,Upper West Side (Central),Malaysian
+Harlem Shake,New York County,New York,10027,Manhattan,100 West 124th Street,-73.946352,40.807112,Treatments,2026-05-26,2026-05-29,Bait applied,Harlem (South),Burger
+Coma Bueno,New York County,New York,10025,Manhattan,944 Columbus Avenue,-73.962832,40.799604,Compliance,2026-05-26,2026-05-28,Failed for Rat Activity,Upper West Side-Manhattan Valley,Dominican
+Plue,New York County,New York,10029,Manhattan,1575 Lexington Avenue,-73.948548,40.788919,Initial,2026-05-26,2026-05-28,Failed for Rat Activity,East Harlem (South),Thai
+ThisBowl,New York County,New York,10012,Manhattan,65 Bleecker Street,-73.995058,40.726316,Initial,2026-05-26,2026-05-28,Failed for Other Reason,Greenwich Village,Salad
+New Golden Empire,New York County,New York,10031,Manhattan,757 Saint Nicholas Avenue,-73.943478,40.826129,Treatments,2026-05-26,2026-05-28,Bait applied,Hamilton Heights-Sugar Hill,Chinese
+Ootoya,New York County,New York,10036,Manhattan,141 West 41st Street,-73.985979,40.75488,Compliance,2026-05-26,2026-05-29,Failed for Rat Activity and Other Reason,Midtown-Times Square,N/A
+Chirping Chicken,New York County,New York,10025,Manhattan,932 Columbus Avenue,-73.963211,40.799084,Compliance,2026-05-26,2026-05-28,Failed for Rat Activity and Other Reason,Upper West Side-Manhattan Valley,Chicken
+Sushi & Co,New York County,New York,10018,Manhattan,980 6th Avenue,-73.986539,40.751139,Initial,2026-05-26,2026-05-27,Failed for Rat Activity,Midtown-Times Square,Sushi
+Sanmiwago,New York County,New York,10018,Manhattan,980 6th Avenue,-73.986514,40.751171,Initial,2026-05-26,2026-05-27,Failed for Rat Activity,Midtown-Times Square,Taiwanese
+Roma Pizza,New York County,New York,10018,Manhattan,980 6th Avenue,-73.986491,40.751203,Initial,2026-05-26,2026-05-27,Failed for Rat Activity,Midtown-Times Square,Pizza
+A-1 Pizza,New York County,New York,10002,Manhattan,505 Grand Street,-73.982348,40.714546,Initial,2026-05-26,2026-05-27,Failed for Rat Activity,Lower East Side,Pizza
+Casa Maya,New York County,New York,10029,Manhattan,2026 2nd Avenue,-73.943089,40.789414,Initial,2026-05-26,2026-05-28,Failed for Rat Activity,East Harlem (South),Mexican
+The Tang,New York County,New York,10025,Manhattan,920 Amsterdam Avenue,-73.966301,40.799957,Treatments,2026-05-27,2026-05-28,Bait applied,Upper West Side-Manhattan Valley,Chinese
+Good Chinese,Kings County,New York,11207,Brooklyn,663 Knickerbocker Avenue,-73.911648,40.695168,Compliance,2026-05-27,2026-05-28,Failed for Rat Activity,Bushwick (East),Chinese
+Aunt Jenny,New York County,New York,10025,Manhattan,2794 Broadway,-73.967371,40.802714,Treatments,2026-05-27,2026-05-29,Bait applied,Upper West Side-Manhattan Valley,Chinese
+Dunkin',New York County,New York,10011,Manhattan,101 West 23rd Street,-73.99314,40.743227,Initial,2026-05-27,2026-05-29,Failed for Other Reason,Chelsea-Hudson Yards,Donut;Coffee_Shop
+Little Caesars,Bronx County,New York,10458,The Bronx,2537 Decatur Avenue,-73.891725,40.862129,Compliance,2026-05-27,2026-05-29,Failed for Rat Activity,University Heights (North)-Fordham,Pizza
+Lone Wolf,Kings County,New York,11221,Brooklyn,1089 Broadway,-73.93051,40.694457,Compliance,2026-05-27,2026-05-28,Failed for Rat Activity,Bushwick (West),N/A
+Adam's Market Place,New York County,New York,10011,Manhattan,197 8th Avenue,-73.999958,40.743598,Initial,2026-05-28,2026-05-29,Failed for Rat Activity and Other Reason,Chelsea-Hudson Yards,Sandwich
+Golden Wok,New York County,New York,10011,Manhattan,209 8th Avenue,-73.99975,40.743909,Initial,2026-05-28,2026-05-29,Failed for Other Reason,Chelsea-Hudson Yards,Chinese
+Onion Tree Pizza Co,New York County,New York,10009,Manhattan,214 1st Avenue,-73.982987,40.730498,Compliance,2026-05-28,2026-05-29,Failed for Rat Activity,East Village,Pizza
+Dil e Punjab Deli,New York County,New York,10011,Manhattan,170 9th Avenue,-74.002404,40.744642,Initial,2026-05-28,2026-05-29,Failed for Rat Activity,Chelsea-Hudson Yards,Indian
+Delice Sarrasin,New York County,New York,10014,Manhattan,18 Christopher Street,-74.000599,40.73385,Compliance,2026-05-28,2026-05-29,Failed for Rat Activity,West Village,N/A
+New Golden Empire,New York County,New York,10031,Manhattan,757 Saint Nicholas Avenue,-73.943478,40.826129,Treatments,2026-05-28,2026-05-29,Bait applied,Hamilton Heights-Sugar Hill,Chinese
+Toshkent Hot Dog,Kings County,New York,11235,Brooklyn,201 Brighton 1st Road,-73.966627,40.574976,Treatments,2026-05-29,2026-05-29,Bait applied,Brighton Beach,Uzbek;Hot_Dog
