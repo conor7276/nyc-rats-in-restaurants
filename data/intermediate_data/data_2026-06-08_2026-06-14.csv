@@ -1,0 +1,6 @@
+name,county,city,postcode,suburb,address,lon,lat,inspection_type,inspection_date,approved_date,result,neighborhood,type
+Jin Mei Dumpling,New York County,New York,10002,Manhattan,25 Henry Street,-73.996581,40.71298,Initial,2026-06-08,2026-06-09,Failed for Rat Activity,Chinatown-Two Bridges,Chinese
+The Spotted Owl,New York County,New York,10009,Manhattan,211 Avenue A,-73.980935,40.729879,Compliance,2026-06-08,2026-06-09,Failed for Rat Activity,East Village,N/A
+Drop-Off Service,New York County,New York,10009,Manhattan,211 Avenue A,-73.980875,40.729957,Compliance,2026-06-08,2026-06-09,Failed for Rat Activity,East Village,N/A
+Okinawa,Kings County,New York,11220,Brooklyn,276 Bay Ridge Avenue,-74.026497,40.635734,Compliance,2026-06-08,2026-06-09,Failed for Rat Activity and Other Reason,Bay Ridge,Japanese;Sushi
+Rice & Beans Restaurant,Kings County,New York,11215,Brooklyn,234 4th Avenue,-73.98357,40.677023,Treatments,2026-06-08,2026-06-08,Bait applied,Carroll Gardens-Cobble Hill-Gowanus-Red Hook,Latin_American
