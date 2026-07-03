@@ -167,7 +167,7 @@ geo_rest_df['address_line2'] = geo_rest_df['address_line2'].apply(lambda x : x.s
 # Some runs containted no commercial data.
 try:
     geo_rest_df = all_restaurants_df[selected_columns]
-except KeyError:
+except Exception as e:
     logger.warning("No commercial data available.")
     geo_rest_df = all_restaurants_df[selected_columns.remove('commercial')]
     geo_rest_df['commercial'] = pd.NA
