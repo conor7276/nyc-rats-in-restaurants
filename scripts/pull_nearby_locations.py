@@ -69,10 +69,8 @@ df['inspection_date'] = df['inspection_date'].apply(lambda x : pd.Timestamp(year
 df = df[
     ['inspection_type',
      'job_id',
-     'job_progress',
      'house_number',
      'street_name',
-     'address',
      'zip_code',
      'latitude',
      'longitude',
@@ -127,10 +125,8 @@ for _ , row in df.iterrows():
 
         local_restaurant_df['inspection_type_interdata'] = row['inspection_type_interdata']
         local_restaurant_df['job_id_interdata'] = row['job_id_interdata']
-        local_restaurant_df['job_progress_interdata'] = row['job_progress_interdata']
         local_restaurant_df['house_number_interdata'] = row['house_number_interdata']
         local_restaurant_df['street_name_interdata'] = row['street_name_interdata']
-        local_restaurant_df['address_interdata'] = row['address_interdata']
         local_restaurant_df['zip_code_interdata'] = row['zip_code_interdata']
         local_restaurant_df['latitude_interdata'] = row['latitude_interdata']
         local_restaurant_df['longitude_interdata'] = row['longitude_interdata']
