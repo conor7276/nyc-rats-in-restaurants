@@ -109,7 +109,8 @@ max_locations_returned = "5"
 all_restaurants_df = pd.DataFrame()
 
 # Get each coordinates from each row
-df = df.head(20)
+df = df.head(10)
+print(df.head())
 for _ , row in df.iterrows():
 
     time.sleep(0.5)
@@ -141,7 +142,7 @@ for _ , row in df.iterrows():
         local_restaurant_df['job_id_interdata'] = row['job_id_interdata']
         local_restaurant_df['house_number_interdata'] = row['house_number_interdata']
         local_restaurant_df['street_name_interdata'] = row['street_name_interdata']
-        local_restaurant_df['address_interdata'] = row['address_interdata']
+        local_restaurant_df['address_interdata'] = row['house_number_interdata'] + ' ' + row['street_name_interdata']
         local_restaurant_df['zip_code_interdata'] = row['zip_code_interdata']
         local_restaurant_df['latitude_interdata'] = row['latitude_interdata']
         local_restaurant_df['longitude_interdata'] = row['longitude_interdata']
@@ -152,10 +153,11 @@ for _ , row in df.iterrows():
         all_restaurants_df = pd.concat([all_restaurants_df, local_restaurant_df])
     except Exception as e:
         # Move on if no data is found
+        print(e)
         continue
 
 logger.info("API calls completed, beginning data processing.")
-
+print(all_restaurants_df.head())
 if all_restaurants_df.empty:
     # If no data was pulled
     logger.info("No locations were able to be found.")
