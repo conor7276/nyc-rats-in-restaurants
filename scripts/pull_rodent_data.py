@@ -6,27 +6,41 @@ import argparse
 from pandas import DataFrame
 from pathlib import Path
 
+# For local testing
+from dotenv import load_dotenv, dotenv_values
+local_check = load_dotenv("secrets.env")
+
 logging.basicConfig(level=logging.INFO, format='%(message)s')
 logger = logging.getLogger(__name__)
 
 # ------------------ ARGUMENTS ------------------
-parser = argparse.ArgumentParser()
-parser.add_argument("--start-date", required=True)
-parser.add_argument("--end-date", required=True)
-parser.add_argument("--manual-start-date", default = "")
-parser.add_argument("--manual-end-date", default = "")
-parser.add_argument("--dry-run", default="false")
-args = parser.parse_args()
 
-# Differentiate between manual and automated run
-if args.manual_start_date and args.manual_end_date:
-    start_date = datetime.strptime(args.manual_start_date, "%Y-%m-%d").date().isoformat()
-    end_date = datetime.strptime(args.manual_end_date, "%Y-%m-%d").date().isoformat() 
-    logger.info(f"Using manual run dates {start_date} and {end_date}")
+# Differentiate between local and workflow runs.
+if local_check == True:
+    local_creds = dotenv_values("secrets.env")
+    start_date = local_creds['local_start_date']
+    end_date = local_creds['local_end_date']
+    logger.info(f"Using local run dates {start_date} and {end_date}")
+
 else:
-    start_date = datetime.strptime(args.start_date, "%Y-%m-%d").date().isoformat()
-    end_date = datetime.strptime(args.end_date, "%Y-%m-%d").date().isoformat()
-    logger.info(f"Using auto run dates {start_date} and {end_date}")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--start-date", required=True)
+    parser.add_argument("--end-date", required=True)
+    parser.add_argument("--manual-start-date", default = "")
+    parser.add_argument("--manual-end-date", default = "")
+    parser.add_argument("--dry-run", default="false")
+    args = parser.parse_args()
+
+    # Differentiate between manual and automated run
+    if args.manual_start_date and args.manual_end_date:
+        start_date = datetime.strptime(args.manual_start_date, "%Y-%m-%d").date().isoformat()
+        end_date = datetime.strptime(args.manual_end_date, "%Y-%m-%d").date().isoformat() 
+        logger.info(f"Using manual run dates {start_date} and {end_date}")
+    else:
+        start_date = datetime.strptime(args.start_date, "%Y-%m-%d").date().isoformat()
+        end_date = datetime.strptime(args.end_date, "%Y-%m-%d").date().isoformat()
+        logger.info(f"Using auto run dates {start_date} and {end_date}")
+
 
 # ------------------ ENV VARS ------------------
 logger.info("Getting environment variables.")

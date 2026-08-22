@@ -11,32 +11,45 @@ import argparse
 import logging
 from datetime import datetime
 
-# Read in environment variables
-parser = argparse.ArgumentParser()
-parser.add_argument("--start-date", required=True)
-parser.add_argument("--end-date", required=True)
-parser.add_argument("--manual-start-date", default = "")
-parser.add_argument("--manual-end-date", default = "")
-parser.add_argument("--dry-run", default="false")
-args = parser.parse_args()
+# For local testing
+local_check = load_dotenv("secrets.env")
 
-geoapify_key = os.getenv('GEOAPIFY_KEY')
+
 
 # Set up logger
 logging.basicConfig(level = logging.INFO, format = '%(message)s')
 logger = logging.getLogger(__name__)
 
 # Resolve environment variables
-# Differentiate between manual and automated run
-logger.info(f"Dates: {args.manual_start_date} {args.manual_end_date}")
-if args.manual_start_date and args.manual_end_date:
-    start_date = datetime.strptime(args.manual_start_date, "%Y-%m-%d").date().isoformat()
-    end_date = datetime.strptime(args.manual_end_date, "%Y-%m-%d").date().isoformat() 
-    logger.info(f"Using manual run dates {start_date} and {end_date}")
-else:
-    start_date = datetime.strptime(args.start_date, "%Y-%m-%d").date().isoformat()
-    end_date = datetime.strptime(args.end_date, "%Y-%m-%d").date().isoformat()
-    logger.info(f"Using auto run dates {start_date} and {end_date}")
+
+if local_check == True: # local_run
+    local_creds = dotenv_values("secrets.env")
+    geoapify_key = local_creds['GEOAPIFY_KEY']
+    start_date = local_creds['local_start_date']
+    end_date = local_creds['local_end_date']
+    logger.info(f"Using local run dates {start_date} and {end_date}")
+    
+else: # Workflow run
+    # Read in environment variables
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--start-date", required=True)
+    parser.add_argument("--end-date", required=True)
+    parser.add_argument("--manual-start-date", default = "")
+    parser.add_argument("--manual-end-date", default = "")
+    parser.add_argument("--dry-run", default="false")
+    args = parser.parse_args()
+
+    geoapify_key = os.getenv('GEOAPIFY_KEY')
+    # Differentiate between manual and automated run
+    logger.info(f"Dates: {args.manual_start_date} {args.manual_end_date}")
+    if args.manual_start_date and args.manual_end_date:
+        start_date = datetime.strptime(args.manual_start_date, "%Y-%m-%d").date().isoformat()
+        end_date = datetime.strptime(args.manual_end_date, "%Y-%m-%d").date().isoformat() 
+        logger.info(f"Using manual run dates {start_date} and {end_date}")
+    else:
+        start_date = datetime.strptime(args.start_date, "%Y-%m-%d").date().isoformat()
+        end_date = datetime.strptime(args.end_date, "%Y-%m-%d").date().isoformat()
+        logger.info(f"Using auto run dates {start_date} and {end_date}")
 
 
 # establish directories
@@ -96,6 +109,7 @@ max_locations_returned = "5"
 all_restaurants_df = pd.DataFrame()
 
 # Get each coordinates from each row
+df = df.head(20)
 for _ , row in df.iterrows():
 
     time.sleep(0.5)
@@ -127,6 +141,7 @@ for _ , row in df.iterrows():
         local_restaurant_df['job_id_interdata'] = row['job_id_interdata']
         local_restaurant_df['house_number_interdata'] = row['house_number_interdata']
         local_restaurant_df['street_name_interdata'] = row['street_name_interdata']
+        local_restaurant_df['address_interdata'] = row['address_interdata']
         local_restaurant_df['zip_code_interdata'] = row['zip_code_interdata']
         local_restaurant_df['latitude_interdata'] = row['latitude_interdata']
         local_restaurant_df['longitude_interdata'] = row['longitude_interdata']
