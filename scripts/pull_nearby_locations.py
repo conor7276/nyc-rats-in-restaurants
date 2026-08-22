@@ -50,7 +50,7 @@ output_filepath = output_dir / f"data_{start_date}_{end_date}.csv"
 logger.info("Data and environmnet variable paths loaded")
 
 # Read data and environment variables
-df = pd.read_csv(input_filepath, parse_dates= ['inspection_date', 'approved_date'])
+df = pd.read_csv(input_filepath, parse_dates= ['inspection_date'])
 
 logger.info("Reading in file.")
 
@@ -64,7 +64,6 @@ df['address'] = df.apply(lambda x : str(x['house_number']) + ' ' + x['street_nam
 
 # Turn dates from timestamp level to date level
 df['inspection_date'] = df['inspection_date'].apply(lambda x : pd.Timestamp(year = x.year, month = x.month, day = x.day))
-df['approved_date'] = df['approved_date'].apply(lambda x : pd.Timestamp(year = x.year, month = x.month, day = x.day))
 
 # Select needed columns
 df = df[
@@ -79,7 +78,6 @@ df = df[
      'longitude',
      'result',
      'inspection_date',
-     'approved_date',
      'nta'
      ]
 ]
@@ -138,7 +136,6 @@ for _ , row in df.iterrows():
         local_restaurant_df['longitude_interdata'] = row['longitude_interdata']
         local_restaurant_df['result_interdata'] = row['result_interdata']
         local_restaurant_df['inspection_date_interdata'] = row['inspection_date_interdata']
-        local_restaurant_df['approved_date_interdata'] = row['approved_date_interdata']
         local_restaurant_df['nta_interdata'] = row['nta_interdata']
         
         all_restaurants_df = pd.concat([all_restaurants_df, local_restaurant_df])
@@ -157,7 +154,7 @@ if all_restaurants_df.empty:
 selected_columns = [
     'name', 'county', 'city', 'postcode', 'district', 'suburb', 'housenumber', 'street', 'address_line2',
     'lon','lat', 'formatted', 'catering', 'commercial','house_number_interdata', 'street_name_interdata', 'address_interdata',
-    'inspection_type_interdata', 'result_interdata', 'inspection_date_interdata', 'approved_date_interdata', 'nta_interdata'
+    'inspection_type_interdata', 'result_interdata', 'inspection_date_interdata', 'nta_interdata'
     ]
 
 # format address
@@ -186,7 +183,7 @@ requested_places_saved = requested_places_saved[requested_places_saved['split_ch
 requested_places_saved[['lon', 'lat']] = requested_places_saved[['lon', 'lat']].round(6)
 selected_columns = [
     'name', 'county', 'city', 'postcode', 'suburb', 'address_line2', 'address_interdata', 'lon', 'lat',
-    'catering', 'commercial', 'inspection_type_interdata', 'inspection_date_interdata', 'approved_date_interdata', 'result_interdata', 'nta_interdata'
+    'catering', 'commercial', 'inspection_type_interdata', 'inspection_date_interdata','result_interdata', 'nta_interdata'
 ]
 requested_places_saved = requested_places_saved[selected_columns]
 requested_places_saved = requested_places_saved.rename(
@@ -194,7 +191,6 @@ requested_places_saved = requested_places_saved.rename(
         'address_line2' : 'address',
         'inspection_type_interdata' : 'inspection_type',
         'inspection_date_interdata' : 'inspection_date',
-        'approved_date_interdata' : 'approved_date',
         'result_interdata' : "result",
         'nta_interdata' : 'neighborhood'}
 )
