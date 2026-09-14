@@ -109,7 +109,6 @@ max_locations_returned = "5"
 all_restaurants_df = pd.DataFrame()
 
 # Get each coordinates from each row
-df = df.head(100)
 print(df.head())
 for _ , row in df.iterrows():
 
