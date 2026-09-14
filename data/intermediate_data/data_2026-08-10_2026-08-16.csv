@@ -1,0 +1,5 @@
+name,county,city,postcode,suburb,address,lon,lat,inspection_type,inspection_date,result,neighborhood,type
+Dunkin',New York County,New York,10009,Manhattan,100 1st Avenue,-73.985941,40.726423,Initial,2026-08-10,Failed for Rat Activity and Other Reason,East Village,Donut;Coffee_Shop
+WAU,New York County,New York,10024,Manhattan,434 Amsterdam Avenue,-73.977614,40.784442,Treatments,2026-08-10,Bait applied,Upper West Side (Central),Malaysian
+Tick Tock Diner,New York County,New York,10001,Manhattan,481 8th Avenue,-73.99355,40.752444,Treatments,2026-08-10,Bait applied,Chelsea-Hudson Yards,Diner
+Miss Lily’s,New York County,New York,10009,Manhattan,109 Avenue A,-73.98375,40.726015,Initial,2026-08-10,Failed for Rat Activity and Other Reason,East Village,Caribbean

@@ -11,32 +11,45 @@ import argparse
 import logging
 from datetime import datetime
 
-# Read in environment variables
-parser = argparse.ArgumentParser()
-parser.add_argument("--start-date", required=True)
-parser.add_argument("--end-date", required=True)
-parser.add_argument("--manual-start-date", default = "")
-parser.add_argument("--manual-end-date", default = "")
-parser.add_argument("--dry-run", default="false")
-args = parser.parse_args()
+# For local testing
+local_check = load_dotenv("secrets.env")
 
-geoapify_key = os.getenv('GEOAPIFY_KEY')
+
 
 # Set up logger
 logging.basicConfig(level = logging.INFO, format = '%(message)s')
 logger = logging.getLogger(__name__)
 
 # Resolve environment variables
-# Differentiate between manual and automated run
-logger.info(f"Dates: {args.manual_start_date} {args.manual_end_date}")
-if args.manual_start_date and args.manual_end_date:
-    start_date = datetime.strptime(args.manual_start_date, "%Y-%m-%d").date().isoformat()
-    end_date = datetime.strptime(args.manual_end_date, "%Y-%m-%d").date().isoformat() 
-    logger.info(f"Using manual run dates {start_date} and {end_date}")
-else:
-    start_date = datetime.strptime(args.start_date, "%Y-%m-%d").date().isoformat()
-    end_date = datetime.strptime(args.end_date, "%Y-%m-%d").date().isoformat()
-    logger.info(f"Using auto run dates {start_date} and {end_date}")
+
+if local_check == True: # local_run
+    local_creds = dotenv_values("secrets.env")
+    geoapify_key = local_creds['GEOAPIFY_KEY']
+    start_date = local_creds['local_start_date']
+    end_date = local_creds['local_end_date']
+    logger.info(f"Using local run dates {start_date} and {end_date}")
+    
+else: # Workflow run
+    # Read in environment variables
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--start-date", required=True)
+    parser.add_argument("--end-date", required=True)
+    parser.add_argument("--manual-start-date", default = "")
+    parser.add_argument("--manual-end-date", default = "")
+    parser.add_argument("--dry-run", default="false")
+    args = parser.parse_args()
+
+    geoapify_key = os.getenv('GEOAPIFY_KEY')
+    # Differentiate between manual and automated run
+    logger.info(f"Dates: {args.manual_start_date} {args.manual_end_date}")
+    if args.manual_start_date and args.manual_end_date:
+        start_date = datetime.strptime(args.manual_start_date, "%Y-%m-%d").date().isoformat()
+        end_date = datetime.strptime(args.manual_end_date, "%Y-%m-%d").date().isoformat() 
+        logger.info(f"Using manual run dates {start_date} and {end_date}")
+    else:
+        start_date = datetime.strptime(args.start_date, "%Y-%m-%d").date().isoformat()
+        end_date = datetime.strptime(args.end_date, "%Y-%m-%d").date().isoformat()
+        logger.info(f"Using auto run dates {start_date} and {end_date}")
 
 
 # establish directories
@@ -50,7 +63,7 @@ output_filepath = output_dir / f"data_{start_date}_{end_date}.csv"
 logger.info("Data and environmnet variable paths loaded")
 
 # Read data and environment variables
-df = pd.read_csv(input_filepath, parse_dates= ['inspection_date', 'approved_date'])
+df = pd.read_csv(input_filepath, parse_dates= ['inspection_date'])
 
 logger.info("Reading in file.")
 
@@ -64,22 +77,18 @@ df['address'] = df.apply(lambda x : str(x['house_number']) + ' ' + x['street_nam
 
 # Turn dates from timestamp level to date level
 df['inspection_date'] = df['inspection_date'].apply(lambda x : pd.Timestamp(year = x.year, month = x.month, day = x.day))
-df['approved_date'] = df['approved_date'].apply(lambda x : pd.Timestamp(year = x.year, month = x.month, day = x.day))
 
 # Select needed columns
 df = df[
     ['inspection_type',
      'job_id',
-     'job_progress',
      'house_number',
      'street_name',
-     'address',
      'zip_code',
      'latitude',
      'longitude',
      'result',
      'inspection_date',
-     'approved_date',
      'nta'
      ]
 ]
@@ -100,6 +109,7 @@ max_locations_returned = "5"
 all_restaurants_df = pd.DataFrame()
 
 # Get each coordinates from each row
+print(df.head())
 for _ , row in df.iterrows():
 
     time.sleep(0.5)
@@ -129,25 +139,24 @@ for _ , row in df.iterrows():
 
         local_restaurant_df['inspection_type_interdata'] = row['inspection_type_interdata']
         local_restaurant_df['job_id_interdata'] = row['job_id_interdata']
-        local_restaurant_df['job_progress_interdata'] = row['job_progress_interdata']
         local_restaurant_df['house_number_interdata'] = row['house_number_interdata']
         local_restaurant_df['street_name_interdata'] = row['street_name_interdata']
-        local_restaurant_df['address_interdata'] = row['address_interdata']
+        local_restaurant_df['address_interdata'] = row['house_number_interdata'] + ' ' + row['street_name_interdata']
         local_restaurant_df['zip_code_interdata'] = row['zip_code_interdata']
         local_restaurant_df['latitude_interdata'] = row['latitude_interdata']
         local_restaurant_df['longitude_interdata'] = row['longitude_interdata']
         local_restaurant_df['result_interdata'] = row['result_interdata']
         local_restaurant_df['inspection_date_interdata'] = row['inspection_date_interdata']
-        local_restaurant_df['approved_date_interdata'] = row['approved_date_interdata']
         local_restaurant_df['nta_interdata'] = row['nta_interdata']
         
         all_restaurants_df = pd.concat([all_restaurants_df, local_restaurant_df])
     except Exception as e:
         # Move on if no data is found
+        print(e)
         continue
 
 logger.info("API calls completed, beginning data processing.")
-
+print(all_restaurants_df.head())
 if all_restaurants_df.empty:
     # If no data was pulled
     logger.info("No locations were able to be found.")
@@ -157,7 +166,7 @@ if all_restaurants_df.empty:
 selected_columns = [
     'name', 'county', 'city', 'postcode', 'district', 'suburb', 'housenumber', 'street', 'address_line2',
     'lon','lat', 'formatted', 'catering', 'commercial','house_number_interdata', 'street_name_interdata', 'address_interdata',
-    'inspection_type_interdata', 'result_interdata', 'inspection_date_interdata', 'approved_date_interdata', 'nta_interdata'
+    'inspection_type_interdata', 'result_interdata', 'inspection_date_interdata', 'nta_interdata'
     ]
 
 # format address
@@ -186,7 +195,7 @@ requested_places_saved = requested_places_saved[requested_places_saved['split_ch
 requested_places_saved[['lon', 'lat']] = requested_places_saved[['lon', 'lat']].round(6)
 selected_columns = [
     'name', 'county', 'city', 'postcode', 'suburb', 'address_line2', 'address_interdata', 'lon', 'lat',
-    'catering', 'commercial', 'inspection_type_interdata', 'inspection_date_interdata', 'approved_date_interdata', 'result_interdata', 'nta_interdata'
+    'catering', 'commercial', 'inspection_type_interdata', 'inspection_date_interdata','result_interdata', 'nta_interdata'
 ]
 requested_places_saved = requested_places_saved[selected_columns]
 requested_places_saved = requested_places_saved.rename(
@@ -194,7 +203,6 @@ requested_places_saved = requested_places_saved.rename(
         'address_line2' : 'address',
         'inspection_type_interdata' : 'inspection_type',
         'inspection_date_interdata' : 'inspection_date',
-        'approved_date_interdata' : 'approved_date',
         'result_interdata' : "result",
         'nta_interdata' : 'neighborhood'}
 )
