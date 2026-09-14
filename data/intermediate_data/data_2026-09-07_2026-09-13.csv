@@ -1,0 +1,25 @@
+name,county,city,postcode,suburb,address,lon,lat,inspection_type,inspection_date,result,neighborhood,type
+New Golden Empire,New York County,New York,10031,Manhattan,757 Saint Nicholas Avenue,-73.943478,40.826129,Treatments,2026-09-08,Bait applied,Hamilton Heights-Sugar Hill,Chinese
+New Golden Empire,New York County,New York,10031,Manhattan,757 Saint Nicholas Avenue,-73.943478,40.826129,Treatments,2026-09-08,Bait applied,Hamilton Heights-Sugar Hill,Chinese
+El Quetzalito,Kings County,New York,11220,Brooklyn,5507 5th Avenue,-74.013307,40.642032,Compliance,2026-09-08,Failed for Rat Activity,Sunset Park (Central),Guatemalan
+Two Doors Down,New York County,New York,10002,Manhattan,159 East Houston Street,-73.989092,40.722865,Initial,2026-09-08,Failed for Rat Activity,Lower East Side,N/A
+New Golden Empire,New York County,New York,10031,Manhattan,757 Saint Nicholas Avenue,-73.943478,40.826129,Treatments,2026-09-08,Bait applied,Hamilton Heights-Sugar Hill,Chinese
+Buttermilk Bar,Kings County,New York,11215,Brooklyn,577 5th Avenue,-73.989766,40.664805,Compliance,2026-09-08,Failed for Rat Activity,Windsor Terrace-South Slope,N/A
+M.C. Luncheonette,Kings County,New York,11215,Brooklyn,577 5th Avenue,-73.989533,40.664724,Compliance,2026-09-08,Failed for Rat Activity,Windsor Terrace-South Slope,Mexican
+Phở Gà Vàng,New York County,New York,10002,Manhattan,30 Market Street,-73.99427,40.712748,Initial,2026-09-08,Failed for Rat Activity,Chinatown-Two Bridges,Vietnamese
+The Tang,New York County,New York,10025,Manhattan,920 Amsterdam Avenue,-73.966301,40.799957,Treatments,2026-09-09,Bait applied,Upper West Side-Manhattan Valley,Chinese
+Halal Chicks,New York County,New York,10025,Manhattan,961 Columbus Avenue,-73.962116,40.799944,Treatments,2026-09-09,Bait applied,Upper West Side-Manhattan Valley,N/A
+Lexington Famous Pizza,New York County,New York,10010,Manhattan,50 Lexington Avenue,-73.984298,40.740471,Initial,2026-09-09,Failed for Other Reason,Gramercy,Pizza
+Plue,New York County,New York,10029,Manhattan,1575 Lexington Avenue,-73.948548,40.788919,Compliance,2026-09-09,Failed for Rat Activity,East Harlem (South),Thai
+Café d'Anvers,New York County,New York,10029,Manhattan,1567 Lexington Avenue,-73.948887,40.788466,Compliance,2026-09-09,Failed for Rat Activity,East Harlem (South),Belgian
+Effy's Kitchen,New York County,New York,10129,Manhattan,1567 Lexington Avenue,-73.948813,40.788545,Compliance,2026-09-09,Failed for Rat Activity,East Harlem (South),American
+Aunt Jenny,New York County,New York,10025,Manhattan,2794 Broadway,-73.967371,40.802714,Treatments,2026-09-09,Bait applied,Upper West Side-Manhattan Valley,Chinese
+Fei Tenc Seafood,New York County,New York,10002,Manhattan,68 Market Street,-73.994873,40.713826,Initial,2026-09-09,Failed for Other Reason,Chinatown-Two Bridges,Seafood
+Binondo,New York County,New York,10002,Manhattan,50 East Broadway,-73.995666,40.713729,Initial,2026-09-09,Failed for Rat Activity,Chinatown-Two Bridges,Filipino
+Le Baobab Gouygui,New York County,New York,10026,Manhattan,120 West 116th Street,-73.950931,40.802354,Initial,2026-09-09,Failed for Other Reason,Harlem (South),Senegalese;African
+Tudor City Steakhouse,New York County,New York,10017,Manhattan,45 Tudor City Place,-73.970191,40.749211,Stoppage,2026-09-10,Stoppage done,Murray Hill-Kips Bay,Steak_House
+Taco Bell,New York County,New York,10029,Manhattan,1884 3rd Avenue,-73.945717,40.79044,Treatments,2026-09-10,Bait applied,East Harlem (South),Tex-Mex
+Chipotle,New York County,New York,10007,Manhattan,275 Greenwich Street,-74.011137,40.714983,Stoppage,2026-09-10,Stoppage done,Tribeca-Civic Center,Mexican
+The Palace,Kings County,New York,11211,Brooklyn,206 Nassau Avenue,-73.944628,40.725461,Compliance,2026-09-10,Failed for Rat Activity and Other Reason,Greenpoint,N/A
+Tigre,New York County,New York,10002,Manhattan,105 Rivington Street,-73.98817,40.719928,Initial,2026-09-10,Failed for Rat Activity,Lower East Side,N/A
+Sigiri Sri Lankan Restaurant,New York County,New York,10003,Manhattan,91 1st Avenue,-73.986534,40.726214,Initial,2026-09-10,Failed for Other Reason,East Village,Asian;Indian
