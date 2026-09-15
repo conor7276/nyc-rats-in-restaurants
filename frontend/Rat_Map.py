@@ -20,11 +20,10 @@ if local_check == True:
     CARTO_API_KEY = local_creds['CARTO_API_KEY']
 # For deployment
 else:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--CARTO_API_KEY", required = True)
-    args = parser.parse_args()
-
     CARTO_API_KEY = os.getenv('CARTO_API_KEY')
+
+    if not CARTO_API_KEY:
+        raise "API KEY failed to load"
 
 
 def app() -> None:
