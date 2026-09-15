@@ -5,7 +5,26 @@ import numpy as np
 import folium
 from folium.plugins import MarkerCluster, FastMarkerCluster
 from pathlib import Path
+import os
+from dotenv import load_dotenv, dotenv_values
+import argparse
 
+
+# Load CARTO API KEY
+secrets_path = os.path.join(Path.cwd().parent, "secrets.env")
+local_check = load_dotenv(secrets_path)
+
+# For local testing
+if local_check == True:
+    local_creds = dotenv_values(secrets_path)
+    CARTO_API_KEY = local_creds['CARTO_API_KEY']
+# For deployment
+else:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--CARTO_API_KEY", required = True)
+    args = parser.parse_args()
+
+    CARTO_API_KEY = os.getenv('CARTO_API_KEY')
 
 
 def app() -> None:
@@ -18,9 +37,14 @@ def app() -> None:
     def build_map(df):
 
         rat_map = folium.Map(
-            location=[40.7, -74.05],
-            tiles="cartodb positron"
+            location=[40.7, -74.05]
         )
+
+        folium.TileLayer(
+            tiles = f"https://basemaps.cartocdn.com/rastertiles/light_all/{{z}}/{{x}}/{{y}}{{r}}.png?key={CARTO_API_KEY}",
+            attr='© <a href="https://carto.com/attributions">CARTO</a>, © OpenStreetMap contributors',
+            name = "CARTODB Positron"
+        ).add_to(rat_map)
 
         data = df[
             ["lat", "lon", "name", "address", "neighborhood", "type", "result", "inspection_date"]
