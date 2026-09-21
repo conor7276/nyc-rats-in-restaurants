@@ -1,0 +1,32 @@
+name,county,city,postcode,suburb,address,lon,lat,inspection_type,inspection_date,result,neighborhood,type
+International Wings Factory,New York County,New York,10128,Manhattan,1762 1st Avenue,-73.94668,40.780257,Compliance,2026-09-14,Failed for Rat Activity and Other Reason,Upper East Side-Yorkville,Chicken
+Sushi Lab,New York County,New York,10003,Manhattan,320 East 11th Street,-73.985283,40.7298,Compliance,2026-09-14,Failed for Rat Activity,East Village,Sushi
+Atomic Wings,New York County,New York,10026,Manhattan,2090 Frederick Douglass Boulevard,-73.956529,40.802511,Treatments,2026-09-14,Bait applied,Harlem (South),Wings
+Food Garden,Kings County,New York,11218,Brooklyn,329 East 2nd Street,-73.978267,40.643608,Treatments,2026-09-14,Bait applied,Kensington,Indian;Bangladeshi
+Thursday,New York County,New York,10009,Manhattan,424 East 9th Street,-73.983771,40.727608,Treatments,2026-09-14,Bait applied,East Village,Korean;International
+Keur Coumba,New York County,New York,10026,Manhattan,125 West 116th Street,-73.950734,40.802656,Treatments,2026-09-14,Bait applied,Harlem (South),African;Senegalese
+Traviata Pizza II,New York County,New York,10025,Manhattan,2753 Broadway,-73.96818,40.80122,Initial,2026-09-14,Failed for Rat Activity,Upper West Side-Manhattan Valley,Pizza
+Quesadillas Doña Maty,New York County,New York,10029,Manhattan,228 East 116th Street,-73.939002,40.797347,Treatments,2026-09-15,Bait applied,East Harlem (North),N/A
+Roma Pizza,New York County,New York,10128,Manhattan,1701 1st Avenue,-73.948518,40.778349,Treatments,2026-09-15,Bait applied,Upper East Side-Yorkville,Pizza
+Ollin,New York County,New York,10029,Manhattan,2108 2nd Avenue,-73.941037,40.792207,Treatments,2026-09-15,Bait applied,East Harlem (South),N/A
+New Golden Empire,New York County,New York,10031,Manhattan,757 Saint Nicholas Avenue,-73.943478,40.826129,Compliance,2026-09-15,Failed for Rat Activity,Hamilton Heights-Sugar Hill,Chinese
+Sumner Cafe,Kings County,New York,11233,Brooklyn,144 Decatur Street,-73.937416,40.680665,Compliance,2026-09-15,Failed for Rat Activity,Bedford-Stuyvesant (East),N/A
+Taco Veloz VIP,Bronx County,New York,10454,The Bronx,359 East 138th Street,-73.923938,40.809729,Initial,2026-09-15,Failed for Rat Activity,Mott Haven-Port Morris,Mexican
+Jing Xin,Bronx County,New York,10454,The Bronx,359 East 138th Street,-73.923978,40.809742,Initial,2026-09-15,Failed for Rat Activity,Mott Haven-Port Morris,N/A
+Monte Carlo Diner,New York County,New York,10029,Manhattan,2162 2nd Avenue,-73.939864,40.793842,Compliance,2026-09-15,Failed for Rat Activity and Other Reason,East Harlem (North),Diner
+Amarachi,Kings County,New York,11201,Brooklyn,189 Bridge Street,-73.984818,40.698115,Initial,2026-09-15,Failed for Rat Activity and Other Reason,Downtown Brooklyn-DUMBO-Boerum Hill,N/A
+Petit Boucherie,New York County,New York,10014,Manhattan,14 Christopher Street,-74.000437,40.733878,Treatments,2026-09-15,Bait applied,West Village,Sandwich
+Sushi & Co,New York County,New York,10018,Manhattan,980 6th Avenue,-73.986539,40.751139,Treatments,2026-09-16,Bait applied,Midtown-Times Square,Sushi
+Sanmiwago,New York County,New York,10018,Manhattan,980 6th Avenue,-73.986514,40.751171,Treatments,2026-09-16,Bait applied,Midtown-Times Square,Taiwanese
+Roma Pizza,New York County,New York,10018,Manhattan,980 6th Avenue,-73.986491,40.751203,Treatments,2026-09-16,Bait applied,Midtown-Times Square,Pizza
+Sushi & Co,New York County,New York,10018,Manhattan,980 6th Avenue,-73.986539,40.751139,Treatments,2026-09-16,Bait applied,Midtown-Times Square,Sushi
+Sanmiwago,New York County,New York,10018,Manhattan,980 6th Avenue,-73.986514,40.751171,Treatments,2026-09-16,Bait applied,Midtown-Times Square,Taiwanese
+Roma Pizza,New York County,New York,10018,Manhattan,980 6th Avenue,-73.986491,40.751203,Treatments,2026-09-16,Bait applied,Midtown-Times Square,Pizza
+Ootoya,New York County,New York,10036,Manhattan,141 West 41st Street,-73.985979,40.75488,Treatments,2026-09-16,Bait applied,Midtown-Times Square,N/A
+Sushi of Gari,New York County,New York,10075,Manhattan,402 East 78th Street,-73.95278,40.771345,Stoppage,2026-09-17,Stoppage done,Upper East Side-Lenox Hill-Roosevelt Island,Sushi
+Vinateria,New York County,New York,10026,Manhattan,2211 Frederick Douglass Boulevard,-73.954055,40.806538,Compliance,2026-09-17,Failed for Rat Activity and Other Reason,Harlem (South),Italian;Spanish
+El Aguila,New York County,New York,10029,Manhattan,1634 Lexington Avenue,-73.947716,40.790519,Initial,2026-09-17,Failed for Rat Activity,East Harlem (South),Mexican
+Quechua Nostra,New York County,New York,10029,Manhattan,1634 Lexington Avenue,-73.94765,40.790596,Initial,2026-09-17,Failed for Rat Activity,East Harlem (South),Peruvian
+The Lexington Social,New York County,New York,10029,Manhattan,1634 Lexington Avenue,-73.947624,40.790664,Initial,2026-09-17,Failed for Rat Activity,East Harlem (South),Mediterranean;Tapas
+Sapoara,New York County,New York,10035,Manhattan,2262 1st Avenue,-73.935049,40.796184,Initial,2026-09-17,Failed for Rat Activity,East Harlem (North),Latin_American
+Caribe Star,Queens County,New York,11418,Queens,54-55 Myrtle Avenue,-73.909156,40.69997,Compliance,2026-09-17,Failed for Rat Activity,Ridgewood,Caribbean
