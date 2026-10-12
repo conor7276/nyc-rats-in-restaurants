@@ -1,0 +1,28 @@
+name,county,city,postcode,suburb,address,lon,lat,inspection_type,inspection_date,result,neighborhood,type
+Dunkin',New York County,New York,10009,Manhattan,100 1st Avenue,-73.985941,40.726423,Compliance,2026-10-05,Failed for Rat Activity,East Village,Donut;Coffee_Shop
+Maza Mexican Restaurant,New York County,New York,10003,Manhattan,102 East 7th Street,-73.985037,40.72655,Compliance,2026-10-05,Failed for Rat Activity and Other Reason,East Village,Mexican
+Los 3 Charros,New York County,New York,10026,Manhattan,57 Malcolm X Boulevard,-73.9514,40.80011,Initial,2026-10-05,Failed for Rat Activity,Harlem (South),Mexican
+El Nuevo Caribeno,New York County,New York,10029,Manhattan,1675 Lexington Avenue,-73.946571,40.791617,Compliance,2026-10-05,Failed for Rat Activity and Other Reason,East Harlem (South),Caribbean
+Harlem Breakfast Club,New York County,New York,10027,Manhattan,2167 Adam Clayton Powell Jr. Boulevard,-73.946404,40.811133,Initial,2026-10-05,Failed for Rat Activity and Other Reason,Harlem (North),N/A
+The Upper Crust Queens,Queens County,New York,11367,Queens,67-11 Main Street,-73.825068,40.733735,Initial,2026-10-06,Failed for Other Reason,Kew Gardens Hills,Pizza
+Loong Noodles,New York County,New York,10003,Manhattan,28 Saint Marks Place,-73.98858,40.728837,Compliance,2026-10-06,Failed for Rat Activity,East Village,Noodle
+Taco Bell,New York County,New York,10029,Manhattan,1884 3rd Avenue,-73.945717,40.79044,Treatments,2026-10-06,Bait applied,East Harlem (South),Tex-Mex
+Taco Bell,New York County,New York,10029,Manhattan,1503 Lexington Avenue,-73.950228,40.786592,Compliance,2026-10-06,Failed for Rat Activity,East Harlem (South),Tex-Mex
+Dallas BBQ,Queens County,New York,11432,Queens,89-14 Parsons Boulevard,-73.801779,40.70553,Treatments,2026-10-06,Bait applied,Jamaica,Barbecue
+New York Grill and Deli,New York County,New York,10009,Manhattan,191 Avenue A,-73.981531,40.72905,Initial,2026-10-06,Failed for Other Reason,East Village,N/A
+Asia Roma,New York County,New York,10013,Manhattan,40 Mulberry Street,-73.999523,40.714839,Compliance,2026-10-07,Failed for Rat Activity,Chinatown-Two Bridges,Asian;Italian;Pub
+Tonii's Fresh Rice Noodle,New York County,New York,10013,Manhattan,83 Bayard Street,-73.998936,40.7157,Compliance,2026-10-07,Failed for Other Reason,Chinatown-Two Bridges,Chinese
+Baxter Street Pizza,New York County,New York,10013,Manhattan,83 Baxter Street,-73.999745,40.716653,Compliance,2026-10-07,Failed for Rat Activity,Chinatown-Two Bridges,Pizza
+Breakroom,New York County,New York,10013,Manhattan,83 Baxter Street,-73.999762,40.716621,Compliance,2026-10-07,Failed for Rat Activity,Chinatown-Two Bridges,Burger;Tacos
+Talon Bar,Kings County,New York,11237,Brooklyn,220 Wyckoff Avenue,-73.91433,40.701142,Initial,2026-10-07,Failed for Rat Activity,Bushwick (West),N/A
+Quesadillas Doña Maty,New York County,New York,10029,Manhattan,228 East 116th Street,-73.939002,40.797347,Compliance,2026-10-07,Failed for Other Reason,East Harlem (North),N/A
+King Food,Kings County,New York,11221,Brooklyn,127 Malcolm X Boulevard,-73.930159,40.68913,Compliance,2026-10-07,Failed for Rat Activity,Bedford-Stuyvesant (East),Chinese
+Halal Chicks,New York County,New York,10025,Manhattan,961 Columbus Avenue,-73.962116,40.799944,Stoppage,2026-10-07,Stoppage done,Upper West Side-Manhattan Valley,N/A
+El Nuevo Caribeno,New York County,New York,10029,Manhattan,1675 Lexington Avenue,-73.946571,40.791617,Stoppage,2026-10-07,Stoppage done,East Harlem (South),Caribbean
+Cafe Royale Restaurant,Bronx County,New York,10468,The Bronx,553 Walton Avenue,-73.928378,40.819008,Treatments,2026-10-07,Bait applied,Concourse-Concourse Village,N/A
+McDonald's,Bronx County,New York,10460,The Bronx,1101 East Tremont Avenue,-73.876891,40.840389,Initial,2026-10-07,Failed for Rat Activity,West Farms,Burger
+House of Kava,Kings County,New York,11237,Brooklyn,238 Central Avenue,-73.924086,40.697294,Initial,2026-10-08,Failed for Rat Activity,Bushwick (West),N/A
+Liffy II Bar,New York County,New York,10034,Manhattan,5009 Broadway,-73.91713,40.869373,Initial,2026-10-08,Failed for Rat Activity,Inwood,N/A
+Forever Taste Restaurant,New York County,New York,10002,Manhattan,27 Rutgers Street,-73.989926,40.712925,Compliance,2026-10-08,Failed for Rat Activity,Chinatown-Two Bridges,Chinese
+IHOP,New York County,New York,10033,Manhattan,4168 Broadway,-73.937823,40.847519,Initial,2026-10-08,Failed for Rat Activity,Washington Heights (South),Breakfast;Pancake
+67 Orange Street,New York County,New York,10026,Manhattan,2082 Frederick Douglass Boulevard,-73.956711,40.802242,Compliance,2026-10-08,Failed for Rat Activity,Harlem (South),N/A
