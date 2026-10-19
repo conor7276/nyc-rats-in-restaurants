@@ -1,0 +1,24 @@
+name,county,city,postcode,suburb,address,lon,lat,inspection_type,inspection_date,result,neighborhood,type
+Bakery Immaculee,Kings County,New York,11235,Brooklyn,1227 Nostrand Avenue,-73.950088,40.657281,Initial,2026-10-13,Failed for Rat Activity,Prospect Lefferts Gardens-Wingate,Haitian
+Market Bar & Brewery,Kings County,New York,11225,Brooklyn,1207 Nostrand Avenue,-73.950148,40.65773,Initial,2026-10-13,Failed for Other Reason,Prospect Lefferts Gardens-Wingate,Pizza
+Sweetgreen,New York County,New York,10025,Manhattan,2460 Broadway,-73.973767,40.791455,Treatments,2026-10-13,Bait applied,Upper West Side (Central),Salad
+Carmelo's,Kings County,New York,11237,Brooklyn,1544 DeKalb Avenue,-73.920517,40.702779,Treatments,2026-10-13,Bait applied,Bushwick (West),N/A
+Paris Blues,New York County,New York,10027,Manhattan,2021 Adam Clayton Powell Jr. Boulevard,-73.949876,40.806403,Treatments,2026-10-13,Bait applied,Harlem (South),N/A
+Onion Tree Pizza Co,New York County,New York,10009,Manhattan,214 1st Avenue,-73.982987,40.730498,Initial,2026-10-13,Failed for Other Reason,East Village,Pizza
+Love Mama,New York County,New York,10003,Manhattan,174 2nd Avenue,-73.986126,40.730404,Initial,2026-10-13,Failed for Other Reason,East Village,Malaysian;Thai;Vietnamese
+La Villetta,New York County,New York,10022,Manhattan,398 East 52nd Street,-73.964943,40.754893,Initial,2026-10-13,Failed for Other Reason,East Midtown-Turtle Bay,Italian;Pizza
+La Cava Wine Bar,New York County,New York,10022,Manhattan,939 2nd Avenue,-73.968816,40.754824,Initial,2026-10-13,Failed for Other Reason,East Midtown-Turtle Bay,Wine
+Rocka Rolla,Kings County,New York,11211,Brooklyn,486 Metropolitan Avenue,-73.952822,40.713936,Initial,2026-10-13,Failed for Rat Activity and Other Reason,Williamsburg,Snack
+Taqueria al Pastor,Kings County,New York,11237,Brooklyn,128 Wyckoff Avenue,-73.91801,40.703398,Treatments,2026-10-14,Bait applied,Bushwick (West),Mexican
+Los Marineros,Kings County,New York,11237,Brooklyn,128 Wyckoff Avenue,-73.917992,40.703382,Treatments,2026-10-14,Bait applied,Bushwick (West),Mexican
+Liffy II Bar,New York County,New York,10034,Manhattan,5009 Broadway,-73.91713,40.869373,Stoppage,2026-10-14,Stoppage done,Inwood,N/A
+Shaffer’s,New York County,New York,10011,Manhattan,151 8th Avenue,-74.001097,40.742052,Compliance,2026-10-14,Failed for Other Reason,Chelsea-Hudson Yards,N/A
+Hassy Juice Bar,New York County,New York,10035,Manhattan,2265 1st Avenue,-73.935409,40.79632,Stoppage,2026-10-14,Stoppage done,East Harlem (North),Juice
+Dunkin',New York County,New York,10028,Manhattan,1661 1st Avenue,-73.949271,40.777328,Initial,2026-10-14,Failed for Other Reason,Upper East Side-Yorkville,Donut
+Cafe Royale Restaurant,Bronx County,New York,10468,The Bronx,553 Walton Avenue,-73.928378,40.819008,Treatments,2026-10-14,Bait applied,Concourse-Concourse Village,N/A
+Fukurou,Kings County,New York,11237,Brooklyn,105 Wilson Avenue,-73.926949,40.701534,Initial,2026-10-14,Failed for Rat Activity,Bushwick (West),Japanese
+Popeyes,New York County,New York,10030,Manhattan,2300 Adam Clayton Powell Jr. Boulevard,-73.943882,40.815575,Treatments,2026-10-15,Bait applied,Harlem (North),Chicken
+Golden Palace Gourmet,Queens County,New York,11355,Queens,140-09 Cherry Avenue,-73.82251,40.754198,Treatments,2026-10-15,Bait applied,Flushing-Willets Point,Chinese
+Bánh Anh Em,New York County,New York,10003,Manhattan,99 3rd Avenue,-73.987672,40.732291,Initial,2026-10-15,Failed for Rat Activity,East Village,Vietnamese
+Vinateria,New York County,New York,10026,Manhattan,2211 Frederick Douglass Boulevard,-73.954055,40.806538,Treatments,2026-10-15,Bait applied,Harlem (South),Italian;Spanish
+Bobby's Night Out,New York County,New York,10009,Manhattan,145 Avenue C,-73.978049,40.725454,Initial,2026-10-15,Failed for Other Reason,East Village,Mexican
